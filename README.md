@@ -1,1 +1,1 @@
-text
+some intro text and project outline
