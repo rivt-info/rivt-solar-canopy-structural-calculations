@@ -1,6 +1,6 @@
 #! python
 # %%
-import rivt.rivtapi as rv
+import rivt.rivtapi as rv1
 rv.R("""Overview and Codes | notoc | 1
 
     This report covers the structural design of a residential solar canopy
