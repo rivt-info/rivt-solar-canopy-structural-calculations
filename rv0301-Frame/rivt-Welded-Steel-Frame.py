@@ -1,6 +1,6 @@
 #! python
 # %%
-import rivt.rivttext as rv
+import rivt.rivtapi as rv
 # %%
 rv.R("""-- Overview | 80 
 
@@ -13,14 +13,14 @@ rv.I("""Minimum Wall Sheathing CRC - First Floor
     common nails at 12" oc at edges and field. The boundary nailing capacity is
     half of the maximum spacing tabulated in the building codes. The residence
     is checked against the CRC prescriptive wall opening limits, assuming 6" oc
-    (which is not the case) to assess the degree of wall continuity. A CBC
-    analysis is performed in calculation 0301 which estimates the DC ratios for
-    the 12" oc nailing.
+    (which is not the case) to assess the degree of wall continuity. In
+    calculation 0301 A CBC analysis estimates the DC ratios for the 12" oc
+    nailing.
 
-    || image | resource | mv_nail1a.jpg |40
+    || image | images/fig1.png | 40
     Existing shear wall nailing - 8d at 12" OC _[f]
     
-    || image | resource | mv_nail2a.jpg |56
+    || image |  data/mv_nail2a.jpg | 56
     Existing shear wall nailing - 8d - 2-1/2" penetration _[f]
 
     The minimum solid wall percent is given in the following CRC table.
