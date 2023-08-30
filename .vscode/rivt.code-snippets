@@ -8,12 +8,12 @@
         ]
     },
     "new R method": {
-        "prefix": "rvR",
+        "prefix": "rvr",
         "description": "add new Repo method",
         "scope": "python",
         "body": [
-            "rv.R(\"\"\"${1:section label} | $(2:default) | ${3:utf;pdf;html;inter} | ${4:width},${5:start}",
-            "    ",
+            "rv.R(\"\"\"${1:section label} | ${2:white} | ${3:1}",
+            "",
             "    ${0:new Repo text}",
             "    ",
             "    \"\"\")"
