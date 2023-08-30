@@ -2,7 +2,7 @@
 # %%
 import rivt.rivtapi as rv
 # %%
-rv.R("""-- Overview | 80 
+rv.R("""-- x | 80 
 
     || pages | config | rivt-config.ini | pdf-style4.sty | 10
  
@@ -20,12 +20,12 @@ rv.I("""Minimum Wall Sheathing CRC - First Floor
     || image | images/fig1.png | 40
     Existing shear wall nailing - 8d at 12" OC _[f]
     
-    || image |  data/mv_nail2a.jpg | 56
+    || image |  images/mv_nail2a.jpg | 56
     Existing shear wall nailing - 8d - 2-1/2" penetration _[f]
 
     The minimum solid wall percent is given in the following CRC table.
 
-    || table | data | r602_3wallpercent.csv | 15,c | [:]
+    || table | data | data0101/areas.csv | 15,c | [:]
 
     The percent solid wall for each shear wall is:
 
