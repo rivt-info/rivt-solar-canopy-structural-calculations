@@ -3,11 +3,11 @@
 import rivt.rivtapi as rv
 rv.R("""Overview and Codes | notoc | 1
 
-    This report covers the structural design of a residential solar canopy
+    This report provides a structural design for a residential solar canopy
     located in Larkspur, California. It includes the design of a concrete slab
-    and stem wall foundation, a welded steel tube frame, and solar panel clips.
+    and stem wall foundation, welded steel tube frame, and solar panel clips.
 
-    || project | project-data.txt | plain 
+    || text | project-data.txt | plain 
 
     """)
 # %%
@@ -31,7 +31,7 @@ rv.I("""Governing Codes | default
 
     
     Table of Project Engineering Standards _[t]
-    || table | data/cbc2019_stds.xlsx | 53,l 
+    || table | data0101/cbc2019_stds.xlsx | 53,l 
  
     
     Basic loads and load combinations for the project are from the California
