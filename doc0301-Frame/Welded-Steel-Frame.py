@@ -6,7 +6,7 @@ rv.R("""-- x | 80
 
     || pages | config | rivt-config.ini | pdf-style4.sty | 10
  
-    """)
+    """)``
 rv.I("""Minimum Wall Sheathing CRC - First Floor
  
     The residence is sheathed in exterior 1/2" 5-ply plywood nailed with 8d
@@ -17,10 +17,10 @@ rv.I("""Minimum Wall Sheathing CRC - First Floor
     calculation 0301 A CBC analysis estimates the DC ratios for the 12" oc
     nailing.
 
-    || image | images/fig1.png | 40
+    || image | private/images/fig1.png | 40
     Existing shear wall nailing - 8d at 12" OC _[f]
     
-    || image |  images/mv_nail2a.jpg | 56
+    || image |  private/images/mv_nail2a.jpg | 56
     Existing shear wall nailing - 8d - 2-1/2" penetration _[f]
 
     The minimum solid wall percent is given in the following CRC table.
