@@ -2,11 +2,11 @@
 # %%
 import rivt.rivtapi as rv
 # %%
-rv.R("""-- x | 80 
+rv.R("""-- R1 | 80 
 
     || pages | config | rivt-config.ini | pdf-style4.sty | 10
  
-    """)``
+    """)
 rv.I("""Minimum Wall Sheathing CRC - First Floor
  
     The residence is sheathed in exterior 1/2" 5-ply plywood nailed with 8d
