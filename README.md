@@ -1,3 +1,5 @@
-some intro text and project outline
+test of search
 
-outline written with markdown write
+rivt
+
+solar xxx frame yyy steel.
