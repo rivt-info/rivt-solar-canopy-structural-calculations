@@ -16,9 +16,9 @@
     {
       "label": "rv_install",
       "type": "shell",
-      "command": "pip3 install --upgrade git+https://github.com/rivtlib/rivetcalc-code",
+      "command": "pip3 install --upgrade git+https://github.com/rivt-code/rivtlib",
       "windows": {
-        "command": "pip install --upgrade git+https://github.com/rivtlib/rivetcalc-code"
+        "command": "pip install --upgrade git+https://github.com/rivt-code/rivtlib"
       },
       "presentation": {
         "reveal": "always",
