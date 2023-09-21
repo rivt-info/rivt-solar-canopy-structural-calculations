@@ -1,12 +1,12 @@
 {
     "configurations": [
         {
-            "name": "rivtCalc",
+            "name": "rivt",
             "type": "python",
             "request": "launch",
             "stopOnEntry": true,
-            "console": "integratedTerminal",
-            "module": "rivt",
+            "console": "internalConsole",
+            "module": "__main__",
             "args": [
                 "${file}"
             ],
