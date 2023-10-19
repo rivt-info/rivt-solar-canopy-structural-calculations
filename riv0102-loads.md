@@ -20,7 +20,7 @@ wall foundation, a welded steel tube frame, and solar panel clips.
 
 
 <p align="center">
-    <img src=dirv01-codes/data01/fig2.png width=50% alt=data/fig2.png><br>
+    <img src=div01-codes/data01/fig2.png width=50% alt=data/fig2.png><br>
     <h4 align="center"><b>Fig. 2 - Wind load B</b></h4>
 </p>
 
