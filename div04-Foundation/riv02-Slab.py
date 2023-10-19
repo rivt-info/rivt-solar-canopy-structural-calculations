@@ -1,5 +1,5 @@
 # %%
-import rivtlib.rv_lib as rv
+import rivtlib.rivtapi as rv
 
 rv.D(" ", "default", "Carport Wind Model", "1")
 

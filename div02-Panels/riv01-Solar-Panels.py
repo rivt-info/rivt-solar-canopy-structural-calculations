@@ -1,6 +1,6 @@
 #! python
 # %%
-import rivt.rivttext as rv
+import rivtlib.rivtapi as rv
 
 # %%
 rv.I("""[01] Structural Deficiencies

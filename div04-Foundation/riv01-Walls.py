@@ -1,6 +1,9 @@
 # %%
-import rivtlib.rv_lib as rv
-rv.D("dev", "default", "Residence Seismic Model", "24")
+import rivtlib.rivtapi as rv
+
+rv.R("""Residence Seismic Model | notoc,1
+     
+     """)
 
 rv.I("""[01]  Seismic Demands for Exterior Walls
 
