@@ -27,7 +27,7 @@ rv.I("""Governing Codes | default
     - 2019 California Building Code [CBC]
     - 2019 California Residential Code [CRC] 
     
-    The canopy is designed for compliance with the requirements of the CBC.
+    The canopy is designed for compliance with the CBC.
 
     
     Table of Project Engineering Standards _[t]
