@@ -14,14 +14,12 @@ wall foundation, a welded steel tube frame, and solar panel clips.
 <br>
 
 <p align="center">
-    <img src=div01-codes/data01/fig1.png width=50% alt=data/fig1.png><br>
-    <h4 align="center"><b>Fig. 1 - Wind load A</b></h4>
+    <img src=div01-codes/data01/fig1.png width=50% alt=div01-codes/data01/fig1.png><br><h4 align="center"><b>Fig. 1 - Wind load A</b></h4>
 </p>
 
 
 <p align="center">
-    <img src=div01-codes/data01/fig2.png width=50% alt=data/fig2.png><br>
-    <h4 align="center"><b>Fig. 2 - Wind load B</b></h4>
+    <img src=div01-codes/data01/fig2.png width=50% alt=div01-codes/data01/fig2.png<br><h4 align="center"><b>Fig. 2 - Wind load B</b></h4>
 </p>
 
 
