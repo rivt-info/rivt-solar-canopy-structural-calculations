@@ -6,7 +6,7 @@
     "inline-bookmarks.view.showVisibleFilesOnly": true,
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
     "insertDateString.formatDate": "MM-DD-YYYY",
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Default Dark Modern",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
         "tab.inactiveBackground": "#505052"

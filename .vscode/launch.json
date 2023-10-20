@@ -1,21 +1,6 @@
 {
     "configurations": [
         {
-            "name": "rivt",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": true,
-            "console": "internalConsole",
-            "module": "__main__",
-            "args": [
-                "${file}"
-            ],
-            "cwd": "${fileDirname}",
-            "env": {
-                "name": "value"
-            }
-        },
-        {
             "name": "Python",
             "type": "python",
             "request": "launch",
