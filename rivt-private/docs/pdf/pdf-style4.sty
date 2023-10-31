@@ -1,0 +1,74 @@
+%%
+%% LaTex report style - rivt default
+%%
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[no-math]{fontspec}
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage{currfile}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{gensymb}
+\usepackage{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{etoolbox}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage[most]{tcolorbox}
+%% section bar
+\tcbset{
+    frame code={}
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=lightgray,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=0mm,
+    boxsep=5pt,
+    arc=0pt,outer arc=0pt,
+    }
+%% math font
+\setmainfont{DejaVu Sans}[Scale=0.8]
+\setsansfont{DejaVu Sans}[Scale=0.8]
+\setmonofont{DejaVu Sans Mono}[Scale=0.8]
+%\DeclareMathSizes{9}
+%\DeclareMathSizes{12}{13}{11}{11}
+%% margins
+\setlength\parindent{0in}
+\setlength\parskip{.1in}
+\newgeometry{includeheadfoot,hmargin={0.9in,0.9in},vmargin={0.5in,0.5in}}
+%% header
+\pagestyle{fancy}
+\fancyhf{}
+%% this gets replaced at runtime with rivt document title in ini file
+\fancyhead[L]{\leftmark}
+%% this marker gets replaced by document number at run time
+\fancyhead[R]{\normalsize\bfseries x*x*x  page \thepage}
+\setlength{\headheight}{15pt}
+\renewcommand\chaptermark[1]{\markboth{#1}{}}
+\renewcommand\sectionmark[1]{\markright{\thesection.\ #1}}
+%% footer
+\fancyfoot[C]{rivt file: \jobname .py \hfill \today\ }
+\renewcommand\headrulewidth{1pt}
+\renewcommand\footrulewidth{1pt}
+%% modify section headings - chapters
+\titleformat{\chapter}
+[display]
+{\normalfont\large\bfseries}
+{}{0pt}
+{\large}
+[\vspace{2mm}\titlerule]
+\titlespacing*{\chapter}{0pt}{-40pt}{12pt}
+%% modify section headings - sections
+\titleformat{\section}
+[display]
+{\normalfont\large\bfseries}
+{}{0pt}
+{\large}
+[\vspace{2mm}\titlerule]
+\titlespacing*{\section}{0pt}{-40pt}{12pt}
+

@@ -1,0 +1,55 @@
+%%
+%% rivt default LaTex report class style
+%%
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[no-math]{fontspec}
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage{currfile}
+\usepackage{bm}
+\usepackage{gensymb}
+\usepackage{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{etoolbox}
+\usepackage[T1]{fontenc}
+%% math font
+\setmainfont{DejaVu Sans}[Scale=0.8]
+\setsansfont{DejaVu Sans}[Scale=0.8]
+\setmonofont{DejaVu Sans Mono}[Scale=0.8]
+\DeclareMathSizes{9}
+%\DeclareMathSizes{12}{13}{11}{11}
+%% margins
+\geometry{letterpaper, includeheadfoot, hmargin={0.25in,0.25in},
+                                vmargin={0.25in,0.25in}}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{.1in}
+
+%% header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\normalsize x*x*x  page \thepage}
+\renewcommand\chaptermark[1]{\markboth{#1}{}}
+\renewcommand\sectionmark[1]{\markright{\thesection.\ #1}}
+%% footer
+\fancyfoot[C]{rivt file: \jobname .py \hfill \today\ }
+\renewcommand\headrulewidth{1pt}
+\renewcommand\footrulewidth{1pt}
+%% modify section headings - chapters
+\titleformat{\chapter}
+[display]
+{\normalfont\large\bfseries}
+{}{0pt}
+{\large}
+[\vspace{2mm}\titlerule]
+\titlespacing*{\chapter}{0pt}{-40pt}{12pt}
+%% modify section headings - sections
+\titleformat{\section}
+[display]
+{\normalfont\large\bfseries}
+{}{0pt}
+{\large}
+[\vspace{2mm}\titlerule]
+\titlespacing*{\section}{0pt}{-40pt}{12pt}
+

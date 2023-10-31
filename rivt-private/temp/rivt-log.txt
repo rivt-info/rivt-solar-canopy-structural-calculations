@@ -1,0 +1,6 @@
+07-09 05:36  rivtapi   INFO     rivt file : [r0101.py]
+07-09 05:36  rivtapi   INFO     rivt public path : [c:\git\rivtproject-solar-canopy\rivt-Solar-Canopy-Structural-Calculations]
+07-09 05:36  rivtapi   INFO     private path: [c:\git\rivtproject-solar-canopy\private]
+07-09 05:36  rivtapi   INFO     log folder short path: [rivtproject-solar-canopy\private]
+07-09 05:36  rivtapi   INFO     rivt backup: [rivt-Solar-Canopy-Structural-Calculations\r0101-codes]
+07-09 05:36  rivtapi   INFO     table command not evaluated: 4 parameters required

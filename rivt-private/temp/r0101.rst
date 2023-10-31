@@ -1,0 +1,743 @@
+
+.. raw:: latex   
+
+ ?x?vspace{.2in}    ?x?begin{tcolorbox}    ?x?textbf{ Overview} ?x?hfill?x?textbf{SECTION [0101] - 1 }   ?x?end{tcolorbox}   
+   ?x?newline   ?x?vspace{.05in}
+
+========  =============  =================  =============================  =====
+  Type      No./Date           Name                    Address               Zip
+========  =============  =================  =============================  =====
+ Client       C001         Bryna Holland       15 Blanca Drive, Novato     94947
+Project       P010       Residence Remodel  55 Loring Avenue, Mill Valley  94941
+Drawings  Dec. 1 , 2020   PR-01 to PR-11    55 Loring Avenue, Mill Valley  94941
+========  =============  =================  =============================  =====
+
+.. raw:: latex   
+
+ ?x?vspace{.2in}    ?x?begin{tcolorbox}    ?x?textbf{ Governing Codes} ?x?hfill?x?textbf{SECTION [0101] - 2 }   ?x?end{tcolorbox}   
+   ?x?newline   ?x?vspace{.05in}
+
+
+.. image:: c:/git/rivtlocal-solar-canopy/rv01-loads/fig1.png
+   :scale:  15%
+   :align: center
+
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+ 
+**Figure 1: Wind load 1**  ?x?hfill 02 - F01
+ 
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+
+.. image:: c:/git/rivtlocal-solar-canopy/rv01-loads/fig2.png
+   :scale:  40 %
+   :align: center
+
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+ 
+**Figure 2: Wind load 2**  ?x?hfill 02 - F02
+ 
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 01: Standards**  ?x?hfill 02 - T01
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+
+===================================================  ==========  ======
+Category                                             Standard      Year
+===================================================  ==========  ======
+Loading                                              ASCE-7        2016
+Concrete                                             ACI-318       2014
+Wood-National Design Specifications                  AWC-NDS       2018
+Wood-Special Design Provisions for Wind and Seismic  AWC-SDPWS     2015
+Wood Frame Construction Manual                       AWC-WFCM      2018
+===================================================  ==========  ======
+
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 02: Load Types**  ?x?hfill 02 - T02
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+
+=====  ===================================  ===================================
+Sym    Load Effect                          Notes
+=====  ===================================  ===================================
+D      Dead load                            See IBC 1606 and Chapter 3 of this
+                                            publication
+E      Combined effect of horizontal and    See IBC 1613, ASCE/SEI 12.4.2 and
+       vertical earthquake-induced forces   Chapter 6 of this publication
+       as defined in ASCE/SEI 12.4.2
+Em     Maximum seismic load effect of       See IBC 1613, ASCE/SEI 12.4.3 and
+       horizontal and vertical forces as    Chapter 6 of this publication
+       set forth in ASCE/SEI 12.4.3
+H      Load due to lateral earth            See IBC 1610 for soil lateral loads
+       pressures, ground water pressure or
+       pressure of bulk materials
+L      Live load, except roof live load,    See IBC 1607 and Chapter 3 of this
+       including any permitted live load    publication
+       reduction
+Li     Roof live load including any         See IBC 1607 and Chapter 3 of this
+       permitted live load reduction        publication
+R      Rain load                            See IBC 1611 and Chapter 3 of this
+                                            publication
+W      Load due to wind pressure            See IBC 1609 and Chapter 5 of this
+                                            publication
+=====  ===================================  ===================================
+
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 03: Load Combinations**  ?x?hfill 02 - T03
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+
+====================  =====================================================
+CBC 2019 reference     Equation
+====================  =====================================================
+Equation 16-1         1.4(D +F)
+Equation 16-2         1.2(D + F) + l.6(L + H) + 0.5(L
+Equation 16-3         1.2(D + F) + l.6(Lr or S or R) + l.6H + (f1L or 0.5W)
+Equation 16-4         1.2(D + F) + 1.0W + f1L +1.6H + 0.5(Lr or S or R)
+Equation 16-5         1.2(D + F) + 1.0E + f1L + l.6H + f2S
+Equation 16-6         0.9D+ l.0W+ l.6H
+Equation 16-7         0.9(D + F) + 1.0E+ l.6H
+====================  =====================================================
+
+.. raw:: latex   
+
+ ?x?vspace{.2in}    ?x?begin{tcolorbox}    ?x?textbf{ Gravity Loads and Seismic Mass} ?x?hfill?x?textbf{SECTION [0101] - 3 }   ?x?end{tcolorbox}   
+   ?x?newline   ?x?vspace{.05in}
+
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 04: Roof unit dead loads**  ?x?hfill 03 - T04
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+==========  =======  =========  =================================
+variable      value    [value]  description
+==========  =======  =========  =================================
+ld1         2.0 psf   0.10 KPa  Urethane foam (4 inch thick)
+ld2         1.0 psf   0.05 KPa  Three-ply roofing
+ld3         5.0 psf   0.24 KPa  Doug Fir decking 2-in.
+ld4         1.0 psf   0.05 KPa  Doug Fir beams 4x12 at 12 ft o.c.
+_ _             _ _        _ _  Total
+roofdl1     9.0 psf   0.43 KPa  Total roof unit load
+==========  =======  =========  =================================
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 05: Floor unit dead loads**  ?x?hfill 03 - T05
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+==========  ========  =========  ==========================
+variable       value    [value]  description
+==========  ========  =========  ==========================
+ld1          3.0 psf   0.14 KPa  3/4 in. hardwood flooring
+ld2          2.0 psf   0.10 KPa  1/2 in. plywood subfloor
+ld3          4.0 psf   0.19 KPa  2x10 joists at 16 in. o.c.
+ld4          1.5 psf   0.07 KPa  fixtures
+_ _              _ _        _ _  Total
+floordl1    10.5 psf   0.50 KPa  Total floor unit load
+==========  ========  =========  ==========================
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 06: Interior wall unit dead loads**  ?x?hfill 03 - T06
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+==========  =======  =========  =============================
+variable      value    [value]  description
+==========  =======  =========  =============================
+ld1         5.5 psf   0.26 KPa  5/8" sheet rock (2)
+ld2           2 psf   0.10 KPa  2x4 studs at 16" o.c.
+ld3         1.5 psf   0.07 KPa  fixtures
+_ _             _ _        _ _  Total
+intwalldl1    9 psf   0.43 KPa  Total interior wall unit load
+==========  =======  =========  =============================
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 07: Exterior wall unit dead loads**  ?x?hfill 03 - T07
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+==========  =======  =========  =============================
+variable      value    [value]  description
+==========  =======  =========  =============================
+ld1         2.0 psf   0.10 KPa  1/2 in plywood sheathing
+ld2         2.0 psf   0.10 KPa  2x4 studs at 16 in o.c.
+ld3         3.0 psf   0.14 KPa  5/8 in sheet rock
+ld4         1.5 psf   0.07 KPa  fixtures
+_ _             _ _        _ _  Total
+extwalldl1  8.5 psf   0.41 KPa  Total exterior wall unit load
+==========  =======  =========  =============================
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 08: Areas**  ?x?hfill 03 - T08
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+==========  ==========  =========  ======================
+variable         value    [value]  description
+==========  ==========  =========  ======================
+arearf1     1700.00 sf  157.94 SM  roof area
+areaflr1    1200.00 sf  111.48 SM  floor area
+htwall1        9.00 ft     2.74 m  wall height
+lenwall1     110.00 ft    33.53 m  interior wall length
+lenwall2     155.00 ft    47.24 m  exterior wall length 2
+==========  ==========  =========  ======================
+
+
+
+**Eq. 1: Roof weight**  ?x?hfill 03 - E01
+
+
+
+::
+
+   rfwt₁ = arearf₁⋅roofdl₁
+
+
+::
+
+   15.30 kip = 1700.00 sf⋅9.00 psf
+
+
+
+
+
+**Eq. 2: Floor weight**  ?x?hfill 03 - E02
+
+
+
+::
+
+   flrwt₁ = areaflr₁⋅floordl₁
+
+
+::
+
+   12.60 kip = 10.50 psf⋅1200.00 sf
+
+
+
+
+
+**Eq. 3: Partition weight**  ?x?hfill 03 - E03
+
+
+
+::
+
+   partwt₁ = htwall₁⋅intwalldl₁⋅lenwall₁
+
+
+::
+
+   8.91 kip = 110.00 ft⋅9.00 ft⋅9.00 psf
+
+
+
+
+
+**Eq. 4: Exterior wall weight**  ?x?hfill 03 - E04
+
+
+
+::
+
+   exwallwt₁ = extwalldl₁⋅htwall₁⋅lenwall₂
+
+
+::
+
+   11.86 kip = 155.00 ft⋅8.50 psf⋅9.00 ft
+
+
+
+
+
+**Eq. 5: Total building weight**  ?x?hfill 03 - E05
+
+
+
+::
+
+   totwt₁ = exwallwt₁ + flrwt₁ + partwt₁ + rfwt₁
+
+
+::
+
+   48.67 kip = 11857.50 lbs + 12600.00 lbs + 15300.00 lbs + 8910.00 lbs
+
+
+
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 09: Weights**  ?x?hfill 03 - T09
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+==========  =========  =========  ===========================
+variable        value    [value]  description [eq. number]
+==========  =========  =========  ===========================
+rfwt1       15.30 kip   68.06 KN  Roof weight  [01]
+flrwt1      12.60 kip   56.05 KN  Floor weight  [02]
+partwt1      8.91 kip   39.63 KN  Partition weight  [03]
+exwallwt1   11.86 kip   52.74 KN  Exterior wall weight  [04]
+totwt1      48.67 kip  216.48 KN  Total building weight  [05]
+==========  =========  =========  ===========================
+
+.. raw:: latex   
+
+ ?x?vspace{.2in}    ?x?begin{tcolorbox}    ?x?textbf{ Material Densities and Seismic Models} ?x?hfill?x?textbf{SECTION [0101] - 4 }   ?x?end{tcolorbox}   
+   ?x?newline   ?x?vspace{.05in}
+
+
+
+**Eq. 6: Effective model floor load**  ?x?hfill 04 - E06
+
+
+
+::
+
+             flrwt₁ + partwt₁
+   eflrdl₁ = ────────────────
+                 areaflr₁    
+
+
+::
+
+               12600.00 lbs + 8910.00 lbs
+   17.93 psf = ──────────────────────────
+                       1200.00 sf        
+
+
+
+
+
+**Eq. 7: Effective model floor density**  ?x?hfill 04 - E07
+
+
+
+::
+
+               eflrdl₁
+   eflrdens₁ = ───────
+                0.5⋅IN
+
+
+::
+
+              17.93 lbs/sf
+   0.25 pci = ────────────
+                 0.5⋅in   
+
+
+
+
+
+**Eq. 8: Effective model roof density**  ?x?hfill 04 - E08
+
+
+
+::
+
+              roofdl₁
+   erfdens₁ = ───────
+               1.5⋅IN
+
+
+::
+
+              9.00 psf
+   0.04 pci = ────────
+               1.5⋅in 
+
+
+
+
+
+**Eq. 9: Effective model wall density**  ?x?hfill 04 - E09
+
+
+
+::
+
+                extwalldl₁
+   ewalldens₁ = ──────────
+                  0.5⋅IN  
+
+
+::
+
+              8.50 psf
+   0.12 pci = ────────
+               0.5⋅in 
+
+
+
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+
+**Table 10: Model loads**  ?x?hfill 04 - T10
+
+
+.. raw:: latex
+
+   ?x?vspace{.05in}
+
+ ?x?nopagebreak 
+
+==========  =========  ==========  ===================================
+variable        value     [value]  description [eq. number]
+==========  =========  ==========  ===================================
+eflrdl1     17.93 psf    0.86 KPa  Effective model floor load   [06]
+eflrdens1    0.25 pci  67.58 KNcM  Effective model floor density  [07]
+erfdens1     0.04 pci  11.31 KNcM  Effective model roof density  [08]
+ewalldens1   0.12 pci  32.05 KNcM  Effective model wall density  [09]
+==========  =========  ==========  ===================================
+
+.. raw:: latex   
+
+ ?x?vspace{.2in}    ?x?begin{tcolorbox}    ?x?textbf{ Abbreviations and References} ?x?hfill?x?textbf{SECTION [0101] - 5 }   ?x?end{tcolorbox}   
+   ?x?newline   ?x?vspace{.05in}
+
+.. raw:: latex 
+
+   ?x?begin{center} ?x?textbf{References } ?x?end{center}
+
+
+
+::
+
+       ACI 
+       American Concrete Institute 
+       38800 Country Club Drive 
+       Farmington Hills, MI 48331 
+       318—14 
+   
+       AISC 
+       American Institute of Steel 
+       130 East Randolph Street, Suite 2000 
+       Chicago, IL 60601-6219 
+       ANSI/AISC 341—16 
+       Seismic Provisions for Structural Steel Buildings 
+   
+       AISI 
+       American Iron and Steel Institute 
+       25 Massachusetts Avenue, NW Suite 800 
+       Washington, DC 20001 
+       AISI S100—16 
+       North American Specification for the Design of Cold-formed 
+       Steel Structural Members, 2016 
+   
+       ASCE/SEI 
+       American Society of Civil Engineers 
+       Structural Engineering Institute 
+       1801 Alexander Bell Drive 
+       Reston, VA 20191-4400 
+       7—16 Minimum Design Loads and Associated Criteria for 
+       Buildings and Other Structures with Supplement No. 1 
+   
+       AWC 
+       American Wood Council 
+       222 Catoctin Circle SE, Suite 201 
+       Leesburg, VA 20175 
+       ANSI/AWC NDS—2018 
+       National Design Specification (NDS) for 
+       Wood Construction—with 2018 NDS Supplement 
+       ANSI/AWC SDPWS—2015 
+       Special Design Provisions for Wind and Seismic 
+   
+       CBC
+       International Code Council
+       500 New Jersey Avenue, NW
+       6th Floor, Washington, DC 20001
+       California Building Standards Commission
+       2525 Natomas Park Dr # 130, Sacramento, CA 95833
+       California Building Code 
+       Part 2 of Title 24, 2019 Edition
+   
+       CRC
+       International Code Council
+       500 New Jersey Avenue, NW
+       6th Floor, Washington, DC 20001
+       California Building Standards Commission
+       2525 Natomas Park Dr # 130, Sacramento, CA 95833
+       California Residential Code 
+       Part 2.5 of Title 24, 2019 Edition
+
+.. raw:: latex 
+
+   ?x?begin{center} ?x?textbf{Drawings } ?x?end{center}
+
+
+
+::
+
+       
+       55 LORING - RESIDENCE REMODEL AND SEISMIC STRENGTHENING 
+       
+       PR.01: COVER AND INDEX
+       PR.02: PROJECT SCOPE
+       PR.03: GENERAL NOTES, CONTRACTORS
+       PR.04: SITE PLAN
+       PR.05: PLANS
+       PR.06: ELEVATIONS
+       PR.07: KITCHEN AND BATH REMODEL
+       PR.08: MASTER BATH, CLOSET, LAUNDRY
+       PR.09: RESIDENCE STRENGTHENING
+       PR.10: CARPORT STRENGTHENING
+       PR.11: SITE IMPROVEMENTS
+
+.. raw:: latex 
+
+   ?x?begin{center} ?x?textbf{Abbreviations - Terms } ?x?end{center}
+
+.. raw:: latex
+
+   \setlength{\parindent}{0.2in}
+   \vspace{-0.3in}
+   \begin{tabbing}
+   \hspace*{4cm} \= \kill
+       \indent\textbf{}         \>  {}\\
+       \indent\textbf{ASD}      \>  {Allowable Stress Design}\\
+       \indent\textbf{ACI}      \>  {American Concrete Institute}\\
+       \indent\textbf{AISC}     \>  {American Institute of Steel Construction}\\
+       \indent\textbf{AISI}     \>  {American Iron and Steel Institute}\\
+       \indent\textbf{ASTM}     \>  {American Society for Testing and Materials}\\
+       \indent\textbf{AWS}      \>  {American Welding Society}\\
+       \indent\textbf{AB}       \>  {Anchor Bolt}\\
+       \indent\textbf{BDRY}     \>  {Boundry}\\
+       \indent\textbf{CBC}      \>  {Califiornia Building Code}\\
+       \indent\textbf{CRC}      \>  {Califiornia Residential Code}\\
+       \indent\textbf{CIP}      \>  {Cast-In-Place}\\
+       \indent\textbf{CLR}      \>  {Clear}\\
+       \indent\textbf{CONC}     \>  {Concrete}\\
+       \indent\textbf{CMU}      \>  {Concrete Masonry Unit}\\
+       \indent\textbf{CRSI}     \>  {Concrete Reinforcing Steel Institute}\\
+       \indent\textbf{CONST JT} \>  {Construction Joint}\\
+       \indent\textbf{CONT}     \>  {Continuous}\\
+       \indent\textbf{CJ}       \>  {Control Joint}\\
+       \indent\textbf{D-C}      \>  {Demand-Capacity (ratio)}\\
+       \indent\textbf{DIA}      \>  {Diameter}\\
+       \indent\textbf{DIM}      \>  {Dimension}\\
+       \indent\textbf{EA}       \>  {Each}\\
+       \indent\textbf{EF}       \>  {Each Face}\\
+       \indent\textbf{EJ}       \>  {Expansion Joint}\\
+       \indent\textbf{ES}       \>  {Each Side}\\
+       \indent\textbf{EW}       \>  {Each Way}\\
+       \indent\textbf{EXP Bolt} \>  {Expansion Bolt}\\
+       \indent\textbf{EXP JT}   \>  {Expansion Joint}\\
+       \indent\textbf{FTG}      \>  {Footing}\\
+       \indent\textbf{FND}      \>  {Foundation}\\
+       \indent\textbf{GALV}     \>  {Galvanized}\\
+       \indent\textbf{GA}       \>  {Gauge}\\
+       \indent\textbf{GR}       \>  {Grade}\\
+       \indent\textbf{HT}       \>  {Height}\\
+       \indent\textbf{IN}       \>  {Inch}\\
+       \indent\textbf{ID}       \>  {Inside Diameter}\\
+       \indent\textbf{ICBO}     \>  {International Conference of Building Officials}\\
+       \indent\textbf{K}        \>  {Kip (1000 Pounds)}\\
+       \indent\textbf{LWC}      \>  {Light Weight Concrete}\\
+       \indent\textbf{LRFD}     \>  {Load and Resistance Factor Design}\\
+       \indent\textbf{NWC}      \>  {Normal Weight Concrete}\\
+       \indent\textbf{NIC}      \>  {Not in Contract}\\
+       \indent\textbf{OC}       \>  {On Center}\\
+       \indent\textbf{OD}       \>  {Outside Diameter}\\
+       \indent\textbf{OPNG}     \>  {Opening}\\
+       \indent\textbf{PVC}      \>  {Polyvinyl Chloride}\\
+       \indent\textbf{PSF}      \>  {Pounds per Square Foot}\\
+       \indent\textbf{PSI}      \>  {Pounds per Square Inch}\\
+       \indent\textbf{R}        \>  {Radius}\\
+       \indent\textbf{REINF}    \>  {Reinforced}\\
+       \indent\textbf{SIM}      \>  {Similar}\\
+       \indent\textbf{SOG}      \>  {Slab on Grade}\\
+       \indent\textbf{SL}       \>  {Splice Length}\\
+       \indent\textbf{SQ}       \>  {Square}\\
+       \indent\textbf{STD}      \>  {Standard}\\
+       \indent\textbf{SDI}      \>  {Steel Deck Institute}\\
+       \indent\textbf{SF}       \>  {Step Footing or Square Foot}\\
+       \indent\textbf{SYM}      \>  {Symmetrical}\\
+       \indent\textbf{THK}      \>  {Thick or Thickness}\\
+       \indent\textbf{T \& B}   \>  {Top and Bottom}\\
+       \indent\textbf{T \& G}   \>  {Tongue and Groove}\\
+       \indent\textbf{TOC}      \>  {Top of Concrete}\\
+       \indent\textbf{TOF}      \>  {Top of Foundation}\\
+       \indent\textbf{TOS}      \>  {Top of Steel}\\
+       \indent\textbf{TOW}      \>  {Top of Wall}\\
+       \indent\textbf{TYP}      \>  {Typical}\\
+       \indent\textbf{UNO}      \>  {Unless Noted Otherwise}\\
+       \indent\textbf{WWF}      \>  {Welded Wire Fabric}\\
+       \indent\textbf{W/}       \>  {With}\\
+       \indent\textbf{WP}       \>  {Working Point}\\
+   \end{tabbing}
+   
+
+
+.. raw:: latex 
+
+   ?x?begin{center} ?x?textbf{Abbreviations - Math } ?x?end{center}
+
+.. raw:: latex
+
+   \vspace{-.4in}
+   \begingroup
+   \allowdisplaybreaks
+   \begin{align*}
+       \bm{D}       & = \textrm{dead load}                               \\
+       \bm{L}       & = \textrm{live load}                               \\                 
+       \bm{D_m}     & = \textrm{module dead load}                        \\
+       \bm{E}       & = \textrm{earthquake load}                         \\
+       \bm{F_a}     & = \textrm{acceleration site coefficient}           \\
+       \bm{F_v}     & = \textrm{velocity site coefficient}               \\
+       \bm{F_N}     & = \textrm{normal wind force}                       \\
+       \bm{GC_M_s}  & = \textrm{net moment static coefficient}           \\
+       \bm{GC_M_d}  & = \textrm{net moment dynamic coefficient}          \\
+       \bm{GC_M}    & = \textrm{net moment coefficient}                  \\
+       \bm{GC_P}    & = \textrm{net pressure coefficient}                \\
+       \bm{GC_P_s}  & = \textrm{net static pressure coefficient}         \\
+       \bm{GC_P_d}  & = \textrm{net dynamic pressure coefficient}        \\
+       \bm{k_1}     & = \textrm{hazard coefficient}                      \\
+       \bm{k_2}     & = \textrm{terrain and structure coefficient}       \\
+       \bm{k_3}     & = \textrm{topography coefficient}                  \\
+       \bm{Kzt}     & = \textrm{topographic Factor}                      \\
+       \bm{K_z}     & = \textrm{velocity pressure exposure coefficient}  \\
+       \bm{MRI}     & = \textrm{mean return interval}                    \\
+       \bm{p_d}     & = \textrm{net design wind pressure on module - Pa} \\
+       \bm{SDOF}    & = \textrm{single degree of freedom}                \\
+       \bm{S_s}     & = \textrm{short period mapped acceleration}        \\
+       \bm{S_D_S}   & = \textrm{site design response acceleration}       \\
+       \bm{S_1}     & = \textrm{1 second period mapped acceleration}     \\
+       \bm{S_M_S}   & = \textrm{short period parameter}                  \\
+       \bm{S_M_1}   & = \textrm{1 second period parameter}               \\
+       \bm{T}       & = \textrm{fundamental period of structure}         \\
+       \bm{M_t_o_r} & = \textrm{wind moment about panel center }         \\
+       \bm{T_0}     & = \textrm{short period spectral cap }              \\
+       \bm{T_S}     & = \textrm{long period spectral cap}                \\
+       \bm{V_b}     & = \textrm{basic wind speed}                        \\
+       \bm{V_B}     & = \textrm{seismic design base shear}               \\
+       \bm{W}       & = \textrm{wind load}                               \\
+       \bm{W}       & = \textrm{seismic weight of structure }            \\
+   \end{align*}
+   \endgroup
+
