@@ -1,26 +1,21 @@
 #! python
 # %%
 import rivtlib.rivtapi as rv
-rv.R("""Overview and Codes | notoc | 1
+# %%
+rv.I("""Overview and Codes | template | nocolor
 
-    This report provides a structural design for a residential solar canopy
-    located in Larkspur, California. It includes the design of a concrete slab
-    and stem wall foundation, welded steel tube frame, and solar panel clips.
+    The structural design is for a residential solar canopy located in
+    Larkspur, California. It includes the design of a concrete slab and stem
+    wall foundation, welded steel tube frame, and solar panel clips.
 
     || text | project-data.txt | plain 
-
-    """)
-# %%
-rv.I("""Governing Codes | default
 
     || image | data01/fig1.png | 75
     Wind load 1 _[f]
 
-    
     || image | data01/fig2.png | 75 
     Wind load 2 _[f]
 
-    
     Building Codes and Jurisdiction _[b]
      
     - City of Larkspur, California 
@@ -47,7 +42,7 @@ rv.I("""Governing Codes | default
 
     """)
 # %%
-rv.V("""Gravity Loads and Seismic Mass | sub
+rv.V("""Gravity Loads and Seismic Mass | template | nocolor
     
     Some filler text
 
@@ -64,23 +59,27 @@ rv.V("""Gravity Loads and Seismic Mass | sub
     || declare | data/dlextwall0.csv
 
     Areas _[t]
-    arearf1 := 1700*SF           |SM| roof area 
-    areaflr1 := 1200*SF          |SM| floor area
-    htwall1 := 9*FT              |M| wall height   
-    lenwall1 := 110*FT           |M| interior wall length 
-    lenwall2 := 155*FT           |M| exterior wall 2 length 
+    arf1 := 1700*SF |SM| roof area 
+    aflr1 := 1200*SF |SM| floor area
+    htwall1 := 9*FT |M| wall height   
+    lwall1 := 110*FT |M| interior wall length 
+    lwall2 := 155*FT |M| exterior wall 2 length 
 
     
     Roof weight _[e]                    
-    rfwt1 = arearf1 * roofdl1                           |KIP,KN|2
+    rfwt1 = arf1 * roofdl1 |KIP,KN|2|nosub
+    
     Floor weight _[e]
-    flrwt1 = areaflr1 * floordl1                        |KIP,KN|2   
+    wtflr1 = areaflr1 * floordl1|KIP,KN|2|nosub   
+    
     Partition weight _[e]
-    partwt1 =  htwall1 * lenwall1 * intwalldl1          |KIP,KN|2
+    wtpart1 =  htwall1 * lenwall1 * intwalldl1|KIP,KN|2|nosub
+    
     Exterior wall weight _[e]                               
-    exwallwt1 = htwall1 * lenwall2 * extwalldl1         |KIP,KN|2
+    wtexwall1 = htwall1 * lenwall2 * extwalldl1|KIP,KN|2|nosub
+
     Total building weight _[e]
-    totwt1 = rfwt1 + flrwt1 + partwt1 + exwallwt1       |KIP,KN|2
+    wttot1 = rfwt1 + flrwt1 + partwt1 + exwallwt1|KIP,KN|2|nosub
     Weights _[t]  
 
     """)
