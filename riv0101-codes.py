@@ -18,14 +18,14 @@ rv.I("""Overview and Codes | template | nocolor
 
     Building Codes and Jurisdiction _[b]
      
+    The canopy is designed using CBC-2019. 
+    
     - City of Larkspur, California 
     - 2019 California Building Code [CBC]
     - 2019 California Residential Code [CRC] 
     
-    The canopy is designed using CBC-2018.
-
     Table of Project Engineering Standards _[t]
-    || table | data0101/cbc2019_stds.xlsx | 53,l 
+    || table | insert01/cbc2019_stds.xlsx | 53,l 
  
     
     Basic loads and load combinations for the project are from the California
@@ -33,7 +33,7 @@ rv.I("""Overview and Codes | template | nocolor
 
     
     Table of Load Types _[t]
-    || table | data/load_types01.csv | 40,l 
+    || table | insert/load_types01.csv | 40,l 
     
     
     Table of Load Combinations _[t]
@@ -46,7 +46,12 @@ rv.V("""Gravity Loads and Seismic Mass | template | nocolor
     Some filler text
 
     Roof unit dead loads _[t]
-    || declare | data/dlroof0.csv
+    variable,value,unit,[unit],description
+    ld1,2.,PSF,KPA,Urethane foam (4 inch thick)
+    ld2,1.,PSF,KPA,Three-ply roofing
+    ld3,5.,PSF,KPA,Doug Fir decking 2-in.
+    ld4,1.,PSF,KPA,Doug Fir beams 4x12 at 12 ft o.c.
+    roofdl1,9.,PSF,KPA,Total roof unit load
 
     Floor unit dead loads _[t]
     || declare | data/dlfloor0.csv
@@ -58,27 +63,27 @@ rv.V("""Gravity Loads and Seismic Mass | template | nocolor
     || declare | data/dlextwall0.csv
 
     Areas _[t]
-    arf1 := 1700*SF |SM| roof area 
-    aflr1 := 1200*SF |SM| floor area
-    htwall1 := 9*FT |M| wall height   
-    lwall1 := 110*FT |M| interior wall length 
-    lwall2 := 155*FT |M| exterior wall 2 length 
+    area1 := 1700*SF | SM, roof area 
+    area2 := 1200*SF |SM| floor area
+    ht1 := 9*FT |M| wall height   
+    len1 := 110*FT |M| interior wall length 
+    len2 := 155*FT |M| exterior wall 2 length 
 
     
     Roof weight _[e]                    
-    rfwt1 = arf1 * roofdl1 |KIP,KN|2|nosub
+    wt1 = area1 * udl1 | KIP,KN,2
     
     Floor weight _[e]
-    wtflr1 = areaflr1 * floordl1|KIP,KN|2|nosub   
+    wt2 = area2 * floordl1 | KIP,KN,2   
     
     Partition weight _[e]
-    wtpart1 =  htwall1 * lenwall1 * intwalldl1|KIP,KN|2|nosub
+    wtpart1 =  htwall1 * lenwall1 * intwalldl1 |KIP,KN|2|nosub
     
     Exterior wall weight _[e]                               
-    wtexwall1 = htwall1 * lenwall2 * extwalldl1|KIP,KN|2|nosub
+    wtexwall1 = htwall1 * lenwall2 * extwalldl1 |KIP,KN|2|nosub
 
     Total building weight _[e]
-    wttot1 = rfwt1 + flrwt1 + partwt1 + exwallwt1|KIP,KN|2|nosub
+    wttot1 = rfwt1 + flrwt1 + partwt1 + exwallwt1 |KIP,KN|2|nosub
     Weights _[t]  
 
     """)
