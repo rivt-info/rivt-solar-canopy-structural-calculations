@@ -4,72 +4,50 @@ import rivtlib.rivtapi as rv
 # %%
 rv.I("""Overview and Codes | template | nocolor
 
-    The structural design is for a residential solar canopy located in
+    This structural design is for a residential solar canopy located in
     Larkspur, California. It includes the design of a concrete slab and stem
     wall foundation, welded steel tube frame, and solar panel clips.
 
-    || text | project-data.txt | plain 
+    || te | project info | project-data.txt | plain 
 
-    || image | data01/fig1.png | 75
-    Wind load 1 _[f]
-
-    || image | data01/fig2.png | 75 
-    Wind load 2 _[f]
+    || im | *Wind load 1 | im01/fig1.png | 75
+     
+    || im | *Wind load 2 | im01/fig2.png  | 75 
 
     Building Codes and Jurisdiction _[b]
      
-    The canopy is designed using CBC-2019. 
-    
     - City of Larkspur, California 
     - 2019 California Building Code [CBC]
     - 2019 California Residential Code [CRC] 
     
-    Table of Project Engineering Standards _[t]
-    || table | insert01/cbc2019_stds.xlsx | 53,l 
+    || ta | *Table of Engineering Standards | in01/cbc2019_stds.xlsx | 53,l 
  
-    
     Basic loads and load combinations for the project are from the California
     Building and Residential Codes and are shown in the following tables.
-
     
-    Table of Load Types _[t]
-    || table | insert/load_types01.csv | 40,l 
+    || ta | *Table of Load Types | ta01/load_types01.csv | 40,l 
     
-    
-    Table of Load Combinations _[t]
-    || table | data/asce7_load_comb.csv | 55,c 
+    || ta | Table of Load Combinations | ta02/asce7_load_comb.csv | 55,c 
 
     """)
 # %%
 rv.V("""Gravity Loads and Seismic Mass | template | nocolor
     
-    Some filler text
+    Check declare command
 
-    Roof unit dead loads _[t]
-    variable,value,unit,[unit],description
-    ld1,2.,PSF,KPA,Urethane foam (4 inch thick)
-    ld2,1.,PSF,KPA,Three-ply roofing
-    ld3,5.,PSF,KPA,Doug Fir decking 2-in.
-    ld4,1.,PSF,KPA,Doug Fir beams 4x12 at 12 ft o.c.
-    roofdl1,9.,PSF,KPA,Total roof unit load
+    || de | Floor unit dead loads | va01/dlfloor0.csv
 
-    Floor unit dead loads _[t]
-    || declare | data/dlfloor0.csv
+    || de | Interior wall unit dead loads | va01/dlintwall0.csv
 
-    Interior wall unit dead loads _[t]
-    || declare | data/dlintwall0.csv
-
-    Exterior wall unit dead loads _[t]
-    || declare | data/dlextwall0.csv
+    || de | Exterior wall unit dead loads | va01/dlextwall0.csv
 
     Areas _[t]
-    area1 := 1700*SF | SM, roof area 
-    area2 := 1200*SF |SM| floor area
+    area1 := 1700*SF | roof area | SM,2
+    area2 := 1200*SF | floor area | SM,1
     ht1 := 9*FT |M| wall height   
     len1 := 110*FT |M| interior wall length 
     len2 := 155*FT |M| exterior wall 2 length 
 
-    
     Roof weight _[e]                    
     wt1 = area1 * udl1 | KIP,KN,2
     

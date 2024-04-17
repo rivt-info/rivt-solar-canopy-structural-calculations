@@ -135,14 +135,6 @@
             "_[x]"
         ]
     },
-    "tag table title": {
-        "prefix": "_t",
-        "description": "table title tag",
-        "scope": "python",
-        "body": [
-            "_[t]"
-        ]
-    },
     "tag paragraph title": {
         "prefix": "_p",
         "description": "paragraph heading - centered",
