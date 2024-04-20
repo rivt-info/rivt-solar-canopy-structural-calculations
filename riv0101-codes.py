@@ -10,30 +10,22 @@ rv.I("""Overview and Codes | none | pass
 
     || project info | data/te01/project-data.txt | plain
 
-    || Wind load 1 |
-    data/im01/fig1.png | 75
-    ....
 
-    || Wind load 1, Wind load 2 |
-    data/im01/fig1.png | 45 
-    data/im01/fig2.png  | 45
-    ....
-         
      **Building Codes and Jurisdiction**
      
     - City of Larkspur, California 
     - 2019 California Building Code [CBC]
     - 2019 California Residential Code [CRC]
     
-    || Exterior wall unit dead loads | data/va01/dlextwall0a.csv | 
-    variable,   value, unit2 , description                  
-    ld1,        2*PSF,  KPA,    1/2 in plywood sheathing     
-    ld2,        2*PSF,  KPA,    2x4 studs at 16 in o.c.      
-    ld3,        3.0,   PSF,  KPA,    5/8 in sheet rock            
-    ld4,        1.5,   PSF,  KPA,    fixtures                     
-    ,           ,      ,     ,      
-    exdl1, 8.5,   PSF,  KPA,    Total exterior wall unit load
-    ....  
+    || Exterior wall unit dead loads | data/va01/dlextwall0a.csv |
+    variable, value, unit1, unit2 , description                  
+    ld1,      2,     PSF,   KPA,    1/2 in plywood sheathing     
+    ld2,      2,     PSF,   KPA,    2x4 studs at 16 in o.c.      
+    ld3,      3.0,   PSF,   KPA,    5/8 in sheet rock            
+    ld4,      1.5,   PSF,   KPA,    fixtures                     
+    ===,      ===,   ===,   ===,    ===                          
+    exdl1,    8.5,   PSF,   KPA,    Total exterior wall unit load
+    ----  
     
     || Table of Engineering Standards | in01/cbc2019_stds.xlsx | 53,l 
  
@@ -45,12 +37,13 @@ rv.I("""Overview and Codes | none | pass
     || Load Combinations | data/va02/asce7_load_comb.csv | 55,c 
 
     """)
+
 # %%
 rv.V("""Gravity Loads and Seismic Mass | none | pass 
     
     Check declare command
 
-    || Floor unit dead loads | data/va01/rv-dlfloor0.csv |
+    || Floor unit dead loads | data/va01/rv-dlfloor0.csv 
 
     || Interior wall unit dead loads | data/va01/rv-dlintwall0.csv
 
@@ -62,21 +55,22 @@ rv.V("""Gravity Loads and Seismic Mass | none | pass
     ht1 := 9*FT | M | wall height   
     len1 := 110*FT | M | interior wall length 
     len2 := 155*FT | M | exterior wall length 
+    ----
 
-    || Exterior wall unit dead loads | data/va01/dlextwall0.csv     
-    vars, value,   unit2, description             
-    ld1,  2.*PSF,  KPA,   1/2 in plywood sheathing
-    ld2,  2.*PSF,  KPA,   2x4 studs at 16 in o.c. 
-    ld3,  3.*PSF,  KPA,   5/8 in sheet rock       
-    ld4,  1.5*PSF, KPA,   fixtures                                          
-    ,           ,      ,     ,      
-    extwalldl1, 8.5,   PSF,  KPA,    Total exterior wall unit load
-    .... 
+    || Exterior wall unit dead loads | data/va01/dlextwall0.csv |    
+    vars,       value, unit1, unit2, description                  
+    ld1,        2.,    PSF,   KPA,   1/2 in plywood sheathing     
+    ld2,        2.,    PSF,   KPA,   2x4 studs at 16 in o.c.      
+    ld3,        3.,    PSF,   KPA,   5/8 in sheet rock            
+    ld4,        1.5,   PSF,   KPA,   fixtures                     
+    ===,        ===,   ===,   ===,   ===                          
+    extwalldl1, 8.5,   PSF,   KPA,   Total exterior wall unit load
+    ---- 
 
-    || equations | rv-aci318-05.csv
+    || equations | rv-aci318-05.csv |
     ACI 318-12.2 Shear Friction Capacity, KIPS, KN
     a = b*c, 2, 2
-    ....
+    ----
 
     wt1 = area1 * udl1 | KIPS, KN | 2, 2
     
@@ -95,6 +89,13 @@ rv.V("""Gravity Loads and Seismic Mass | none | pass
 
     """)
 
+# %%
+rv.V("""Wind Loads | none | pass 
+    
+    || Wind load 1 | data/im01/fig1.png | 75 |
+    || Wind load 2 | data/im01/fig2.png | 75 |
+    
+    """)
 
 # %%
 rv.V("""Material Densities and Seismic Models | sub
