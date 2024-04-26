@@ -1,142 +1,158 @@
-#! python\
+#! python\"ctrl+["
 # %%
 import rivtlib.rivtapi as rv
 # %%
-rv.I("""Overview and Codes | none | pass
+rv.I("""Overview and Codes | pass | none
 
-    This structural design is for a residential solar canopy located in
-    Larkspur, California. The design includes a concrete slab and stem
-    wall, a steel welded tube frame, and solar panel clips.
+    This document is a solar canopy structural design for a residence located
+    in Larkspur, California. The design includes a concrete slab and stem wall,
+    a steel welded tube frame, and solar panel clips.
 
-    || project info | data/te01/project-data.txt | plain
+    || image | 2x1 | bw
+    Wind load 1 | /images/im02/kitchen.png | 50 
+    Wind load 2 | /images/im02/as_built1.jpg | 50
+    ----- 
 
+    ||| latex | text/te02/tex-aci318-05.txt:10 | 4
+    [ACI 318-12.2] Shear Friction Capacity
+    wt1 = area1 * udl1
+    wt2 = area2 * udl1
+    -----
 
-     **Building Codes and Jurisdiction**
-     
-    - City of Larkspur, California 
-    - 2019 California Building Code [CBC]
-    - 2019 California Residential Code [CRC]
-    
-    || Exterior wall unit dead loads | data/va01/dlextwall0a.csv |
-    variable, value, unit1, unit2 , description                  
-    ld1,      2,     PSF,   KPA,    1/2 in plywood sheathing     
-    ld2,      2,     PSF,   KPA,    2x4 studs at 16 in o.c.      
-    ld3,      3.0,   PSF,   KPA,    5/8 in sheet rock            
-    ld4,      1.5,   PSF,   KPA,    fixtures                     
-    ===,      ===,   ===,   ===,    ===                          
-    exdl1,    8.5,   PSF,   KPA,    Total exterior wall unit load
-    ----  
-    
-    || Table of Engineering Standards | in01/cbc2019_stds.xlsx | 53,l 
- 
-    Design loads for the project are from the California
-    Building and Residential Codes and are shown in the following tables.
-    
-    || Load Types | data/va01/load_types01.csv | 40,l 
-    
-    || Load Combinations | data/va02/asce7_load_comb.csv | 55,c 
+    ||| sympy | text/te02/sym-aci318-05.txt:10 | 4
+    [ACI 318-12.2] Shear Friction Capacity
+    wt1 = area1 * udl1
+    wt2 = area2 * udl1
+    -----
+
+    | sympy | Shear Friction Capacity | c
+    wt2 = area2 * floordl1 
+    -----
+
+    || latex | Shear Friction Capacity | l
+    wt2 = area2 * floordl1 
+    -----
+
+    """)
+
+rv.I("""--project info | redact | none 
+  
+    | Project Information | text/te01/project-data.csv | 35, l
+    Client, Aaron Kahn
+    Address, 10 Fairfield Ave 
+    City, Corte Madera
+    State, California
+    Zip, 94947
+    County, Marin
+    Project Name, Solar Canopy
+    Project Number, 24-001
+    Contract Amount, "$1,000" 
+    Total Amount, "$1,000"
+    Building Code, 2015 CRC
+    Date Started, 01-01-2020
+    Date Completed, 01-01-2021
+    Construction Started, 06-01-2022
+    Construction Completed, 06-01-2023
+    Materials, "steel, concrete"
+    -----------
+
+    """)
+
+rv.I("""--code tables | pass | none 
+  
+    **Building Codes and Jurisdiction**
+
+    - City of Larkspur, California
+    - 2019 California Building Code[CBC]
+    - 2019 California Residential Code[CRC]
+
+    ||| Engineering Standards  | insert/ta02/cbc2019_stds.csv | 53, l
+    Category,                                            Standard,  Year
+    Loading,                                             ASCE-7,    2016
+    Concrete,                                            ACI-318,   2014
+    Wood-National Design Specifications,                 AWC-NDS,   2018
+    Wood-Special Design Provisions for Wind and Seismic, AWC-SDPWS, 2015
+    Wood Frame Construction Manual,                      AWC-WFCM,  2018    
+    ----------
+
+    Design loads for the project are from the California Building and
+    Residential Codes and are summarized in the following tables.
+
+    | Load Types | insert/ta02/load_types01.csv | 40, l 
+    --------
+
+    |-| Load Combinations | insert/ta02/asce7_load_comb.csv | 55, c
+    CBC 2019 reference, Equation                                             
+    Equation 16-1,      1.4(D +F)                                            
+    Equation 16-2,      1.2(D + F) + l.6(L + H) + 0.5(L or S or R)
+    Equation 16-3,      1.2(D + F) + l.6(Lr or S or R) + l.6H + (f1L or 0.5W)
+    Equation 16-4,      1.2(D + F) + 1.0W + f1L +1.6H + 0.5(Lr or S or R)    
+    Equation 16-5,      1.2(D + F) + 1.0E + f1L + l.6H + f2S                 
+    Equation 16-6,      0.9D+ l.0W + l.6H                                     
+    Equation 16-7,      0.9(D + F) + 1.0E+ l.6H                              
+    -----------
 
     """)
 
 # %%
-rv.V("""Gravity Loads and Seismic Mass | none | pass 
-    
+rv.V("""Gravity Loads and Seismic Mass | none | pass
+
     Check declare command
 
-    || Floor unit dead loads | data/va01/rv-dlfloor0.csv 
+    **Areas **
+    area1 := 1700*SF | SM | roof area
+    area2 := 1200*SF | SM | floor area
+    ht1 := 9*FT | M | wall height
+    len1 := 110*FT | M | interior wall length
+    len2 := 155*FT | M | exterior wall length
 
-    || Interior wall unit dead loads | data/va01/rv-dlintwall0.csv
 
-    || Exterior wall unit dead loads | data/va01/rv-dlextwall0.csv
+    ||| Exterior wall unit dead loads | insert/ta01/dlextwall0.csv |
+    ld1,        2.,    PSF,   KPA,   1/2 in plywood sheathing
+    ld2,        2.,    PSF,   KPA,   2x4 studs at 16 in o.c.
+    ld3,        3.,    PSF,   KPA,   5/8 in sheet rock
+    ld4,        1.5,   PSF,   KPA,   fixtures
+    -----
 
-    || Areas | data/va01/rv-area.txt |
-    area1 := 1700*SF | SM | roof area 
-    area2 := 1200*SF | SM | floor area 
-    ht1 := 9*FT | M | wall height   
-    len1 := 110*FT | M | interior wall length 
-    len2 := 155*FT | M | exterior wall length 
-    ----
+    udl1 := sum(col2L)*PSF | KPA | exterior wall total area load
 
-    || Exterior wall unit dead loads | data/va01/dlextwall0.csv |    
-    vars,       value, unit1, unit2, description                  
-    ld1,        2.,    PSF,   KPA,   1/2 in plywood sheathing     
-    ld2,        2.,    PSF,   KPA,   2x4 studs at 16 in o.c.      
-    ld3,        3.,    PSF,   KPA,   5/8 in sheet rock            
-    ld4,        1.5,   PSF,   KPA,   fixtures                     
-    ===,        ===,   ===,   ===,   ===                          
-    extwalldl1, 8.5,   PSF,   KPA,   Total exterior wall unit load
-    ---- 
+    ||| equation | values/va02/eq-aci318-05.txt:10 | 4
+    [ACI 318-12.2] Shear Friction Capacity | KIPS, KN | 2, 2
+    wt1 = area1 * udl1
+    wt2 = area2 * udl1
+    ----------
 
-    || equations | rv-aci318-05.csv |
-    ACI 318-12.2 Shear Friction Capacity, KIPS, KN
-    a = b*c, 2, 2
-    ----
+    || eq | Shear Friction Capacity | KIPS, KN, 2, 2
+    wt2 = area2 * floordl1 
+    -----------
 
-    wt1 = area1 * udl1 | KIPS, KN | 2, 2
-    
-    Floor weight _[e]
-    wt2 = area2 * floordl1 | KIP,KN,2   
-    
-    Partition weight | KIP,KN,2
-    wtpart1 =  htwall1 * lenwall1 * intwalldl1 |
-    
-    Exterior wall weight _[e]                               
-    wtexwall1 = htwall1 * lenwall2 * extwalldl1 |KIP,KN|2|nosub
-
-    Total building weight _[e]
-    wttot1 = rfwt1 + flrwt1 + partwt1 + exwallwt1 |KIP,KN|2|nosub
-    Weights _[t]  
+    || image | 2x1 | none
+    Wind load 1 | image/im01/fig1.png | 75 |
+    Wind load 2 | image/im01/fig2.png | 75 |
+    -------------
 
     """)
 
 # %%
-rv.V("""Wind Loads | none | pass 
-    
-    || Wind load 1 | data/im01/fig1.png | 75 |
-    || Wind load 2 | data/im01/fig2.png | 75 |
-    
-    """)
+rv.I("""Abbreviations and References | pass | none
+    References _[bc]
 
-# %%
-rv.V("""Material Densities and Seismic Models | sub
-
-    Because the T&G roof is relatively more flexible, the effective floor load
-    for seismic models is calculated as the sum of the floor and all of the
-    partition weight.
+    | references | data/references.txt | plain
 
 
-    Effective model floor load  _[e]  
-    eflrdl1 = (flrwt1 + partwt1)/(areaflr1)                     |PSF, KPA|2
-    Effective model floor density _[e]  
-    eflrdens1 = eflrdl1/(0.5*IN)                                |PCI, KNCM|2
-    Effective model roof density _[e]  
-    erfdens1 = roofdl1/(1.5*IN)                                 |PCI, KNCM|2
-    Effective model wall density _[e]  
-    ewalldens1 = extwalldl1/(0.5*IN)                            |PCI, KNCM|2
-    Model loads _[t]
-          
-    """)
-# %%
-rv.I("""Abbreviations and References | default
- 
-    References _[cb]
+    Drawings _[bc]
 
-    || references | data/references.txt | plain
+    | text | data/drawing_list.txt | plain
 
-    
-    Drawings _[cb]
 
-    || text | data/drawing_list.txt | plain
+    Abbreviations - Terms _[bc]
 
-        
-    Abbreviations - Terms _[cb]
+    | text | data/abbrev_terms.tex | plain
 
-    || text | data/abbrev_terms.tex | plain
 
-    
     Abbreviations - Math _[bc]
 
-    || text | data/abbrev_math.tex | plain
+    | text | data/abbrev_math.tex | plain
     """)
 
-# rv.write("txt, pdf:pdf-style4.sty")
+rv.W("txt, pdf:pdf-style4.sty")

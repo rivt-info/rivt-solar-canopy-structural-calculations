@@ -188,7 +188,7 @@
         "args": "rivtsearch"
     },
     {
-        "key": "ctrl+alt+x",
+        "key": "ctrl+alt+z",
         "command": "-workbench.view.extension.latex-workshop-activitybar",
         "when": "!config.latex-workshop.bind.altKeymap.enabled"
     },
@@ -214,11 +214,15 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus",
         "args": {
-            "snippet": "R.("""${
-                1:tag
-            } |
-            
-            """)"
+            "snippet": "rv.R(\"\"\" section | none \n ${1:tag} \n \"\"\")"
         }
     },
+    {
+        "key": "ctrl+alt+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "rv.I(\"\"\" section | none \n ${1:tag} \n \"\"\")"
+        }
+    }
 ]

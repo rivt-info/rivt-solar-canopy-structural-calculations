@@ -9,7 +9,7 @@
     },
     "new R method": {
         "prefix": "rvr",
-        "description": "add new Repo method",
+        "description": "add Repo method",
         "scope": "python",
         "body": [
             "rv.R(\"\"\"${1:section label} | ${2:white} | ${3:1}",
@@ -32,7 +32,7 @@
         ]
     },
     "new V method": {
-        "prefix": "rvV",
+        "prefix": "rvv",
         "description": "add new Value method",
         "scope": "python",
         "body": [
@@ -44,7 +44,7 @@
         ]
     },
     "new T method": {
-        "prefix": "rvT",
+        "prefix": "rvt",
         "description": "add new Table method",
         "scope": "python",
         "body": [
@@ -55,44 +55,20 @@
             "    \"\"\")"
         ]
     },
-    "image": {
-        "prefix": "|i1",
-        "description": "insert image",
+    "new write method": {
+        "prefix": "rvw",
+        "description": "add write method",
         "scope": "python",
         "body": [
-            "|| image | ${1: filename} | ${0:0.5}"
+            ""
         ]
     },
-    "table": {
-        "prefix": "|t",
-        "description": "insert table ",
-        "scope": "python",
-        "body": [
-            "|| table | ${1: filename} | ${2:40} | ${3:[:]}"
-        ]
-    },
-    "text": {
-        "prefix": "|x",
-        "description": "read table from file",
-        "scope": "python",
-        "body": [
-            "|| text | ${1: filename} | ${0:plain} "
-        ]
-    },
-    "values": {
-        "prefix": "|v",
-        "description": "read values from file",
-        "scope": "python",
-        "body": [
-            "|| values | ${1: filename} | ${0:[:]} "
-        ]
-    },
-    "functions": {
+    "files": {
         "prefix": "|f",
-        "description": "insert functions from file",
+        "description": "insert file",
         "scope": "python",
         "body": [
-            "|| functions | ${1: filename} | ${0:docs} "
+            "| ${1: title} | ${2: filename} | ${0:parameters} "
         ]
     },
     "project": {
@@ -101,14 +77,6 @@
         "scope": "python",
         "body": [
             "|| project | ${1: file} | ${0:default} "
-        ]
-    },
-    "append": {
-        "prefix": "|a",
-        "description": "attach pdf file",
-        "scope": "python",
-        "body": [
-            "|| attach | ${1: file} |  ${1: number} | ${0:default} |"
         ]
     },
     "tag equation lable": {
