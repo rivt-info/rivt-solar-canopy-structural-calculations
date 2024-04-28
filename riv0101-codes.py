@@ -4,40 +4,36 @@ import rivtlib.rivtapi as rv
 # %%
 rv.I("""Overview and Codes | pass | none
 
-    This document is a solar canopy structural design for a residence located
-    in Larkspur, California. The design includes a concrete slab and stem wall,
-    a steel welded tube frame, and solar panel clips.
+    This document is a solar canopy structural design for a Larkspur,
+    California residence. The design includes a concrete slab, stem wall, steel
+    welded tube frame, and solar panel clips.
 
-    || image | 2x1 | bw
-    Wind load 1 | /images/im02/kitchen.png | 50 
-    Wind load 2 | /images/im02/as_built1.jpg | 50
-    ----- 
-
-    ||| latex | text/te02/tex-aci318-05.txt:10 | 4
+    | /images/im02/kitchen.png | 2 | Wind Load 1 _[f] | 50 | bw     
+    | /images/im02/as_built1.jpg | 1 | Wind Load 2 _[f] | 50 | none | 
+    
+    || insert/te02/tex-aci318-05.txt:10 | 4 | title | sympy
     [ACI 318-12.2] Shear Friction Capacity
     wt1 = area1 * udl1
     wt2 = area2 * udl1
     -----
 
-    ||| sympy | text/te02/sym-aci318-05.txt:10 | 4
+    || insert/te02/sym-aci318-05.txt:10 | 4 | title | latex
     [ACI 318-12.2] Shear Friction Capacity
     wt1 = area1 * udl1
     wt2 = area2 * udl1
     -----
 
-    | sympy | Shear Friction Capacity | c
-    wt2 = area2 * floordl1 
-    -----
+    Title 1 _[e]
+    wt2 = a2 * dl2/2 _[s]
 
-    || latex | Shear Friction Capacity | l
-    wt2 = area2 * floordl1 
-    -----
+    Title 2 _[e]
+    wt3 = a3 * dl3 _[l]
 
     """)
 
 rv.I("""--project info | redact | none 
   
-    | Project Information | text/te01/project-data.csv | 35, l
+    | text/te01/project-data.csv | 35, l 
     Client, Aaron Kahn
     Address, 10 Fairfield Ave 
     City, Corte Madera
@@ -66,7 +62,7 @@ rv.I("""--code tables | pass | none
     - 2019 California Building Code[CBC]
     - 2019 California Residential Code[CRC]
 
-    ||| Engineering Standards  | insert/ta02/cbc2019_stds.csv | 53, l
+    || insert/ta02/cbc2019_stds.csv:1 | all | Engineering Standards  | 53, l
     Category,                                            Standard,  Year
     Loading,                                             ASCE-7,    2016
     Concrete,                                            ACI-318,   2014
@@ -78,10 +74,10 @@ rv.I("""--code tables | pass | none
     Design loads for the project are from the California Building and
     Residential Codes and are summarized in the following tables.
 
-    | Load Types | insert/ta02/load_types01.csv | 40, l 
+    | insert/ta02/load_types01.csv:1 | all | Load Types | 40, l 
     --------
 
-    |-| Load Combinations | insert/ta02/asce7_load_comb.csv | 55, c
+    | insert/ta02/asce7_load_comb.csv:1 | all | Load Combinations | 55, c
     CBC 2019 reference, Equation                                             
     Equation 16-1,      1.4(D +F)                                            
     Equation 16-2,      1.2(D + F) + l.6(L + H) + 0.5(L or S or R)
@@ -99,15 +95,15 @@ rv.V("""Gravity Loads and Seismic Mass | none | pass
 
     Check declare command
 
-    **Areas **
-    area1 := 1700*SF | SM | roof area
-    area2 := 1200*SF | SM | floor area
-    ht1 := 9*FT | M | wall height
-    len1 := 110*FT | M | interior wall length
-    len2 := 155*FT | M | exterior wall length
+    **Areas**
+    area1 := 10,700*SF,SM | roof area
+    area2 := 10,200*SF,SM | floor area
+    ht1 := 9*FT,M | wall height
+    len1 := 110*FT,M | interior wall length
+    len2 := 155*FT,M | exterior wall length
 
 
-    ||| Exterior wall unit dead loads | insert/ta01/dlextwall0.csv |
+    || values/va01/dlextwall0.csv:12 | 6 | notitle 
     ld1,        2.,    PSF,   KPA,   1/2 in plywood sheathing
     ld2,        2.,    PSF,   KPA,   2x4 studs at 16 in o.c.
     ld3,        3.,    PSF,   KPA,   5/8 in sheet rock
@@ -116,20 +112,16 @@ rv.V("""Gravity Loads and Seismic Mass | none | pass
 
     udl1 := sum(col2L)*PSF | KPA | exterior wall total area load
 
-    ||| equation | values/va02/eq-aci318-05.txt:10 | 4
+    || values/va02/ aci318-05.txt:10 | 4 | title 
     [ACI 318-12.2] Shear Friction Capacity | KIPS, KN | 2, 2
     wt1 = area1 * udl1
     wt2 = area2 * udl1
     ----------
 
-    || eq | Shear Friction Capacity | KIPS, KN, 2, 2
-    wt2 = area2 * floordl1 
-    -----------
+    wt2 = area2 * floordl1 | KIPS,KN,2,2
 
-    || image | 2x1 | none
-    Wind load 1 | image/im01/fig1.png | 75 |
-    Wind load 2 | image/im01/fig2.png | 75 |
-    -------------
+    Wind load 1 | image/im01/fig1.png | 75,bw | 2x1
+    Wind load 2 | image/im01/fig2.png | 75,none
 
     """)
 
@@ -137,7 +129,7 @@ rv.V("""Gravity Loads and Seismic Mass | none | pass
 rv.I("""Abbreviations and References | pass | none
     References _[bc]
 
-    | references | data/references.txt | plain
+    | data/references.txt | plain
 
 
     Drawings _[bc]
