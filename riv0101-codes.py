@@ -91,11 +91,9 @@ rv.I("""--code tables | pass | none
     """)
 
 # %%
-rv.V("""Gravity Loads and Seismic Mass | none | pass
+rv.V("""Gravity Loads and Seismic Mass | pass | none
 
-    Check declare command
 
-    **Areas**
     area1 := 10,700*SF,SM | roof area
     area2 := 10,200*SF,SM | floor area
     ht1 := 9*FT,M | wall height
@@ -108,7 +106,7 @@ rv.V("""Gravity Loads and Seismic Mass | none | pass
     ld2,        2.,    PSF,   KPA,   2x4 studs at 16 in o.c.
     ld3,        3.,    PSF,   KPA,   5/8 in sheet rock
     ld4,        1.5,   PSF,   KPA,   fixtures
-    -----
+    ----------
 
     udl1 := sum(col2L)*PSF | KPA | exterior wall total area load
 
@@ -120,8 +118,9 @@ rv.V("""Gravity Loads and Seismic Mass | none | pass
 
     wt2 = area2 * floordl1 | KIPS,KN,2,2
 
-    Wind load 1 | image/im01/fig1.png | 75,bw | 2x1
-    Wind load 2 | image/im01/fig2.png | 75,none
+    | /images/im02/fig1.png | 1 | Wind Load 1 _[f] | 50 | bw     
+
+    | /images/im02/fig2.png | 1 | Wind Load 2 _[f] | 70 | none | 
 
     """)
 
@@ -129,7 +128,7 @@ rv.V("""Gravity Loads and Seismic Mass | none | pass
 rv.I("""Abbreviations and References | pass | none
     References _[bc]
 
-    | data/references.txt | plain
+    | insert/te02/references.txt:1 | plain
 
 
     Drawings _[bc]
