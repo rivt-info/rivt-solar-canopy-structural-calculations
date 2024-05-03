@@ -4,36 +4,36 @@ import rivtlib.rivtapi as rv
 # %%
 rv.I("""Overview and Codes | pass | none
 
-    This document is a solar canopy structural design for a Larkspur,
-    California residence. The design includes a concrete slab, stem wall, steel
+    This document is a structural design for a residential solar canopy in
+    Larkspur, California. The design includes a concrete slab, stem wall, steel
     welded tube frame, and solar panel clips.
 
-    | /images/im02/kitchen.png | 2 | Wind Load 1 _[f] | 50 | bw     
-    | /images/im02/as_built1.jpg | 1 | Wind Load 2 _[f] | 50 | none | 
+    | /images/im02/kitchen.png | 2 | Wind Load 1 _[f] | 50 | bw 
+    | /images/im02/as_built1.jpg | 2 | Wind Load 2 _[f] | 50 | none 
     
-    || insert/te02/tex-aci318-05.txt:10 | 4 | title | sympy
+    || /text/te02/aci318-05.txt:10 | 4 | title | sympy
     [ACI 318-12.2] Shear Friction Capacity
     wt1 = area1 * udl1
     wt2 = area2 * udl1
     -----
 
-    || insert/te02/sym-aci318-05.txt:10 | 4 | title | latex
+    || /text/te02/aci318-05.tex:10 | 4 | title | latex
     [ACI 318-12.2] Shear Friction Capacity
     wt1 = area1 * udl1
     wt2 = area2 * udl1
     -----
 
-    Title 1 _[e]
+    Label 1 _[e]
     wt2 = a2 * dl2/2 _[s]
 
-    Title 2 _[e]
+    Label 2 _[e]
     wt3 = a3 * dl3 _[l]
 
     """)
 
 rv.I("""--project info | redact | none 
   
-    | text/te01/project-data.csv | 35, l 
+    | /text/te01/project-data.csv | 35, l 
     Client, Aaron Kahn
     Address, 10 Fairfield Ave 
     City, Corte Madera
@@ -93,7 +93,6 @@ rv.I("""--code tables | pass | none
 # %%
 rv.V("""Gravity Loads and Seismic Mass | pass | none
 
-
     area1 := 10,700*SF,SM | roof area
     area2 := 10,200*SF,SM | floor area
     ht1 := 9*FT,M | wall height
@@ -128,22 +127,34 @@ rv.V("""Gravity Loads and Seismic Mass | pass | none
 rv.I("""Abbreviations and References | pass | none
     References _[bc]
 
-    | insert/te02/references.txt:1 | plain
+    | insert/te02/te02/references.txt:1 | plain
 
 
     Drawings _[bc]
 
-    | text | data/drawing_list.txt | plain
+    | insert/te02/drawing_list.txt | plain
 
 
     Abbreviations - Terms _[bc]
 
-    | text | data/abbrev_terms.tex | plain
+    | insert/te02/abbrev_terms.tex | latex
 
 
     Abbreviations - Math _[bc]
 
-    | text | data/abbrev_math.tex | plain
+    | insert/te02/abbrev_math.tex | latex
     """)
 
-rv.W("txt, pdf:pdf-style4.sty")
+# %%
+rv.W("""report
+
+    | output | text, html, pdf
+
+
+    || files |
+
+
+    -------------
+
+
+    """)
