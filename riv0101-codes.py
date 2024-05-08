@@ -1,15 +1,15 @@
-#! python
+#! python"ctrl+alt+]"fold
 # %%
 import rivtlib.rivtapi as rv
 # %%
 rv.I("""Overview and Codes | pass | none
 
-    This document is a structural design for a residential solar canopy in
-    Larkspur, California. The design includes a concrete slab, stem wall, steel
-    welded tube frame, and solar panel clips.
+    This document is a structural design calculation for a residential solar
+    canopy in Larkspur, California. The design includes a concrete slab, stem
+    wall, steel welded tube frame, and solar panel clips.
 
-    || /images/im02/kitchen.png | Wind Load 1 _[f] | 50 | bw 
-       /images/im02/as_built1.jpg | Wind Load 2 _[f] | 50 | none 
+    || images/img02/kitchen.png | Wind Load 1 _[f] | 50 | bw 
+       images/img02/as_built1.jpg | Wind Load 2 _[f] | 50 | none 
     -----
 
     || text/txt02/example1.txt:2 | 3 | title | plain
@@ -28,13 +28,13 @@ rv.I("""Overview and Codes | pass | none
     wt2 = a2 * dl2/2 
 
     Label 2 _[l]
-    wt3 = a3 * dl3 
+    a1 = \frac{1}{z}
 
     """)
 
 rv.I("""--project info | redact | none 
   
-    | /csv/ta01/project-data.csv:1 | 15 | Project Information | 35, l 
+    | /csv/tab01/project-data.csv:1 | 15 | Project Information | 35, l 
     Client, Aaron Kahn
     Address, 10 Fairfield Ave 
     City, Corte Madera
@@ -94,32 +94,35 @@ rv.I("""--code tables | pass | none
 # %%
 rv.V("""Gravity Loads and Seismic Mass | pass | none
 
-    area1 := 10700*SF,SM | roof area
-    area2 := 10200*SF,SM | floor area
-    ht1 := 9*FT,M | wall height
-    len1 := 110*FT,M | interior wall length
-    len2 := 155*FT,M | exterior wall length
+    area1 := 10700*SF, SM | roof area          
+    area2 := 10200*SF, SM | floor area         
+    ht1 := 9*FT,       M | wall height         
+    len1 := 110*FT,    M | interior wall length
+    len2 := 155*FT,    M | exterior wall length
 
-    || text/va01/dlextwall0.csv:12 | 6 | notitle
-    ld1,        2.,    PSF,   KPA,   1/2 in plywood sheathing
-    ld2,        2.,    PSF,   KPA,   2x4 studs at 16 in o.c.
-    ld3,        3.,    PSF,   KPA,   5/8 in sheet rock
-    ld4,        1.5,   PSF,   KPA,   fixtures
-    ----------
+    || csv/val01/dlextwall0.csv:2 | 4 | label
+    ld1 := 2*PSF,   KPA | 1/2 in plywood sheathing
+    ld2 := 2.*PSF,  KPA | 2x4 studs at 16 in o.c. 
+    ld3 := 3.*PSF,  KPA | 5/8 in sheet rock       
+    ld4 := 1.5*PSF, KPA | fixtures                            
+    ------
 
-    udl1 := sum(col2L)*PSF | KPA | exterior wall - total area load
+    Exterior wall - total area load _[t]
+    udl1 := sum(col2L)*PSF, KPA | description 
 
-    || values/va02/ aci318-05.txt:10 | 4 | title 
-    [ACI 318-12.2] Shear Friction Capacity | KIPS, KN | 2, 2
-    wt1 = area1 * udl1
-    wt2 = area2 * udl1
-    ----------
+    || csv/val02/equation.txt:2 | 3 | - beam 1 shear _[e]
+    [ACI 318-12.2] Shear Friction Capacity 
+    wt1 = area1 * udl1 | KIPS, KN | 2,2
+    wt2 = area2 * udl1 | KIPS, KN | 2,2
+    ------
 
     wt2 = area2 * floordl1 | KIPS,KN,2,2
 
-    | /images/im02/fig1.png | Wind Load 1 _[f] | 50 | bw     
+    | images/img02/fig1.png | Wind Load 1 _[f] | 50 | bw
+    ------     
 
-    | /images/im02/fig2.png | Wind Load 2 _[f] | 70 | none
+    | images/img02/fig2.png | Wind Load 2 _[f] | 70 | none
+    ------
 
     """)
 
@@ -128,34 +131,30 @@ rv.I("""Abbreviations and References | pass | none
 
     References _[bc]
 
-    | insert/te02/te02/references.txt:1 | plain
-
+    | text/txt02/te02/references.txt:1 | plain
+    ------
 
     Drawings _[bc]
 
     | insert/te02/drawing_list.txt:1 | all | plain
-
+    ------
 
     Abbreviations - Terms _[bc]
 
     | insert/te02/abbrev_terms.tex:1 | all | latex
-
+    ------
 
     Abbreviations - Math _[bc]
 
     | insert/te02/abbrev_math.tex:1 | all | latex
+    ------
+    
     """)
 
 # %%
-rv.W("""report
+rv.W("""docs
 
-    | output | text, html, pdf
-
-
-    || files |
-
-
-    -------------
-
+    | docs | text, html, pdf
+    -----
 
     """)
