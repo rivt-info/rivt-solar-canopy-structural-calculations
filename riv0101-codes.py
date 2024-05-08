@@ -1,4 +1,4 @@
-#! python\"ctrl+["
+#! python
 # %%
 import rivtlib.rivtapi as rv
 # %%
@@ -8,32 +8,33 @@ rv.I("""Overview and Codes | pass | none
     Larkspur, California. The design includes a concrete slab, stem wall, steel
     welded tube frame, and solar panel clips.
 
-    | /images/im02/kitchen.png | 2 | Wind Load 1 _[f] | 50 | bw 
-    | /images/im02/as_built1.jpg | 2 | Wind Load 2 _[f] | 50 | none 
-    
-    || /text/te02/aci318-05.txt:10 | 4 | title | sympy
+    || /images/im02/kitchen.png | Wind Load 1 _[f] | 50 | bw 
+       /images/im02/as_built1.jpg | Wind Load 2 _[f] | 50 | none 
+    -----
+
+    || text/txt02/example1.txt:2 | 3 | title | plain
     [ACI 318-12.2] Shear Friction Capacity
     wt1 = area1 * udl1
     wt2 = area2 * udl1
     -----
 
-    || /text/te02/aci318-05.tex:10 | 4 | title | latex
+    || /text/txt02/aci318-05.tex:10 | 3 | title | latex
     [ACI 318-12.2] Shear Friction Capacity
     wt1 = area1 * udl1
     wt2 = area2 * udl1
     -----
 
-    Label 1 _[e]
-    wt2 = a2 * dl2/2 _[s]
+    Label 1 _[s]
+    wt2 = a2 * dl2/2 
 
-    Label 2 _[e]
-    wt3 = a3 * dl3 _[l]
+    Label 2 _[l]
+    wt3 = a3 * dl3 
 
     """)
 
 rv.I("""--project info | redact | none 
   
-    | /text/te01/project-data.csv | 35, l 
+    | /csv/ta01/project-data.csv:1 | 15 | Project Information | 35, l 
     Client, Aaron Kahn
     Address, 10 Fairfield Ave 
     City, Corte Madera
@@ -62,7 +63,7 @@ rv.I("""--code tables | pass | none
     - 2019 California Building Code[CBC]
     - 2019 California Residential Code[CRC]
 
-    || insert/ta02/cbc2019_stds.csv:1 | all | Engineering Standards  | 53, l
+    || csv/ta02/cbc2019_stds.csv:1 | all | Engineering Standards  | 53, l
     Category,                                            Standard,  Year
     Loading,                                             ASCE-7,    2016
     Concrete,                                            ACI-318,   2014
@@ -77,7 +78,7 @@ rv.I("""--code tables | pass | none
     | insert/ta02/load_types01.csv:1 | all | Load Types | 40, l 
     --------
 
-    | insert/ta02/asce7_load_comb.csv:1 | all | Load Combinations | 55, c
+    || insert/ta02/asce7_load_comb.csv:1 | all | Load Combinations | 55, c
     CBC 2019 reference, Equation                                             
     Equation 16-1,      1.4(D +F)                                            
     Equation 16-2,      1.2(D + F) + l.6(L + H) + 0.5(L or S or R)
@@ -93,21 +94,20 @@ rv.I("""--code tables | pass | none
 # %%
 rv.V("""Gravity Loads and Seismic Mass | pass | none
 
-    area1 := 10,700*SF,SM | roof area
-    area2 := 10,200*SF,SM | floor area
+    area1 := 10700*SF,SM | roof area
+    area2 := 10200*SF,SM | floor area
     ht1 := 9*FT,M | wall height
     len1 := 110*FT,M | interior wall length
     len2 := 155*FT,M | exterior wall length
 
-
-    || values/va01/dlextwall0.csv:12 | 6 | notitle 
+    || text/va01/dlextwall0.csv:12 | 6 | notitle
     ld1,        2.,    PSF,   KPA,   1/2 in plywood sheathing
     ld2,        2.,    PSF,   KPA,   2x4 studs at 16 in o.c.
     ld3,        3.,    PSF,   KPA,   5/8 in sheet rock
     ld4,        1.5,   PSF,   KPA,   fixtures
     ----------
 
-    udl1 := sum(col2L)*PSF | KPA | exterior wall total area load
+    udl1 := sum(col2L)*PSF | KPA | exterior wall - total area load
 
     || values/va02/ aci318-05.txt:10 | 4 | title 
     [ACI 318-12.2] Shear Friction Capacity | KIPS, KN | 2, 2
@@ -117,14 +117,15 @@ rv.V("""Gravity Loads and Seismic Mass | pass | none
 
     wt2 = area2 * floordl1 | KIPS,KN,2,2
 
-    | /images/im02/fig1.png | 1 | Wind Load 1 _[f] | 50 | bw     
+    | /images/im02/fig1.png | Wind Load 1 _[f] | 50 | bw     
 
-    | /images/im02/fig2.png | 1 | Wind Load 2 _[f] | 70 | none | 
+    | /images/im02/fig2.png | Wind Load 2 _[f] | 70 | none
 
     """)
 
 # %%
 rv.I("""Abbreviations and References | pass | none
+
     References _[bc]
 
     | insert/te02/te02/references.txt:1 | plain
@@ -132,17 +133,17 @@ rv.I("""Abbreviations and References | pass | none
 
     Drawings _[bc]
 
-    | insert/te02/drawing_list.txt | plain
+    | insert/te02/drawing_list.txt:1 | all | plain
 
 
     Abbreviations - Terms _[bc]
 
-    | insert/te02/abbrev_terms.tex | latex
+    | insert/te02/abbrev_terms.tex:1 | all | latex
 
 
     Abbreviations - Math _[bc]
 
-    | insert/te02/abbrev_math.tex | latex
+    | insert/te02/abbrev_math.tex:1 | all | latex
     """)
 
 # %%
