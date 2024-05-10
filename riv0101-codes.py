@@ -120,10 +120,10 @@ rv.V("""Gravity Loads and Seismic Mass | pass | none
 
     wt2 = area2 * floordl1 | KIPS,KN,2,2
 
-    | images/img02/fig1.png | Wind Load 1 _[f] | 50 | bw
+    | images/img02/fig1.png | Wind Load 1 _[f] | 50, bw
     ------     
 
-    | images/img02/fig2.png | Wind Load 2 _[f] | 70 | none
+    | images/img02/fig2.png | Wind Load 2 _[f] | 70, none
     ------
 
     """)
