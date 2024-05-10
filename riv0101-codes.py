@@ -9,13 +9,13 @@ rv.I("""Overview and Codes | pass | none
     wall, steel welded tube frame, and solar panel clips.
 
     || images/img02/kitchen.png | Wind Load 1 _[f] | 50 | bw 
-       images/img02/as_built1.jpg | Wind Load 2 _[f] | 50 | none 
+    images/img02/as_built1.jpg | Wind Load 2 _[f] | 50 | none 
     -----
 
     || text/txt02/example1.txt:2 | 3 | title | plain
-    [ACI 318-12.2] Shear Friction Capacity
-    wt1 = area1 * udl1
-    wt2 = area2 * udl1
+    Some text
+    that is used 
+    regularly
     -----
 
     || /text/txt02/aci318-05.tex:10 | 3 | title | latex
@@ -94,26 +94,28 @@ rv.I("""--code tables | pass | none
 # %%
 rv.V("""Gravity Loads and Seismic Mass | pass | none
 
-    area1 := 10700*SF, SM | roof area          
-    area2 := 10200*SF, SM | floor area         
-    ht1 := 9*FT,       M | wall height         
-    len1 := 110*FT,    M | interior wall length
-    len2 := 155*FT,    M | exterior wall length
+    area1 :=, 10700, SF, SM, roof area           
+    area2 :=, 10200, SF, SM, floor area          
+    ht1 :=,   9,     FT, M,  wall height         
+    len1 :=,  110,   FT, M,  interior wall length
+    len2 :=,  155,   FT, M,  exterior wall length
 
-    || csv/val01/dlextwall0.csv:2 | 4 | label
-    ld1 := 2*PSF,   KPA | 1/2 in plywood sheathing
-    ld2 := 2.*PSF,  KPA | 2x4 studs at 16 in o.c. 
-    ld3 := 3.*PSF,  KPA | 5/8 in sheet rock       
-    ld4 := 1.5*PSF, KPA | fixtures                            
+    || csv/val01/dlextwall0.csv:2 | 4 | first floor _[v]
+    Wall Assembly Dead Loads
+    ld1 :=,    2,   PSF, KPA, 1/2 in plywood sheathing
+    ldead2 :=, 2.,  PSF, KPA, 2x4 studs at 16 in o.c. 
+    ld3 :=,    3.,  PSF, KPA, 5/8 in sheet rock       
+    ld4 :=,    1.5, PSF, KPA, fixtures
+    totdl1 :=, 8.5, PSF, KPA, total load                
     ------
 
-    Exterior wall - total area load _[t]
-    udl1 := sum(col2L)*PSF, KPA | description 
+    Exterior wall - total area load _[v]
+    udl1 :=, 12.2,PSF,KPA,description 
 
-    || csv/val02/equation.txt:2 | 3 | - beam 1 shear _[e]
+    || text/equ02/equation1.txt:2 | 3 | beam 1 shear _[e]
     [ACI 318-12.2] Shear Friction Capacity 
-    wt1 = area1 * udl1 | KIPS, KN | 2,2
-    wt2 = area2 * udl1 | KIPS, KN | 2,2
+    wt1 = area1 * udl1 | KIPS, KN, 2, 2
+    wt2 = area2 * udl1 | KIPS, KN, 2, 2
     ------
 
     wt2 = area2 * floordl1 | KIPS,KN,2,2
