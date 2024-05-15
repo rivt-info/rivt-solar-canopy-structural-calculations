@@ -4,21 +4,20 @@ import rivtlib.rivtapi as rv
 # %%
 rv.I("""Overview and Codes | pass | none
 
-    This document is a structural design calculation for a residential solar
+    This is a structural design calculation document for a residential solar
     canopy in Larkspur, California. The design includes a concrete slab, stem
     wall, steel welded tube frame, and solar panel clips.
 
-    || images/img02/kitchen.png | Wind Load 1 _[f] | 50 | bw 
-    images/img02/as_built1.jpg | Wind Load 2 _[f] | 50 | none 
-    -----
+    | Wind Load 1 _[f] | images/img02/kitchen.png | 50, bw, 1 
+    | Wind Load 2 _[f] | images/img02/as_built1.jpg |  50, none, 0 
 
-    || text/txt02/example1.txt:2 | 3 | title | plain
+    || title | text/txt02/example1.txt:2-5 |  plain
     Some text
     that is used 
     regularly
     -----
 
-    || /text/txt02/aci318-05.tex:10 | 3 | title | latex
+    || title | /text/txt02/aci318-05.tex:10-13  | latex
     [ACI 318-12.2] Shear Friction Capacity
     wt1 = area1 * udl1
     wt2 = area2 * udl1
@@ -27,14 +26,14 @@ rv.I("""Overview and Codes | pass | none
     Label 1 _[s]
     wt2 = a2 * dl2/2 
 
-    Label 2 _[l]
+    Label 2 _[m]
     a1 = \frac{1}{z}
 
     """)
 
 rv.I("""--project info | redact | none 
   
-    | /csv/tab01/project-data.csv:1 | 15 | Project Information | 35, l 
+    | /csv/tab01/project-data.csv:1-0 | Project Information | 35, l 
     Client, Aaron Kahn
     Address, 10 Fairfield Ave 
     City, Corte Madera
@@ -63,7 +62,7 @@ rv.I("""--code tables | pass | none
     - 2019 California Building Code[CBC]
     - 2019 California Residential Code[CRC]
 
-    || csv/ta02/cbc2019_stds.csv:1 | all | Engineering Standards  | 53, l
+    || Engineering Standards | tables/tbl02/cbc2019_stds.csv:1-0 |  53, l
     Category,                                            Standard,  Year
     Loading,                                             ASCE-7,    2016
     Concrete,                                            ACI-318,   2014
@@ -75,10 +74,9 @@ rv.I("""--code tables | pass | none
     Design loads for the project are from the California Building and
     Residential Codes and are summarized in the following tables.
 
-    | insert/ta02/load_types01.csv:1 | all | Load Types | 40, l 
-    --------
+    | Load Types _[t] | tables/tbl02/load_types01.csv:1-0 |  40, l 
 
-    || insert/ta02/asce7_load_comb.csv:1 | all | Load Combinations | 55, c
+    || Load Combinations | insert/ta02/asce7_load_comb.csv:1-0 |  55, c
     CBC 2019 reference, Equation                                             
     Equation 16-1,      1.4(D +F)                                            
     Equation 16-2,      1.2(D + F) + l.6(L + H) + 0.5(L or S or R)
@@ -96,23 +94,25 @@ rv.V("""Gravity Loads and Seismic Mass | pass | none
 
     area1 :=, 10700, SF, SM, roof area           
     area2 :=, 10200, SF, SM, floor area          
-    ht1 :=,   9,     FT, M,  wall height         
+    ht1 :=,   9.0,   FT, M,  wall height         
     len1 :=,  110,   FT, M,  interior wall length
     len2 :=,  155,   FT, M,  exterior wall length
 
-    || csv/val01/dlextwall0.csv:2 | 4 | first floor _[v]
+    || aisc shapes _[o] | tables/dat02/aisc-16.0.csv:75-80 | [1,3:7] 
+
+    || first floor _[v] | values/val01/dlextwall0.csv:2-4 | ref
     Wall Assembly Dead Loads
-    ld1 :=,    2,   PSF, KPA, 1/2 in plywood sheathing
-    ldead2 :=, 2.,  PSF, KPA, 2x4 studs at 16 in o.c. 
-    ld3 :=,    3.,  PSF, KPA, 5/8 in sheet rock       
-    ld4 :=,    1.5, PSF, KPA, fixtures
-    totdl1 :=, 8.5, PSF, KPA, total load                
+    t1_f :=,   .5,  IN,  MM,  flange thickness       
+    ld2 :=,    2.,  PSF, KPA, 2x4 studs at 16 in o.c.
+    ld3 :=,    3.,  PSF, KPA, 5/8 in sheet rock
+    ld4 :=,    1.5, PSF, KPA, fixtures             
+    totdl1 :=, 7.0, PSF, KPA, total load                          
     ------
 
     Exterior wall - total area load _[v]
     udl1 :=, 12.2,PSF,KPA,description 
 
-    || text/equ02/equation1.txt:2 | 3 | beam 1 shear _[e]
+    || Beam 1 _[e] | text/equ02/equation1.txt:2-4 | ref
     [ACI 318-12.2] Shear Friction Capacity 
     wt1 = area1 * udl1 | KIPS, KN, 2, 2
     wt2 = area2 * udl1 | KIPS, KN, 2, 2
@@ -120,36 +120,21 @@ rv.V("""Gravity Loads and Seismic Mass | pass | none
 
     wt2 = area2 * floordl1 | KIPS,KN,2,2
 
-    | images/img02/fig1.png | Wind Load 1 _[f] | 50, bw
-    ------     
-
-    | images/img02/fig2.png | Wind Load 2 _[f] | 70, none
-    ------
+    | Wind Load 1 _[f] | images/img02/fig1.png | 50, bw, 0  
+    | Wind Load 2 _[f] | images/img02/fig2.png | 70, none, 0
 
     """)
 
 # %%
 rv.I("""Abbreviations and References | pass | none
 
-    References _[bc]
+    | Reference Standards _[bc] | text/txt02/references.txt:1-0 |  plain
+    
+    | Drawing List _[bc] | text/txt02/drawing_list.txt:1-0 | plain
+    
+    | Abbreviations - Terms _[bc] | text/tex02/abbrev_terms.tex:1-0 | plain
 
-    | text/txt02/te02/references.txt:1 | plain
-    ------
-
-    Drawings _[bc]
-
-    | insert/te02/drawing_list.txt:1 | all | plain
-    ------
-
-    Abbreviations - Terms _[bc]
-
-    | insert/te02/abbrev_terms.tex:1 | all | latex
-    ------
-
-    Abbreviations - Math _[bc]
-
-    | insert/te02/abbrev_math.tex:1 | all | latex
-    ------
+    | Abbreviations - Math _[bc] | text/tex02/abbrev_math.tex:1-0 | math
     
     """)
 
@@ -157,6 +142,6 @@ rv.I("""Abbreviations and References | pass | none
 rv.W("""docs
 
     | docs | text, html, pdf
-    -----
+
 
     """)
