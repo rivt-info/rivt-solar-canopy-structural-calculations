@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="816" height="1056" fill="transparent" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0">
+	<defs>
+		<clipPath id="clipPath0">
+			<path fill-rule="evenodd" d="M0,0L816,0 816,1056 0,1056 0,0Z" />
+		</clipPath>
+		<clipPath id="clipPath1">
+			<rect x="184" y="536.5521" width="256" height="30.8958" />
+		</clipPath>
+		<clipPath id="clipPath2">
+			<path fill-rule="evenodd" d="M411.529558219625,534L455.23463648102,534 455.23463648102,587.705078261396 411.529558219625,587.705078261396 411.529558219625,534Z" />
+		</clipPath>
+		<pattern id="pattern3" width="8" height="8" patternTransform="translate(-192 -528)">
+			<image width="8" height="8" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAVSURBVChTYwCC/3///sWJR4SCv/8BKlflySG1l/4AAAAASUVORK5CYII=" />
+		</pattern>
+		<clipPath id="clipPath4">
+			<rect x="174" y="510" width="276" height="51.7621" />
+		</clipPath>
+		<clipPath id="clipPath5">
+			<rect x="162.8042" y="539" width="55.1922" height="42.6209" />
+		</clipPath>
+		<clipPath id="clipPath6">
+			<rect x="296.8415" y="495.5994" width="28.7893" height="23.5176" />
+		</clipPath>
+		<clipPath id="clipPath7">
+			<rect x="185.4699" y="645.7509" width="256" height="30.8958" />
+		</clipPath>
+		<clipPath id="clipPath8">
+			<path fill-rule="evenodd" d="M412.999409475156,643.19879762494L456.704487736552,643.19879762494 456.704487736552,696.903875886336 412.999409475156,696.903875886336 412.999409475156,643.19879762494Z" />
+		</clipPath>
+		<clipPath id="clipPath9">
+			<rect x="164.274" y="648.1988" width="55.1922" height="42.6209" />
+		</clipPath>
+		<clipPath id="clipPath10">
+			<rect x="301.7463" y="599.1686" width="24.6537" height="20.1393" />
+		</clipPath>
+		<clipPath id="clipPath11">
+			<path fill-rule="evenodd" d="M170,668.020304262462L170,742 214,742 214,668.020304262462 170,668.020304262462ZM192,689.020304262462L196,697.020304262462 188,697.020304262462 192,689.020304262462Z" />
+		</clipPath>
+		<clipPath id="clipPath12">
+			<path fill-rule="evenodd" d="M170,668.020304262462L214,668.020304262462 214,742 170,742 170,668.020304262462Z" />
+		</clipPath>
+		<clipPath id="clipPath13">
+			<path fill-rule="evenodd" d="M410,668.020304262462L410,742 454,742 454,668.020304262462 410,668.020304262462ZM432,689.020304262462L436,697.020304262462 428,697.020304262462 432,689.020304262462Z" />
+		</clipPath>
+		<clipPath id="clipPath14">
+			<path fill-rule="evenodd" d="M410,668.020304262462L454,668.020304262462 454,742 410,742 410,668.020304262462Z" />
+		</clipPath>
+		<clipPath id="clipPath15">
+			<rect x="201.6054" y="705.1929" width="24" height="19.6053" />
+		</clipPath>
+		<clipPath id="clipPath16">
+			<rect x="397.6692" y="703.9971" width="24" height="19.6053" />
+		</clipPath>
+		<clipPath id="clipPath17">
+			<path fill-rule="evenodd" d="M307.55364005579,590.285347264077L307.335886626628,676.666658651724 351.729952361982,676.778568969975 351.947705791145,590.397257582328 307.55364005579,590.285347264077ZM325.606265019869,647.62189862048L333.606239601461,647.642065273086 329.586085658059,655.631956528375 325.606265019869,647.62189862048Z" />
+		</clipPath>
+		<clipPath id="clipPath18">
+			<path fill-rule="evenodd" d="M307.55364005579,590.285347264077L307.335886626628,676.666658651724 351.729952361982,676.778568969975 351.947705791145,590.397257582328 307.55364005579,590.285347264077Z" />
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clipPath0)">
+		<rect fill="#ffffff" x="0" y="0" width="816" height="1056" />
+	</g>
+	<g clip-path="url(#clipPath1)">
+		<g transform="translate(192 552)">
+			<path stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.5,0.5L240.5,0.5" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath2)">
+		<g transform="matrix(-1.83690953073357E-16 -1 1 -1.83690953073357E-16 424.529558219625 569.705078261396)">
+			<path fill="#c6c6c6" stroke="#214b78" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M17.7050782613958,8.85253913069789C17.7050782613958,13.7416614913606 13.7416614913606,17.7050782613958 8.85253913069789,17.7050782613958 3.96341677003519,17.7050782613958 0,13.7416614913606 0,8.85253913069789 0,3.96341677003519 3.96341677003519,0 8.85253913069789,0 13.7416614913606,0 17.7050782613958,3.96341677003519 17.7050782613958,8.85253913069789Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath4)">
+		<g transform="translate(192 528)">
+			<path fill="url(#pattern3)" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M-2.8421709430404E-14,0L240,0 240,16 -2.8421709430404E-14,16 -2.8421709430404E-14,0Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath5)">
+		<g transform="translate(180.804179772885 552)">
+			<path fill="#c6c6c6" stroke="#214b78" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M9.69582022711526,0.5L18.6958202271153,16.5 -0.304179772884737,16.5 9.69582022711526,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath6)">
+		<g transform="translate(296.841499598923 497.675897774281)">
+			<text fill="#000000" x="7.2327" y="16.0155" font-family="'Arial',sans-serif" font-size="12.75pt" font-weight="bold">ω</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath7)">
+		<g transform="translate(193.469851255531 661.19879762494)">
+			<path stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.0301487444687609,0.301202375060029L240.030148744469,0.301202375060029" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath8)">
+		<g transform="matrix(-1.83690953073357E-16 -1 1 -1.83690953073357E-16 425.999409475156 678.903875886336)">
+			<path fill="#c6c6c6" stroke="#214b78" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M17.7050782613958,8.85253913069789C17.7050782613958,13.7416614913606 13.7416614913606,17.7050782613958 8.85253913069789,17.7050782613958 3.96341677003519,17.7050782613958 0,13.7416614913606 0,8.85253913069789 0,3.96341677003519 3.96341677003519,0 8.85253913069789,0 13.7416614913606,0 17.7050782613958,3.96341677003519 17.7050782613958,8.85253913069789Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath9)">
+		<g transform="translate(182.274031028416 661.19879762494)">
+			<path fill="#c6c6c6" stroke="#214b78" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M9.22596897158402,0.301202375060029L19.225968971584,16.30120237506 0.225968971584024,16.30120237506 9.22596897158402,0.301202375060029Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath10)">
+		<g transform="translate(301.746270725596 601.790352383982)">
+			<text fill="#000000" x="8.1335" y="12.28" font-family="'Arial',sans-serif" font-size="9.75pt" font-weight="bold">P</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath11)">
+		<g transform="matrix(6.12303176911189E-17 1 -1 6.12303176911189E-17 192 689.020304262462)">
+			<path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0,0L30.979695737538,0" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath12)">
+		<g transform="matrix(6.12303176911189E-17 1 -1 6.12303176911189E-17 192 689.020304262462)">
+			<polygon fill="#000000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" points="8,-4 0,0 8,4" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath13)">
+		<g transform="matrix(6.12303176911189E-17 1 -1 6.12303176911189E-17 432 689.020304262462)">
+			<path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0,0L30.979695737538,0" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath14)">
+		<g transform="matrix(6.12303176911189E-17 1 -1 6.12303176911189E-17 432 689.020304262462)">
+			<polygon fill="#000000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" points="8,-4 0,0 8,4" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath15)">
+		<g transform="translate(201.605373993709 707.547651717881)">
+			<text fill="#000000" x="3.869" y="12.5227" font-family="'Arial',sans-serif" font-size="9.75pt" font-weight="bold">R1</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath16)">
+		<g transform="translate(397.669243482433 706.351831490766)">
+			<text fill="#000000" x="3.8051" y="11.7185" font-family="'Arial',sans-serif" font-size="9.75pt" font-weight="bold">R2</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath17)">
+		<g transform="matrix(0.00252083157567634 -0.999996822699036 0.999996822699036 0.00252083157567634 329.586085658059 655.631956528375)">
+			<path stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0,0L43.2001372598377,0" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath18)">
+		<g transform="matrix(0.00252083157567634 -0.999996822699036 0.999996822699036 0.00252083157567634 329.586085658059 655.631956528375)">
+			<polygon fill="#000000" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" points="8,-4 0,0 8,4" />
+		</g>
+	</g>
+</svg>

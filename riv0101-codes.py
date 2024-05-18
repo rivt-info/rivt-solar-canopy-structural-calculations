@@ -98,7 +98,7 @@ rv.V("""Gravity Loads and Seismic Mass | pass | none
     len1 :=,  110,   FT, M,  interior wall length
     len2 :=,  155,   FT, M,  exterior wall length
 
-    || aisc shapes _[o] | tables/dat02/aisc-16.0.csv:75-80 | [1,3:7] 
+    || aisc shapes _[o] | values/dat02/aisc-16.0.csv:75-80 | [1,3:7] 
 
     || first floor _[v] | values/val01/dlextwall0.csv:2-4 | ref
     Wall Assembly Dead Loads
@@ -141,7 +141,7 @@ rv.I("""Abbreviations and References | pass | none
 # %%
 rv.W("""docs
 
-    | docs | text, html, pdf
+    | docs | text, html, pdf | page #; auto
 
 
     """)
