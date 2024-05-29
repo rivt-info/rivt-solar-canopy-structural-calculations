@@ -2,6 +2,13 @@
 # %%
 import rivtlib.rivtapi as rv
 # %%
+rv.X("""docs
+
+    | docs | text, html, pdf | page #; auto
+
+
+    """)
+# %%
 rv.I("""Overview and Codes | pass | none
 
     This is a structural design calculation document for a residential solar
@@ -136,12 +143,4 @@ rv.I("""Abbreviations and References | pass | none
 
     | Abbreviations - Math _[bc] | text/tex02/abbrev_math.tex:1-0 | math
     
-    """)
-
-# %%
-rv.W("""docs
-
-    | docs | text, html, pdf | page #; auto
-
-
     """)
