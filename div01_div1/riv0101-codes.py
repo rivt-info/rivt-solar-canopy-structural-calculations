@@ -2,14 +2,33 @@
 # %%
 import rivtlib.rivtapi as rv
 # %%
-rv.X("""docs
+
+rv.I("""project info | redact | none 
+  
+    | /csv/tab01/project-data.csv:1-0 | Project Information | 35, l 
+    Client, Aaron Kahn
+    Address, 10 Fairfield Ave 
+    City, Corte Madera
+    State, California
+    Zip, 94947
+    County, Marin
+    Project Name, Solar Canopy
+    Project Number, 24-001
+    Contract Amount, "$1,000" 
+    Total Amount, "$1,000"
+    Building Code, 2015 CRC
+    Date Started, 01-01-2020
+    Date Completed, 01-01-2021
+    Construction Started, 06-01-2022
+    Construction Completed, 06-01-2023
+    Materials, "steel, concrete"
+    ------
 
     | docs | text, html, pdf | page #; auto
 
-
     """)
-# %%
-rv.I("""Overview and Codes | pass | none
+
+rv.I("""Overview and Codes | all | none
 
     This is a structural design calculation document for a residential solar
     canopy in Larkspur, California. The design includes a concrete slab, stem
@@ -35,29 +54,6 @@ rv.I("""Overview and Codes | pass | none
 
     Label 2 _[m]
     a1 = \frac{1}{z}
-
-    """)
-
-rv.I("""--project info | redact | none 
-  
-    | /csv/tab01/project-data.csv:1-0 | Project Information | 35, l 
-    Client, Aaron Kahn
-    Address, 10 Fairfield Ave 
-    City, Corte Madera
-    State, California
-    Zip, 94947
-    County, Marin
-    Project Name, Solar Canopy
-    Project Number, 24-001
-    Contract Amount, "$1,000" 
-    Total Amount, "$1,000"
-    Building Code, 2015 CRC
-    Date Started, 01-01-2020
-    Date Completed, 01-01-2021
-    Construction Started, 06-01-2022
-    Construction Completed, 06-01-2023
-    Materials, "steel, concrete"
-    -----------
 
     """)
 
