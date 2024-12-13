@@ -1,6 +1,6 @@
 #! python
 # %%
-import rivt.rivttext as rv
+import rivt.rivtapi as rv
 # %%
 rv.R("""Overview | 80 
 
