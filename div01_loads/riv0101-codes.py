@@ -30,6 +30,29 @@ rv.I("""project info | redact | none
 
 rv.I("""Overview and Codes | all | none
 
+    This report describes the structural design of a solar canopy covering a
+    residential patio located in the City of Larkspur, California. It includes
+    the design of a concrete slab and stem wall, steel tube frame, and
+    attachments of solar panels to the frame. The report is divided into the
+    following divisions and subdivisions::
+    
+                    [01] Loads
+                        [01] Gravity
+                        [02] Wind and Seismic
+                    [02] Frame
+                        [01] Steel tubes 
+                        [02] Connections and clips 
+                    [03] Foundation 
+                        [01] Slab
+                        [02] Stem wall
+                    [04] References and Abbreviations
+                        [01] Codes and Standards
+                        [02] Abbreviations
+                        [03] Symbols
+
+    || pages | config | rivt-config.ini | pdf-style2.sty | 1
+    || project | resource | proj-info.txt | 30,C
+
     This is a structural design calculation document for a residential solar
     canopy in Larkspur, California. The design includes a concrete slab, stem
     wall, steel welded tube frame, and solar panel clips.
