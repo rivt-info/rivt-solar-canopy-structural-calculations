@@ -1,34 +1,15 @@
 #! python"ctrl+alt+]"fold
 # %%
-import rivtlib.rivtapi as rv
+import rivtlib.api as rv
 # %%
 
-rv.I("""project info | redact | none 
+rv.I("""project info | priv | none 
   
-    | /csv/tab01/project-data.csv:1-0 | Project Information | 35, l 
-    Client, Aaron Kahn
-    Address, 10 Fairfield Ave 
-    City, Corte Madera
-    State, California
-    Zip, 94947
-    County, Marin
-    Project Name, Solar Canopy
-    Project Number, 24-001
-    Contract Amount, "$1,000" 
-    Total Amount, "$1,000"
-    Building Code, 2015 CRC
-    Date Started, 01-01-2020
-    Date Completed, 01-01-2021
-    Construction Started, 06-01-2022
-    Construction Completed, 06-01-2023
-    Materials, "steel, concrete"
-    ------
-
-    | docs | text, html, pdf | page #; auto
+    || /s01/ins/project-data.csv | all | Project Information | 35, l 
 
     """)
 
-rv.I("""Overview and Codes | all | none
+rv.I("""Overview and Codes | pub | none
 
     This report describes the structural design of a solar canopy covering a
     residential patio located in the City of Larkspur, California. It includes
@@ -50,23 +31,16 @@ rv.I("""Overview and Codes | all | none
                         [02] Abbreviations
                         [03] Symbols
 
-    || pages | config | rivt-config.ini | pdf-style2.sty | 1
-    || project | resource | proj-info.txt | 30,C
-
     This is a structural design calculation document for a residential solar
     canopy in Larkspur, California. The design includes a concrete slab, stem
     wall, steel welded tube frame, and solar panel clips.
 
-    | Wind Load 1 _[f] | images/img02/kitchen.png | 50, bw, 1 
-    | Wind Load 2 _[f] | images/img02/as_built1.jpg |  50, none, 0 
+    || images/img02/kitchen.png | Wind Load 1 _[f] |  50, bw, 1 
+    || images/img02/as_built1.jpg | Wind Load 2 _[f] | 50, none, 0 
 
-    || title | text/txt02/example1.txt:2-5 |  plain
-    Some text
-    that is used 
-    regularly
-    -----
+    || r01/ins/example1.txt | 1:3 | plain
 
-    || title | /text/txt02/aci318-05.tex:10-13  | latex
+    || /text/txt02/aci318-05.tex | latex
     [ACI 318-12.2] Shear Friction Capacity
     wt1 = area1 * udl1
     wt2 = area2 * udl1

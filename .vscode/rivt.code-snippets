@@ -7,9 +7,9 @@
             "import rivt.rivtapi as rv"
         ]
     },
-    "new R method": {
+    "R method": {
         "prefix": "rvr",
-        "description": "add Repo method",
+        "description": "Run method",
         "scope": "python",
         "body": [
             "rv.R(\"\"\"${1:section label} | ${2:white} | ${3:1}",
@@ -19,9 +19,9 @@
             "    \"\"\")"
         ]
     },
-    "new I method": {
+    "I method": {
         "prefix": "rvI",
-        "description": "add new Insert method",
+        "description": "Insert method",
         "scope": "python",
         "body": [
             "rv.I(\"\"\"${1:section label} | ${2:docfolder; default}",
@@ -31,9 +31,9 @@
             "    \"\"\")"
         ]
     },
-    "new V method": {
+    "V method": {
         "prefix": "rvv",
-        "description": "add new Value method",
+        "description": "Value method",
         "scope": "python",
         "body": [
             "rv.V(\"\"\"${1:section label} | ${2:docfolder; default} | ${3:sub; nosub} ",
@@ -43,9 +43,9 @@
             "    \"\"\")"
         ]
     },
-    "new T method": {
+    "T method": {
         "prefix": "rvt",
-        "description": "add new Table method",
+        "description": "Tools method",
         "scope": "python",
         "body": [
             "rv.T(\"\"\"${1:section label} | ${2:docfolder; default} ",
@@ -69,14 +69,6 @@
         "scope": "python",
         "body": [
             "| ${1: title} | ${2: filename} | ${0:parameters} "
-        ]
-    },
-    "project": {
-        "prefix": "|p",
-        "description": "insert project in",
-        "scope": "python",
-        "body": [
-            "|| project | ${1: file} | ${0:default} "
         ]
     },
     "tag equation lable": {
@@ -208,11 +200,11 @@
         ]
     },
     "block tag center": {
-        "prefix": "__c",
+        "prefix": "_[[c",
         "description": "tag center block",
         "scope": "python",
         "body": [
-            "___[c]"
+            "_[[c]]"
         ]
     }
 }
