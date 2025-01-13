@@ -46,11 +46,11 @@ rv.I("""Overview and Codes | pub | none
     wt2 = area2 * udl1
     -----
 
-    Label 1 _[s]
-    wt2 = a2 * dl2/2 
+    Label 1 _[e] 
+    wt2 = a2 * dl2/2   _[s]
 
-    Label 2 _[m]
-    a1 = \frac{1}{z}
+    a1 = \frac{1}{z}   _[l]
+
 
     """)
 
