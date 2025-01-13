@@ -1,6 +1,6 @@
 #! python
 # %%
-import rivtlib.rivtapi as rv
+import rivtlib.api as rv
 # %%
 rv.I("""Load Combinations | default
  
