@@ -23,9 +23,6 @@ rv.V("""Gravity Loads and Seismic Mass | nosub
     Floor unit dead loads [t]_
     || value | r0102 | dlfloor0.csv
 
-    Interior wall unit dead loads [t]_
-    || value | r0102 | dlintwall0.csv
-
     Exterior wall unit dead loads [t]_
     || value | r0102| dlextwall0.csv
     
