@@ -11,7 +11,7 @@ rv.I("""Load Combinations | default
 
     || table | asce7_load_comb.csv | 55,C | [:]
 
-    [page]_
+    [page]_   
     
     """)
 # %%
