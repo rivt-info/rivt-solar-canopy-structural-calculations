@@ -2,128 +2,112 @@
 # %%
 import rivtlib.api as rv
 # %%
+rv.W("""write-settings | public  | nocolor  
+
+# write text
+# write pdf
+# write html
+
+""")
 
 rv.I("""project info | priv | none 
   
-    || /s01/ins/project-data.csv | all | Project Information | 35, l 
+|| /s01/ins/project-data.csv | all | Project Information | 35, l 
 
-    """)
+""")
+
 
 rv.I("""Overview and Codes | pub | none
 
-    This report describes the structural design of a solar canopy covering a
-    residential patio located in the City of Larkspur, California. It includes
-    the design of a concrete slab and stem wall, steel tube frame, and
-    attachments of solar panels to the frame. The report is divided into the
-    following divisions and subdivisions::
-    
-                    [01] Loads
-                        [01] Gravity
-                        [02] Wind and Seismic
-                    [02] Frame
-                        [01] Steel tubes 
-                        [02] Connections and clips 
-                    [03] Foundation 
-                        [01] Slab
-                        [02] Stem wall
-                    [04] References and Abbreviations
-                        [01] Codes and Standards
-                        [02] Abbreviations
-                        [03] Symbols
+This report describes the structural design of a solar canopy covering a
+residential patio located in the City of Larkspur, California. It includes the
+design of a concrete slab and stem wall, steel tube frame, and attachments of
+solar panels to the frame. The report is divided into the following divisions
+and subdivisions::
 
-    This is a structural design calculation document for a residential solar
-    canopy in Larkspur, California. The design includes a concrete slab, stem
-    wall, steel welded tube frame, and solar panel clips.
+[01] Loads
+    [01] Gravity
+    [02] Wind and Seismic
+[02] Frame
+    [01] Steel tubes 
+    [02] Connections and clips 
+[03] Foundation 
+    [01] Slab
+    [02] Stem wall
+[04] References and Abbreviations
+    [01] Codes and Standards
+    [02] Abbreviations
+    [03] Symbols
 
-    || images/img02/kitchen.png | Wind Load 1 _[f] |  50, bw, 1 
-    || images/img02/as_built1.jpg | Wind Load 2 _[f] | 50, none, 0 
+This is a structural design calculation document for a residential solar canopy
+in Larkspur, California. The design includes a concrete slab, stem wall, steel
+welded tube frame, and solar panel clips.
 
-    || r01/ins/example1.txt | 1:3 | plain
+|| images/img02/kitchen.png | Wind Load 1 _[f] |  50, bw, 1 
+|| images/img02/as_built1.jpg | Wind Load 2 _[f] | 50, none, 0 
 
-    || /text/txt02/aci318-05.tex | latex
-    [ACI 318-12.2] Shear Friction Capacity
-    wt1 = area1 * udl1
-    wt2 = area2 * udl1
-    -----
+|| r01/ins/example1.txt | 1:3 | plain
 
-    Label 1 _[e] 
-    wt2 = a2 * dl2/2   _[s]
-
-    a1 = \frac{1}{z}   _[l]
+|| /text/txt02/aci318-05.tex | latex
+[ACI 318-12.2] Shear Friction Capacity
+wt1 = area1 * udl1
+wt2 = area2 * udl1
 
 
-    """)
+Label 1 _[e] 
+wt2 = a2 * dl2/2   _[s]
+
+a1 = \frac{1}{z}   _[l]
+
+""")
+
 
 rv.I("""--code tables | pass | none 
   
-    **Building Codes and Jurisdiction**
+**Building Codes and Jurisdiction**
 
-    - City of Larkspur, California
-    - 2019 California Building Code[CBC]
-    - 2019 California Residential Code[CRC]
+- City of Larkspur, California
+- 2019 California Building Code[CBC]
+- 2019 California Residential Code[CRC]
 
-    || Engineering Standards | tables/tbl02/cbc2019_stds.csv:1-0 |  53, l
-    Category,                                            Standard,  Year
-    Loading,                                             ASCE-7,    2016
-    Concrete,                                            ACI-318,   2014
-    Wood-National Design Specifications,                 AWC-NDS,   2018
-    Wood-Special Design Provisions for Wind and Seismic, AWC-SDPWS, 2015
-    Wood Frame Construction Manual,                      AWC-WFCM,  2018    
-    ----------
+|| table | ins/d01/cbc2019_stds.csv:1-0 |  53, l
 
-    Design loads for the project are from the California Building and
-    Residential Codes and are summarized in the following tables.
+Design loads for the project are from the California Building and
+Residential Codes and are summarized in the following tables.
 
-    | Load Types _[t] | tables/tbl02/load_types01.csv:1-0 |  40, l 
+| table | ins/d01/load_types01.csv:0 |  40, l 
 
-    || Load Combinations | insert/ta02/asce7_load_comb.csv:1-0 |  55, c
-    CBC 2019 reference, Equation                                             
-    Equation 16-1,      1.4(D +F)                                            
-    Equation 16-2,      1.2(D + F) + l.6(L + H) + 0.5(L or S or R)
-    Equation 16-3,      1.2(D + F) + l.6(Lr or S or R) + l.6H + (f1L or 0.5W)
-    Equation 16-4,      1.2(D + F) + 1.0W + f1L +1.6H + 0.5(Lr or S or R)    
-    Equation 16-5,      1.2(D + F) + 1.0E + f1L + l.6H + f2S                 
-    Equation 16-6,      0.9D+ l.0W + l.6H                                     
-    Equation 16-7,      0.9(D + F) + 1.0E+ l.6H                              
-    -----------
+|| table | ins/d01/asce7_load_comb.csv:1-0 |  55, c                        
 
-    """)
+""")
 
 # %%
 rv.V("""Gravity Loads and Seismic Mass | pass | none
 
-    area1 :=, 10700, SF, SM, roof area           
-    area2 :=, 10200, SF, SM, floor area          
-    ht1 :=,   9.0,   FT, M,  wall height         
-    len1 :=,  110,   FT, M,  interior wall length
-    len2 :=,  155,   FT, M,  exterior wall length
+area1 := 10700*SF 
+area2 := 10200*SF          
+ht1 := 9.0*FT, wall height         
+len1 := 110*FT, interior wall length
+len2 := 155*FT, exterior wall length
+udl1 := 12.2*PSF, description 
 
-    || aisc shapes _[o] | values/dat02/aisc-16.0.csv:75-80 | [1,3:7] 
+|| eval | val/d01/aisc-16.0.csv:75-80 | [1,3:7] 
 
-    || first floor _[v] | values/val01/dlextwall0.csv:2-4 | ref
-    Wall Assembly Dead Loads
-    t1_f :=,   .5,  IN,  MM,  flange thickness       
-    ld2 :=,    2.,  PSF, KPA, 2x4 studs at 16 in o.c.
-    ld3 :=,    3.,  PSF, KPA, 5/8 in sheet rock
-    ld4 :=,    1.5, PSF, KPA, fixtures             
-    totdl1 :=, 7.0, PSF, KPA, total load                          
-    ------
+Wall Assembly Dead Loads
+|| assign | values/val01/dlextwall0.csv:2-4 | ref
 
-    Exterior wall - total area load _[v]
-    udl1 :=, 12.2,PSF,KPA,description 
 
-    || Beam 1 _[e] | text/equ02/equation1.txt:2-4 | ref
-    [ACI 318-12.2] Shear Friction Capacity 
-    wt1 = area1 * udl1 | KIPS, KN, 2, 2
-    wt2 = area2 * udl1 | KIPS, KN, 2, 2
-    ------
+Exterior wall - total area load _[v]
 
-    wt2 = area2 * floordl1 | KIPS,KN,2,2
+|| eval | ins/d01/equation1.txt:2 | 1:4
 
-    | Wind Load 1 _[f] | images/img02/fig1.png | 50, bw, 0  
-    | Wind Load 2 _[f] | images/img02/fig2.png | 70, none, 0
+Beams _[e]
+wt2 = area2 * floordl1 | KIP,2 | ACI
 
-    """)
+|| image | Wind Load 1 _[f] | ins/d01/rivt01.png | 50
+|| image | Wind Load 2 _[f] | ins/d01/site01.png | 70
+
+""")
 
 # %%
 rv.I("""Abbreviations and References | pass | none

@@ -1,109 +1,107 @@
 {
-    "rivt": {
-        "prefix": "api",
+    "rivtlib ( rvapi )": {
+        "prefix": "rvapi",
         "description": "import rivt api",
         "scope": "python",
         "body": [
-            "import rivt.rivtapi as rv"
+            "import rivtlib.api as rv"
         ]
     },
-    "R method": {
+    "R method { rvr )": {
         "prefix": "rvr",
         "description": "Run method",
         "scope": "python",
         "body": [
-            "rv.R(\"\"\"${1:section label} | ${2:white} | ${3:1}",
+            "rv.R(\"\"\"${1:run-section} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
             "",
-            "    ${0:new Repo text}",
+            "    # run",
             "    ",
             "    \"\"\")"
         ]
     },
-    "I method": {
+    "I method ( rvl )": {
         "prefix": "rvI",
         "description": "Insert method",
         "scope": "python",
         "body": [
-            "rv.I(\"\"\"${1:section label} | ${2:docfolder; default}",
+            "rv.I(\"\"\"${1:insert-section} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
             "    ",
-            "    ${0:new Insert text}",
+            "    # insert",
             "    ",
             "    \"\"\")"
         ]
     },
-    "V method": {
+    "V method ( rvv )": {
         "prefix": "rvv",
         "description": "Value method",
         "scope": "python",
         "body": [
-            "rv.V(\"\"\"${1:section label} | ${2:docfolder; default} | ${3:sub; nosub} ",
+            "rv.V(\"\"\"${1:values-section} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
             "    ",
-            "    ${0:new Value text}",
+            "    # values",
             "    ",
-            "    \"\"\")"
+            "    \"\"\")",
+            ""
         ]
     },
-    "T method": {
+    "T method ( rvt )": {
         "prefix": "rvt",
         "description": "Tools method",
         "scope": "python",
         "body": [
-            "rv.T(\"\"\"${1:section label} | ${2:docfolder; default} ",
+            "rv.T(\"\"\"${1:tool-section} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
             "    ",
-            "    ${0:new Table text}",
+            "    # import function",
+            "    # for i in range(5): print(i)",
             "    ",
             "    \"\"\")"
         ]
     },
-    "new write method": {
+    "W method [ rvw ]": {
         "prefix": "rvw",
-        "description": "add write method",
+        "description": "write method",
         "scope": "python",
         "body": [
-            ""
+            "rv.W(\"\"\"${1:write-settings} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
+            "    ",
+            "    #|| write | pdf",
+            "    ",
+            "    \"\"\")"
         ]
     },
-    "files": {
-        "prefix": "|f",
-        "description": "insert file",
+    "cmd text ( |x )": {
+        "prefix": "|x",
+        "description": "insert text from file",
         "scope": "python",
         "body": [
-            "| ${1: title} | ${2: filename} | ${0:parameters} "
+            "| text | ${2: filename} | ${1:plain}  ${0:rivt} "
         ]
     },
-    "tag equation lable": {
-        "prefix": "_e",
-        "description": "equation label tag",
+    "cmd image ( |i )": {
+        "prefix": "|i",
+        "description": "insert image from file",
         "scope": "python",
         "body": [
-            "_[e]"
+            "| image | ${3: rel path}, ${2: rel path} | ${1:1,0}, ${0:1.0} "
         ]
     },
-    "tag sympy equation": {
-        "prefix": "_s",
-        "description": "sympy equation tag",
+    "cmd table [ |t ]": {
+        "prefix": "|t",
+        "description": "insert table from file",
         "scope": "python",
         "body": [
-            "_[s]"
+            "| table | ${3:rel-path} | ${2:20}, [${1:0},${0:0}]  "
         ]
     },
-    "tag latex equation": {
-        "prefix": "_x",
-        "description": "latex equation tag",
+    "cmd append [ |a ]": {
+        "prefix": "|a",
+        "description": "append pdf file",
         "scope": "python",
         "body": [
-            "_[x]"
+            "| append | ${2: rel-path} | ${1:number}  ${0:nonumber} "
         ]
     },
-    "tag paragraph title": {
-        "prefix": "_p",
-        "description": "paragraph heading - centered",
-        "scope": "python",
-        "body": [
-            "_[p]"
-        ]
-    },
-    "tag figure caption": {
+    "tag figure [ _f }": {
         "prefix": "_f",
         "description": "figure caption",
         "scope": "python",
@@ -111,31 +109,31 @@
             "_[f]"
         ]
     },
-    "tag footnote": {
-        "prefix": "_#",
-        "description": "tag a footnote ",
+    "tag equation [ _e }": {
+        "prefix": "_e",
+        "description": "equation label tag",
         "scope": "python",
         "body": [
-            "_[#]"
+            "_[e]"
         ]
     },
-    "tag insert line": {
-        "prefix": "_-",
-        "description": "insert horizontal line",
+    "tag table [ _t ]": {
+        "prefix": "_t",
+        "description": "table title tag",
         "scope": "python",
         "body": [
-            "_[-]"
+            "_[t]"
         ]
     },
-    "tag new page": {
-        "prefix": "_n",
-        "description": "start new page",
+    "tag sympy [ _s ]": {
+        "prefix": "_s",
+        "description": "sympy equation tag",
         "scope": "python",
         "body": [
-            "_[n]"
+            "_[s]"
         ]
     },
-    "tag right justify": {
+    "tag right justify [ _r ]": {
         "prefix": "_r",
         "description": "right justify line",
         "scope": "python",
@@ -143,7 +141,7 @@
             "_[r]"
         ]
     },
-    "tag center": {
+    "tag center [ _c ]": {
         "prefix": "_c",
         "description": "center line",
         "scope": "python",
@@ -151,15 +149,39 @@
             "_[c]"
         ]
     },
-    "tag footnote description": {
-        "prefix": "_o",
+    "tag footnote [ _# ]": {
+        "prefix": "_#",
+        "description": "tag a footnote ",
+        "scope": "python",
+        "body": [
+            "_[#]"
+        ]
+    },
+    "tag footnote description [ _d ]": {
+        "prefix": "_d",
         "description": "tag footnote description",
         "scope": "python",
         "body": [
             "_[foot]"
         ]
     },
-    "tag url": {
+    "tag horizontal line  [ _- ]": {
+        "prefix": "_-",
+        "description": "insert horizontal line",
+        "scope": "python",
+        "body": [
+            "_[-]"
+        ]
+    },
+    "tag new page [ _n ]": {
+        "prefix": "_n",
+        "description": "start a new page",
+        "scope": "python",
+        "body": [
+            "_[n]"
+        ]
+    },
+    "tag url [ _u ]": {
         "prefix": "_u",
         "description": "tag url",
         "scope": "python",
@@ -167,44 +189,52 @@
             "_[ https://${1: url} ${0: url label} url]"
         ]
     },
-    "block tag latex": {
-        "prefix": "__x",
+    "block tag latex ( _[l )": {
+        "prefix": "_[x",
         "description": "tag latex block",
         "scope": "python",
         "body": [
-            "___[x]"
+            "_[[l]]"
         ]
     },
-    "block tag math": {
-        "prefix": "__m",
-        "description": "tag latex math block",
+    "block tag plain ( _[p )": {
+        "prefix": "_[p",
+        "description": "tag plain text block",
         "scope": "python",
         "body": [
-            "___[m]"
+            "_[[p]]"
         ]
     },
-    "block tag literal": {
-        "prefix": "__l",
-        "description": "tag literal text block",
+    "block tag bold ( _[b )": {
+        "prefix": "_[b",
+        "description": "block tag bold",
         "scope": "python",
         "body": [
-            "___[l]"
+            "_[[b]]"
         ]
     },
-    "block tag right": {
-        "prefix": "__r",
-        "description": "tag right justify block",
+    "block tag italic ( _[i )": {
+        "prefix": "_[i",
+        "description": "block tag italic",
         "scope": "python",
         "body": [
-            "___[r]"
+            "_[[i]]"
         ]
     },
-    "block tag center": {
-        "prefix": "_[[c",
-        "description": "tag center block",
+    "block tag center ( _[c )": {
+        "prefix": "_[c",
+        "description": "block tag center",
         "scope": "python",
         "body": [
             "_[[c]]"
+        ]
+    },
+    "block tag quit [ _[q ]": {
+        "prefix": "_[q",
+        "description": "tag block quit",
+        "scope": "python",
+        "body": [
+            "__[[q]]"
         ]
     }
 }

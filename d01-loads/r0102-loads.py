@@ -2,14 +2,21 @@
 # %%
 import rivtlib.api as rv
 # %%
+rv.W("""write | pu | non 
+    
+    new Value text
+    
+    """)
+
+
 rv.I("""Load Combinations | default
  
     Basic loads and load combinations are derived from the California Building
     and Residential Codes.
 
-    || table | load_types01.csv | 30,L | [:]
+    || table | load_types01.csv | 30,L | [0:0]
 
-    || table | asce7_load_comb.csv | 55,C | [:]
+    || table | asce7_load_comb.csv | 55,C | [0:0]
 
     [page]_   
     
