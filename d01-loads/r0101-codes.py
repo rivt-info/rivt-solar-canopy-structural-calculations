@@ -12,7 +12,7 @@ rv.W("""write-settings | public  | nocolor
 
 rv.I("""project info | priv | none 
   
-|| /s01/ins/project-data.csv | all | Project Information | 35, l 
+|| table | ins02/project-data.csv:1-0 | 35, l 
 
 """)
 
@@ -25,26 +25,27 @@ design of a concrete slab and stem wall, steel tube frame, and attachments of
 solar panels to the frame. The report is divided into the following divisions
 and subdivisions::
 
-[01] Loads
-    [01] Gravity
-    [02] Wind and Seismic
-[02] Frame
-    [01] Steel tubes 
-    [02] Connections and clips 
-[03] Foundation 
-    [01] Slab
-    [02] Stem wall
-[04] References and Abbreviations
-    [01] Codes and Standards
-    [02] Abbreviations
-    [03] Symbols
+    [01] Loads
+        [01] Gravity
+        [02] Wind and Seismic
+    [02] Frame
+        [01] Steel tubes 
+        [02] Connections and clips 
+    [03] Foundation 
+        [01] Slab
+        [02] Stem wall
+    [04] References and Abbreviations
+        [01] Codes and Standards
+        [02] Abbreviations
+        [03] Symbols
+
 
 This is a structural design calculation document for a residential solar canopy
 in Larkspur, California. The design includes a concrete slab, stem wall, steel
 welded tube frame, and solar panel clips.
 
-|| images/img02/kitchen.png | Wind Load 1 _[f] |  50, bw, 1 
-|| images/img02/as_built1.jpg | Wind Load 2 _[f] | 50, none, 0 
+|| image _[f] | ins/d01/kitchen.png | Wind Load 1  |  50, bw, 1 
+|| image _[f]| ins/d01/as_built1.jpg | Wind Load 2 _[f] | 50, none, 0 
 
 || r01/ins/example1.txt | 1:3 | plain
 
@@ -57,7 +58,6 @@ wt2 = area2 * udl1
 Label 1 _[e] 
 wt2 = a2 * dl2/2   _[s]
 
-a1 = \frac{1}{z}   _[l]
 
 """)
 
@@ -75,9 +75,9 @@ rv.I("""--code tables | pass | none
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-| table | ins/d01/load_types01.csv:0 |  40, l 
+|| table | ins/d01/load_types01.csv:1-0 | 40, l 
 
-|| table | ins/d01/asce7_load_comb.csv:1-0 |  55, c                        
+|| table | ins/d01/asce7_load_comb.csv:1-0 | 55, c                        
 
 """)
 
@@ -99,7 +99,7 @@ Wall Assembly Dead Loads
 
 Exterior wall - total area load _[v]
 
-|| eval | ins/d01/equation1.txt:2 | 1:4
+|| eval | ins/d01/equation1.csv:2-6 | nolabel
 
 Beams _[e]
 wt2 = area2 * floordl1 | KIP,2 | ACI
@@ -112,15 +112,15 @@ wt2 = area2 * floordl1 | KIP,2 | ACI
 # %%
 rv.I("""Abbreviations and References | pass | none
 
-    | Reference Standards _[bc] | text/txt02/references.txt:1-0 |  plain
-    
-    | Drawing List _[bc] | text/txt02/drawing_list.txt:1-0 | plain
-    
-    | Abbreviations - Terms _[bc] | text/tex02/abbrev_terms.tex:1-0 | plain
+| Reference Standards _[bc] | text/txt02/references.txt:1-0 |  plain
 
-    | Abbreviations - Math _[bc] | text/tex02/abbrev_math.tex:1-0 | math
-    
-    """)
+| Drawing List _[bc] | text/txt02/drawing_list.txt:1-0 | plain
+
+| Abbreviations - Terms _[bc] | text/tex02/abbrev_terms.tex:1-0 | plain
+
+| Abbreviations - Math _[bc] | text/tex02/abbrev_math.tex:1-0 | math
+
+""")
 # %%
 rv.X("""write
 

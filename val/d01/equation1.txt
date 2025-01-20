@@ -1,9 +1,0 @@
-    [ACI 318-12.2] Shear Friction Capacity 
-    wt1 = area1 * udl1 | KIPS, KN | 2,2
-    wt2 = area2 * udl1 | KIPS, KN | 2,2
-    [ACI 318-12.3] Shear Friction Capacity 
-    wt21 = area1 * udl1 | KIPS, KN | 2,2
-    wt2 = area2 * udl1 | KIPS, KN | 2,2
-    [ACI 318-12.4] Shear Friction Capacity 
-    wt31 = area1 * udl1 | KIPS, KN | 2,2
-    wt2 = area2 * udl1 | KIPS, KN | 2,2
