@@ -13,6 +13,7 @@ rv.W("""write-settings | public  | nocolor
 rv.I("""project info | priv | none 
   
 || table | ins02/project-data.csv:1-0 | 35, l 
+|| table | ins02/dlroof100.csv:1-0 | 35, l 
 
 """)
 
