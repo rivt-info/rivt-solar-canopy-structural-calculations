@@ -1,30 +1,34 @@
-#! python"ctrl+alt+]"fold
+#! python
 # %%
 import rivtlib.api as rv
 # %%
-rv.W("""write-settings | public  | nocolor  
+rv.X("""write-settings | public  | nocolor  
 
-# write text
-# write pdf
-# write html
+# || write | docs | text
+# || write | docs | textpdf
+# || write | docs | pdf
+# || write | docs | html
+# || write | report | readme
+# || write | report | textpdf
+# || write | report | pdf
+# || write | report | html
+
 
 """)
 
-rv.I("""project info | priv | none 
+rv.I("""project info | noxchange | none 
   
-|| table | ins02/project-data.csv:1-0 | 35, l 
-|| table | ins02/dlroof100.csv:1-0 | 35, l 
+|| table | ins01/project-data.csv:1-0 | 35, l 
 
 """)
 
 
-rv.I("""Overview and Codes | pub | none
+rv.I("""Overview and Codes | xchange | none
 
 This report describes the structural design of a solar canopy covering a
 residential patio located in the City of Larkspur, California. It includes the
 design of a concrete slab and stem wall, steel tube frame, and attachments of
-solar panels to the frame. The report is divided into the following divisions
-and subdivisions::
+solar panels to the frame. The report is divided into::
 
     [01] Loads
         [01] Gravity
