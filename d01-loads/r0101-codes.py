@@ -1,24 +1,13 @@
 #! python
-# %%
 import rivtlib.api as rv
-# %%
-rv.X("""write-settings | public  | nocolor  
 
-# || write | docs | text
-# || write | docs | textpdf
-# || write | docs | pdf
-# || write | docs | html
-# || write | report | readme
-# || write | report | textpdf
-# || write | report | pdf
-# || write | report | html
+rv.I("""project info | noxchange | none
 
+some text  asdfas
 
-""")
-
-rv.I("""project info | noxchange | none 
+asdfasf   asedfasf
   
-|| table | ins01/project-data.csv:1-0 | 35, l 
+# || TABLE | ins01/project-data.csv:1-0 | 35, l 
 
 """)
 
@@ -49,68 +38,64 @@ This is a structural design calculation document for a residential solar canopy
 in Larkspur, California. The design includes a concrete slab, stem wall, steel
 welded tube frame, and solar panel clips.
 
-|| image _[f] | ins/d01/kitchen.png | Wind Load 1  |  50, bw, 1 
-|| image _[f]| ins/d01/as_built1.jpg | Wind Load 2 _[f] | 50, none, 0 
+|| IMAGE | ins01/rivt01.png | Wind Load 1  _[F], .50
+|| IMAGE | ins01/site01.png | Wind Load 2 _[F], .50
 
-|| r01/ins/example1.txt | 1:3 | plain
+# || TEXT | ins01/example1.txt | 1:3 | plain
 
-|| /text/txt02/aci318-05.tex | latex
-[ACI 318-12.2] Shear Friction Capacity
-wt1 = area1 * udl1
-wt2 = area2 * udl1
-
-
-Label 1 _[e] 
-wt2 = a2 * dl2/2   _[s]
+# Label 1 _[E] 
+# wt2 = a2 * dl2/2   _[S]
 
 
 """)
 
 
-rv.I("""--code tables | pass | none 
+rv.I("""--code tables | xchange | none 
   
 **Building Codes and Jurisdiction**
 
 - City of Larkspur, California
-- 2019 California Building Code[CBC]
-- 2019 California Residential Code[CRC]
+- 2019 California Building Code [CBC]
+- 2019 California Residential Code [CRC]
 
-|| table | ins/d01/cbc2019_stds.csv:1-0 |  53, l
+# || table | ins01/cbc2019_stds.csv:1-0 |  53, l
 
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-|| table | ins/d01/load_types01.csv:1-0 | 40, l 
+# || table | ins01/load_types01.csv:1-0 | 40, l 
 
-|| table | ins/d01/asce7_load_comb.csv:1-0 | 55, c                        
+# || table | ins01/asce7_load_comb.csv:1-0 | 55, c                        
 
 """)
 
 # %%
 rv.V("""Gravity Loads and Seismic Mass | pass | none
 
-area1 := 10700*SF 
-area2 := 10200*SF          
-ht1 := 9.0*FT, wall height         
-len1 := 110*FT, interior wall length
-len2 := 155*FT, exterior wall length
-udl1 := 12.2*PSF, description 
+Test of values block
 
-|| eval | val/d01/aisc-16.0.csv:75-80 | [1,3:7] 
+_[[V]]
+area1 = 10700*SF | SF | roof area
+area2 = 10*FT * 10*FT | SF |  floor area       
+ht1 = 9.0*FT | FT | wall height         
+len1 = 110*FT | FT | interior wall length
+len2 = 155*FT | FT | exterior wall length
+udl1 = 12.2*PSF | PSF | description 
+_[[Q]]
+
+Test of equation TAG _[E]
+wt2 = area2 * floordl1 | KIP | ACI-315-05 
+
+|| eval | val01/aisc-16.0.csv:75-80 | table
 
 Wall Assembly Dead Loads
-|| assign | values/val01/dlextwall0.csv:2-4 | ref
+|| eval | val01/dlextwall0.csv:2-4 | table
 
+Exterior wall - total area load _[e]
+|| eval | ins01/equation1.csv:2-6 | table
 
-Exterior wall - total area load _[v]
-
-|| eval | ins/d01/equation1.csv:2-6 | nolabel
-
-Beams _[e]
-wt2 = area2 * floordl1 | KIP,2 | ACI
-
-|| image | Wind Load 1 _[f] | ins/d01/rivt01.png | 50
-|| image | Wind Load 2 _[f] | ins/d01/site01.png | 70
+|| image | ins01/rivt01.png | Wind Load 1 _[f], 50
+|| image | ins01/site01.png | Wind Load 2 _[f], 70
 
 """)
 
@@ -132,3 +117,5 @@ rv.X("""write
 
 
 """)
+
+rv.Q()
