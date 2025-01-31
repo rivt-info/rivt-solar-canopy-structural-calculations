@@ -5,7 +5,7 @@ rv.I("""project info | noxchange | none
 
 some text  asdfas
 
-asdfasf   asedfasf
+center this text _[c]
   
 # || TABLE | ins01/project-data.csv:1-0 | 35, l 
 
@@ -117,5 +117,3 @@ rv.X("""write
 
 
 """)
-
-rv.Q()
