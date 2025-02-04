@@ -39,14 +39,12 @@ This is a structural design calculation document for a residential solar canopy
 in Larkspur, California. The design includes a concrete slab, stem wall, steel
 welded tube frame, and solar panel clips.
 
-|| IMAGE | ins01/rivt01.png | Wind Load 1  _[F], .50
-|| IMAGE | ins01/site01.png | Wind Load 2 _[F], .50
+|| IMAGE | ins01/rivt01.png | Wind Load 1, .50, _[F]
+|| IMAGE | ins01/site01.png | Wind Load 2, .50, _[F]
 
 # || TEXT | ins01/example1.txt | 1:3 | plain
 
-# Label 1 _[E] 
 # wt2 = a2 * dl2/2   _[S]
-
 
 """)
 
@@ -73,30 +71,30 @@ Residential Codes and are summarized in the following tables.
 # %%
 rv.V("""Gravity Loads and Seismic Mass | pass | none
 
-Test of values block
-
-_[[V]]
-area1 = 10700*SF | SF | roof area
+     
+|| VCFG | default | default | 2,2
+  
+Test of values block _[E]
+     
+area1 = 10700*SF | SF | roof area _[[V]]     
 area2 = 10*FT * 10*FT | SF |  floor area       
 ht1 = 9.0*FT | FT | wall height         
 len1 = 110*FT | FT | interior wall length
 len2 = 155*FT | FT | exterior wall length
-udl1 = 12.2*PSF | PSF | description 
-_[[Q]]
+udl1 = 12.2*PSF | PSF | description _[[Q]]
 
-Test of equation TAG _[E]
-wt2 = area2 * floordl1 | KIP | ACI-315-05 
+Equation 1 _[E]     
+wt2 = area2 * floordl1 | KIPS | ACI-315-05 
 
-|| eval | val01/aisc-16.0.csv:75-80 | table
+Equation 2 _[E]
+wt3 = area3 * floordl2 | KIPS | ACI-315-05 
 
-Wall Assembly Dead Loads
-|| eval | val01/dlextwall0.csv:2-4 | table
+|| VALS | val01/aisc-16.0.csv:75-80 | 2
+     
+|| VALS | val01/dlextwall0.csv:2-4 | 2
 
-Exterior wall - total area load _[e]
-|| eval | ins01/equation1.csv:2-6 | table
-
-|| image | ins01/rivt01.png | Wind Load 1 _[f], 50
-|| image | ins01/site01.png | Wind Load 2 _[f], 70
+Exterior wall - total area load _[E]
+|| VALS | ins01/equation1.csv:2-6 | 2
 
 """)
 
