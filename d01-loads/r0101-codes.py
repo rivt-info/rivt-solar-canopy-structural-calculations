@@ -2,13 +2,13 @@
 
 import rivtlib.api as rv
 
-rv.I("""project info | noxchange | none
+rv.I("""project info | norel | none
 
 some text  asdfas
 
 center this text _[C]
   
-# || TABLE | ins01/project-data.csv:1-0 | 35, l 
+| TABLE | ins01/project-data.csv:1-0 | 35, l 
 
 """)
 
@@ -39,10 +39,10 @@ This is a structural design calculation document for a residential solar canopy
 in Larkspur, California. The design includes a concrete slab, stem wall, steel
 welded tube frame, and solar panel clips.
 
-|| IMAGE | ins01/rivt01.png | Wind Load 1, .50, _[F]
-|| IMAGE | ins01/site01.png | Wind Load 2, .50, _[F]
+| IMG | ins01/rivt01.png | Wind Load 1, .50, _[F]
+| IMG | ins01/site01.png | Wind Load 2, .50, _[F]
 
-# || TEXT | ins01/example1.txt | 1:3 | plain
+# | TEXT | ins01/example1.txt | 1:3 | plain
 
 # wt2 = a2 * dl2/2   _[S]
 
@@ -57,14 +57,14 @@ rv.I("""--code tables | xchange | none
 - 2019 California Building Code [CBC]
 - 2019 California Residential Code [CRC]
 
-# || table | ins01/cbc2019_stds.csv:1-0 |  53, l
+# || TABLE | ins01/cbc2019_stds.csv:1-0 |  53, l
 
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-# || table | ins01/load_types01.csv:1-0 | 40, l 
+# | TABLE | ins01/load_types01.csv:1-0 | 40, l 
 
-# || table | ins01/asce7_load_comb.csv:1-0 | 55, c                        
+# | TABLE | ins01/asce7_load_comb.csv:1-0 | 55, c                        
 
 """)
 
@@ -72,7 +72,7 @@ Residential Codes and are summarized in the following tables.
 rv.V("""Gravity Loads and Seismic Mass | pass | none
 
      
-# || VCFG | default | default | 2,2
+# | VCFG | default | default | 2,2
   
 Test of values block _[E]
      
