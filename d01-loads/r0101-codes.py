@@ -6,7 +6,7 @@ rv.I("""project info | noxchange | none
 
 some text  asdfas
 
-center this text _[c]
+center this text _[C]
   
 # || TABLE | ins01/project-data.csv:1-0 | 35, l 
 
@@ -72,16 +72,17 @@ Residential Codes and are summarized in the following tables.
 rv.V("""Gravity Loads and Seismic Mass | pass | none
 
      
-|| VCFG | default | default | 2,2
+# || VCFG | default | default | 2,2
   
 Test of values block _[E]
      
-area1 = 10700*SF | SF | roof area _[[V]]     
+|| EVAL | default | 2     
+area1 = 10700*SF | SF | roof area      
 area2 = 10*FT * 10*FT | SF |  floor area       
 ht1 = 9.0*FT | FT | wall height         
 len1 = 110*FT | FT | interior wall length
 len2 = 155*FT | FT | exterior wall length
-udl1 = 12.2*PSF | PSF | description _[[Q]]
+udl1 = 12.2*PSF | PSF | description 
 
 Equation 1 _[E]     
 wt2 = area2 * floordl1 | KIPS | ACI-315-05 

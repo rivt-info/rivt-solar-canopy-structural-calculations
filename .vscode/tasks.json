@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "rv_update",
+      "label": "rv-update",
       "type": "shell",
       "command": "pip3 install --upgrade --no-deps git+https://github.com/rivtlib/rivtlib-code",
       "windows": {
@@ -14,7 +14,7 @@
       }
     },
     {
-      "label": "rv_install",
+      "label": "rv-install",
       "type": "shell",
       "command": "pip3 install --upgrade git+https://github.com/rivt-code/rivtlib",
       "windows": {
@@ -26,7 +26,7 @@
       }
     },
     {
-      "label": "rivtsearch",
+      "label": "rv-search",
       "type": "shell",
       "command": "xdg-open start https://github.com/search?q=rivt+${input:rivsearch}+in%3Areadmeref=simplesearch",
       "windows": {
@@ -40,7 +40,7 @@
   ],
   "inputs": [
     {
-      "id": "rivsearch",
+      "id": "rv-search2",
       "description": "rivt+search+terms:",
       "default": "beam",
       "type": "promptString"
