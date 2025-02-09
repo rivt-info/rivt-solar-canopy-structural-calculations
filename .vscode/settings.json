@@ -20,4 +20,9 @@
     "seito-openfile.searchPaths": [],
     "inline-bookmarks.view.expanded": true,
     "editor.formatOnSave": true,
+    "triggerTaskOnSave.tasks": {
+        "lintpy": [
+            "**/*.py"
+        ],
+    }
 }
