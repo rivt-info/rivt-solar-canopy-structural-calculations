@@ -33,7 +33,8 @@ welded tube frame, and solar panel clips.
 
 # | TEXT | ins01/example1.txt | 1:3 | plain
 
-# wt2 = a2 * dl2/2   _[S]
+
+wt2 = a2 * dl2/2   _[S]
 
 """)
 
