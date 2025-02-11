@@ -2,7 +2,7 @@
 # %%
 import rivtlib.api as rv
 
-rv.I(""" Project Summary | xoss | none
+rv.I(""" Project Summary | xos | none
 
 some text  asdfas
 
@@ -13,7 +13,7 @@ center this text _[C]
 """)
 
 
-rv.I(""" Overview and Codes | xoss | none
+rv.I(""" Overview and Codes | xos | none
 
 This report describes the structural design of a solar canopy covering a
 residential patio located in the City of Larkspur, California. It includes the
@@ -40,7 +40,7 @@ wt2 = a2 * dl2/2   _[S]
 
 
 # %%
-rv.I(""" --code tables | xoss | none 
+rv.I(""" --code tables | xos | none 
   
 **Building Codes and Jurisdiction**
 
@@ -62,40 +62,45 @@ Residential Codes and are summarized in the following tables.
 
 
 # %%
-rv.V("""Gravity Loads and Seismic Mass | pass | none
+rv.V("""Gravity Loads and Seismic Mass | os | none
 
-     
-# | VCFG | default | default | 2,2
-  
+    
 Test of values block _[E]
      
-|| EVAL | default | 2     
-area1 = 10700*SF | SF | roof area      
-area2 = 10*FT * 10*FT | SF |  floor area       
-ht1 = 9.0*FT | FT | wall height         
-len1 = 110*FT | FT | interior wall length
-len2 = 155*FT | FT | exterior wall length
-udl1 = 12.2*PSF | PSF | description 
+_[[V]]   
+area1 = 10700*SF | roof area | SF, SM | 2,2       
 
+area2 = 10*FT * 10*FT | floor area | SF, SM | 2,2         
 
-Equation 1 _[E]     
-wt2 = area2 * floordl1 | KIPS | ACI-315-05 
+ht1 = 9.0*FT | wall height  | FT, M | 2,2       
 
-Equation 2 _[E]
-wt3 = area3 * floordl2 | KIPS | ACI-315-05 
+len1 = 110*FT | interior wall length | FT, M | 2,2
+
+len2 = 155*FT | exterior wall length | FT, M | 2,2 
+
+udl1 = 12.2*PSF | description | PSF, PA | 2,2 
+_[[Q]]
 
 || VALS | val01/aisc-16.0.csv:75-80 | 2
-     
-|| VALS | val01/dlextwall0.csv:2-4 | 2
 
+Equation 1 _[E]     
+wt2 = area2 * floordl1 | ACI-315-05 | KIPS  
+
+Equation 2 _[E]
+wt3 = area3 * floordl2 | ACI-315-05 | KIPS |
+
+     
 Exterior wall - total area load _[E]
 || VALS | ins01/equation1.csv:2-6 | 2
+
+
+|| VALS | val01/dlextwall0.csv:2-4 | 2
 
 """)
 
 
 # %%
-rv.X(""" Abbreviations and References | oss | none
+rv.X(""" Abbreviations and References | os | none
 
 **Reference Standards**
 
