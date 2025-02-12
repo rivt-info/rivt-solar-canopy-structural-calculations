@@ -81,6 +81,7 @@ len2 = 155*FT | exterior wall length | FT, M | 2,2
 udl1 = 12.2*PSF | description | PSF, PA | 2,2 
 _[[Q]]
 
+
 || VALS | val01/aisc-16.0.csv:75-80 | 2
 
 Equation 1 _[E]     
