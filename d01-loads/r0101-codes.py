@@ -91,10 +91,10 @@ A line of text.
 
 
 Equation 1 _[E]     
-wt2 = area2 * floordl1 | ACI-315-05 | KIPS  
+wt2 = area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
 
 Equation 2 _[E]
-wt3 = area3 * floordl2 | ACI-315-05 | KIPS |
+wt3 = area3 * floordl2/2 | ACI-315-05 | KIPS, N | 2,2
 
      
 Exterior wall - total area load _[E]
