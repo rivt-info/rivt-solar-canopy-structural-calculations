@@ -87,7 +87,7 @@ _[[Q]]
 A line of text.
 
 
-#| VREAD | val01/test1.csv | -
+| VREAD | val01/test1.csv | -
 
 
 Equation 1 _[E]     
@@ -98,7 +98,7 @@ wt3 = area3 * floordl2 | ACI-315-05 | KIPS |
 
      
 Exterior wall - total area load _[E]
-#| VREAD | ins01/equation1.csv | -
+| VREAD | val01/test2.csv | -
 
 """)
 
