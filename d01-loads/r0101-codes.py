@@ -48,7 +48,7 @@ rv.I(""" --code tables | xos | none
 - 2019 California Building Code [CBC]
 - 2019 California Residential Code [CRC]
 
-
+Loading _[T]
 | TABLE | ins01/cbc2019A_stds.csv:1-0 |  53, l
 
 Design loads for the project are from the California Building and
@@ -56,6 +56,8 @@ Residential Codes and are summarized in the following tables.
 
 | TABLE | ins01/load_types01.csv:1-0 | 40, l 
 
+
+Load Combinations _[T]
 | TABLE | ins01/asce7_load_comb.csv:1-0 | 55, c                        
 
 """)
@@ -82,7 +84,11 @@ udl1 = 12.2*PSF | description | PSF, PA | 2,2
 _[[Q]]
 
 
-|| VALS | val01/aisc-16.0.csv:75-80 | 2
+A line of text.
+
+
+#| VREAD | val01/test1.csv | -
+
 
 Equation 1 _[E]     
 wt2 = area2 * floordl1 | ACI-315-05 | KIPS  
@@ -92,10 +98,7 @@ wt3 = area3 * floordl2 | ACI-315-05 | KIPS |
 
      
 Exterior wall - total area load _[E]
-|| VALS | ins01/equation1.csv:2-6 | 2
-
-
-|| VALS | val01/dlextwall0.csv:2-4 | 2
+#| VREAD | ins01/equation1.csv | -
 
 """)
 
