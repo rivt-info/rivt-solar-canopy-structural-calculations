@@ -86,12 +86,12 @@ A line of text extended text - not formatted
 
 | VREAD | val01/test1.csv | -
 
-Equation for floor area _[E]    
 
+Equation for floor area _[E]    
 wt2 = area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
 
-Equation for wall area _[E]
 
+Equation for wall area _[E]
 wt3 = area3 * floordl2/2 | ACI-315-05 | KIPS, N | 2,2
 
      
