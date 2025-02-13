@@ -22,7 +22,7 @@ rv.I("""Load Combinations | default
     
     """)
 # %%
-rv.V("""Gravity Loads and Seismic Mass | nosub
+rv.V("""Gravity Loads and Seismic Mass | nosub | nocolor
  
     Roof unit dead loads [t]_
     || declare | r0102 | dlroof0.csv

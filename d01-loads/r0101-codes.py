@@ -8,7 +8,7 @@ some text  asdfas
 
 center this text _[C]
   
-# | TABLE | ins01/project-data.csv:1-0 | 35, l 
+# | TABLE | ins01/project-data.csv | 35, l, [] 
 
 """)
 
@@ -31,7 +31,7 @@ welded tube frame, and solar panel clips.
 | IMG | ins01/site01.png | Wind Load 2, .2
      
 
-# | TEXT | ins01/example1.txt | 1:3 | plain
+# | TEXT | ins01/example1.txt | plain, []
 
 
 wt2 = a2 * dl2/2   _[S]
@@ -49,16 +49,16 @@ rv.I(""" --code tables | xos | none
 - 2019 California Residential Code [CRC]
 
 Loading _[T]
-| TABLE | ins01/cbc2019A_stds.csv:1-0 |  53, l
+| TABLE | ins01/cbc2019A_stds.csv | 53, l, []
 
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-| TABLE | ins01/load_types01.csv:1-0 | 40, l 
+| TABLE | ins01/load_types01.csv:1-0 | 40, l, [] 
 
 
 Load Combinations _[T]
-| TABLE | ins01/asce7_load_comb.csv:1-0 | 55, c                        
+| TABLE | ins01/asce7_load_comb.csv | 55, c, []                        
 
 """)
 
@@ -66,8 +66,7 @@ Load Combinations _[T]
 # %%
 rv.V("""Gravity Loads and Seismic Mass | os | none
 
-    
-Test of values block _[E]
+Test values block _[E]
      
 _[[V]]   
 area1 = 10700*SF | roof area | SF, SM | 2,2       
@@ -83,17 +82,16 @@ len2 = 155*FT | exterior wall length | FT, M | 2,2
 udl1 = 12.2*PSF | description | PSF, PA | 2,2 
 _[[Q]]
 
-
-A line of text.
-
+A line of text extended text - not formatted    
 
 | VREAD | val01/test1.csv | -
 
+Equation for floor area _[E]    
 
-Equation 1 _[E]     
 wt2 = area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
 
-Equation 2 _[E]
+Equation for wall area _[E]
+
 wt3 = area3 * floordl2/2 | ACI-315-05 | KIPS, N | 2,2
 
      
