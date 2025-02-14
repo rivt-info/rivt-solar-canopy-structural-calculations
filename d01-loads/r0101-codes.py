@@ -17,31 +17,22 @@ rv.I(""" Overview and Codes | xos | none
 
 This report describes the structural design of a solar canopy covering a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and stem wall, steel tube frame, and attachments of
-solar panels to the frame. The report is divided into::
+design of a concrete slab and stem wall, steel tube frame, and clip attachments
+of solar panels to the frame.
 
 
 | IMG | ins01/rivt01.png | Wind Load 1, .6
      
-
-This is a structural design calculation document for a residential solar canopy
-in Larkspur, California. The design includes a concrete slab, stem wall, steel
-welded tube frame, and solar panel clips.
-
 | IMG | ins01/site01.png | Wind Load 2, .2
      
-
-# | TEXT | ins01/example1.txt | plain, []
-
-
 wt2 = a2 * dl2/2   _[S]
 
+# | TEXT | ins01/example1.txt | plain, []
 """)
 
 
 # %%
 rv.I(""" --code tables | xos | none 
-  
 **Building Codes and Jurisdiction**
 
 - City of Larkspur, California
@@ -84,19 +75,17 @@ _[[Q]]
 
 A line of text extended text - not formatted    
 
-| VREAD | val01/test1.csv | -
+| VALREAD | val01/test1.csv | -
 
 
 Equation for floor area _[E]    
 wt2 = area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
 
-
 Equation for wall area _[E]
 wt3 = area3 * floordl2/2 | ACI-315-05 | KIPS, N | 2,2
 
-     
 Exterior wall - total area load _[E]
-| VREAD | val01/test2.csv | -
+| VALREAD | val01/test2.csv | -
 
 """)
 
