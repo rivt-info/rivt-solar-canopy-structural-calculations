@@ -45,7 +45,7 @@ Loading _[T]
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-| TABLE | ins01/load_types01.csv:1-0 | 40, l, [] 
+| TABLE | ins01/load_types01.csv | 40, l, [] 
 
 
 Load Combinations _[T]
@@ -62,7 +62,9 @@ Test values block _[E]
 _[[V]]   
 area1 = 10700*SF | roof area | SF, SM | 2,2       
 
-area2 = 10*FT * 10*FT | floor area | SF, SM | 2,2         
+area2 = 10000*FT * 10*FT | floor area | SF, SM | 2,2         
+
+area3 = 5*FT * 5*FT | floor area | SF, SM | 2,2         
 
 ht1 = 9.0*FT | wall height  | FT, M | 2,2       
 
@@ -81,8 +83,12 @@ A line of text extended text - not formatted
 Equation for floor area _[E]    
 wt2 = area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
 
+
+
 Equation for wall area _[E]
-wt3 = area3 * floordl2/2 | ACI-315-05 | KIPS, N | 2,2
+wt3 = area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
+
+
 
 Exterior wall - total area load _[E]
 | VALREAD | val01/test2.csv | -
@@ -95,19 +101,19 @@ rv.X(""" Abbreviations and References | os | none
 
 **Reference Standards**
 
-| TEXT | text/txt02/references.txt:1-0 |  plain
+| TEXT | text/txt02/references.txt |  plain
 
 **Drawing List**
      
-| TEXT | text/txt02/drawing_list.txt:1-0 | plain
+| TEXT | text/txt02/drawing_list.txt | plain
 
 **Abbreviations**
 
-| TEXT | ins01/abbrev_terms.tex:1-0 | latex
+| TEXT | ins01/abbrev_terms.tex | latex
 
 **Abbreviations - Math**
 
-| TEXT | ins01/abbrev_math.tex:1-0 | latex
+| TEXT | ins01/abbrev_math.tex | latex
 
 """)
 
