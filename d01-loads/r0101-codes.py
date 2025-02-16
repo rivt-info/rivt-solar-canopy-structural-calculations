@@ -12,7 +12,6 @@ center this text _[C]
 
 """)
 
-
 rv.I(""" Overview and Codes | xos | none
 
 This report describes the structural design of a solar canopy covering a
@@ -30,9 +29,9 @@ wt2 = a2 * dl2/2   _[S]
 # | TEXT | ins01/example1.txt | plain, []
 """)
 
-
 # %%
 rv.I(""" --code tables | xos | none 
+
 **Building Codes and Jurisdiction**
 
 - City of Larkspur, California
@@ -52,7 +51,6 @@ Load Combinations _[T]
 | TABLE | ins01/asce7_load_comb.csv | 55, c, []                        
 
 """)
-
 
 # %%
 rv.V("""Gravity Loads and Seismic Mass | os | none
@@ -95,7 +93,6 @@ Exterior wall - total area load _[E]
 
 """)
 
-
 # %%
 rv.X(""" Abbreviations and References | os | none
 
@@ -117,10 +114,8 @@ rv.X(""" Abbreviations and References | os | none
 
 """)
 
-
 # %%
 rv.X(""" Write
-
 
 
 """)
