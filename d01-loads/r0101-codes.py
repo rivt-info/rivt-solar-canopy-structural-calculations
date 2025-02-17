@@ -75,7 +75,7 @@ _[[Q]]
 
 A line of text extended text - not formatted    
 
-| VALREAD | val01/test1.csv | -
+| VALREAD | val01/test1.csv | noprint
 
 
 Equation for floor area _[E]    
@@ -89,7 +89,7 @@ wt3 = area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
 
 
 Exterior wall - total area load _[E]
-| VALREAD | val01/test2.csv | -
+| VALREAD | val01/test2.csv | noprint
 
 """)
 
