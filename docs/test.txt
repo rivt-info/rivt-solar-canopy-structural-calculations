@@ -1,4 +1,4 @@
-2025-02-17 | 04:24AM
+2025-02-19 | 12:30AM
 
 ________________________________________________________________________________
 0101-[1] Project Summary
@@ -108,26 +108,26 @@ variable        value     [value]  description
 ----------  ---------  ----------  --------------------
 floordl1    50.00 psf  2394.01 Pa  interior wall length
 floordl2    10.00 psf   478.80 Pa  exterior wall length
-[values read from file: val01/test1.csv]
+[values read from file: v01/test1.csv]
 
 Equation for floor area                                                    Eq-02
                                                                       ACI-315-05
 wt₂ = area₂⋅floordl₁
 
-     wt2        floordl1       area2
--------------  ----------  -------------
-5000.00 kips   50.00 psf   100000.00 ft²
-22241108.00 N  50.00 psf   100000.00 ft²
+     wt2          area2       floordl1
+-------------  ------------  ----------
+5000.00 kips   100000.00 sf  50.00 psf
+22241108.00 N   9290.30 SM   2394.01 Pa
 
 
 Equation for wall area                                                     Eq-03
                                                                       ACI-315-05
 wt₃ = area₃⋅floordl₂⋅0.1
 
-  wt3      floordl2     area3
---------  ----------  ---------
-25.0 lbs  10.00 psf   25.00 ft²
-111.2 N   10.00 psf   25.00 ft²
+  wt3      area3     floordl2
+--------  --------  ----------
+25.0 lbs  25.00 sf  10.00 psf
+111.2 N   2.32 SM   478.80 Pa
 
 
 Exterior wall - total area load                                            Eq-04
@@ -135,5 +135,5 @@ variable        value    [value]  description
 ----------  ---------  ---------  --------------------
 len1        410.00 ft   124.97 m  interior wall length
 len2        455.00 ft   138.68 m  exterior wall length
-[values read from file: val01/test2.csv]
+[values read from file: v01/test2.csv]
 
