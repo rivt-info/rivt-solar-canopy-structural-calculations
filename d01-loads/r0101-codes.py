@@ -55,8 +55,7 @@ Load Combinations _[T]
 # %%
 rv.V("""Gravity Loads and Seismic Mass | os | none
 
-Test values block _[E]
-     
+First floor dimensions _[E]
 _[[V]]   
 area1 = 10700*SF | roof area | SF, SM | 2,2       
 
@@ -115,8 +114,9 @@ rv.X(""" Abbreviations and References | os | none
 """)
 
 # %%
-rv.X(""" Write
+rv.X(""" Write | os | none
 
+|| DOC | docs | pdf
 
 """)
 
