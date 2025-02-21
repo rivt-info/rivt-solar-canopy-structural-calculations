@@ -1,0 +1,1421 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 6 0 R /F6 8 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /ZapfDingbats /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+7 0 obj
+<<
+/Contents 14 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 13 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Symbol /Name /F6 /Subtype /Type1 /Type /Font
+>>
+endobj
+9 0 obj
+<<
+/Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 13 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/Contents 16 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 13 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+11 0 obj
+<<
+/PageLabels 17 0 R /PageMode /UseNone /Pages 13 0 R /Type /Catalog
+>>
+endobj
+12 0 obj
+<<
+/Author () /CreationDate (D:20250221111705-08'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20250221111705-08'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title () /Trapped /False
+>>
+endobj
+13 0 obj
+<<
+/Count 3 /Kids [ 7 0 R 9 0 R 10 0 R ] /Type /Pages
+>>
+endobj
+14 0 obj
+<<
+/Length 7208
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 753.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2025-02-21 | 11:17AM) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 735.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (0101-[1] Project Summary) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 706.6772 cm
+0 0 0 RG
+n 0 14.17323 m 481.2283 14.17323 l S
+Q
+q
+1 0 0 1 57.02362 688.6772 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (some text asdfas) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 682.6772 cm
+Q
+q
+1 0 0 1 57.02362 670.6772 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (center this text) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 670.6772 cm
+Q
+q
+1 0 0 1 57.02362 652.6772 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (0101-[2] Overview and Codes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 624.3307 cm
+0 0 0 RG
+n 0 14.17323 m 481.2283 14.17323 l S
+Q
+q
+1 0 0 1 57.02362 582.3307 cm
+q
+BT 1 0 0 1 0 26 Tm .484609 Tw 12 TL /F1 10 Tf 0 0 0 rg (This report ) Tj /F2 10 Tf (describes) Tj /F1 10 Tf ( the structural design of a solar canopy ) Tj /F3 10 Tf (covering) Tj /F1 10 Tf ( a residential patio located in the City) Tj T* 0 Tw 1.167686 Tw (of Larkspur, California. It includes the design of a concrete slab and ) Tj /F3 10 Tf (stem) Tj /F1 10 Tf ( wall, steel tube frame, and clip) Tj T* 0 Tw (attachments of solar panels to the frame.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 566.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (wt) Tj /F4 10 Tf 12 TL (n) Tj /F2 10 Tf 12 TL ( = ) Tj /F4 10 Tf 12 TL (nnnnnn) Tj /F2 10 Tf 12 TL T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 551.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 533.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Building Codes and Jurisdiction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 527.3307 cm
+Q
+q
+1 0 0 1 57.02362 527.3307 cm
+Q
+q
+1 0 0 1 57.02362 515.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F5 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (City of Larkspur, California) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 509.3307 cm
+Q
+q
+1 0 0 1 57.02362 497.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F5 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2019 California Building Code [CBC]) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 491.3307 cm
+Q
+q
+1 0 0 1 57.02362 479.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F5 10 Tf 12 TL 8 0 Td (\177) Tj T* -8 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2019 California Residential Code [CRC]) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 479.3307 cm
+Q
+q
+1 0 0 1 57.02362 377.3307 cm
+q
+BT 1 0 0 1 0 86 Tm 87.37459 Tw 12 TL /F1 10 Tf 1 0 0 rg (**) Tj 0 0 0 rg (Table 01: Loading [from file:) Tj T* 0 Tw (c:gitrivt-solar-canopy-structural-calculationsd01-loadsins01cbc2019A_stds.csv]) Tj T* 13.67945 Tw (=================================================== ========== ====== Category) Tj T* 0 Tw 4.282087 Tw (Standard Year =================================================== ========== ======) Tj T* 0 Tw 3.104835 Tw (Loading ASCE-7 2016 Concrete ACI-318 2014 Wood-National Design Specifications AWC-NDS 2018) Tj T* 0 Tw 2.575304 Tw (Wood-Special Design Provisions for Wind and Seismic AWC-SDPWS 2015 Wood Frame Construction) Tj T* 0 Tw .269587 Tw (Manual AWC-WFCM 2018 =================================================== ==========) Tj T* 0 Tw (======) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 347.3307 cm
+q
+BT 1 0 0 1 0 14 Tm .724897 Tw 12 TL /F1 10 Tf 0 0 0 rg (Design loads for the project are from the California Building and Residential Codes and are summarized in) Tj T* 0 Tw (the following tables.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 293.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F1 10 Tf 12 TL 21.74612 Tw ([from file: c:gitrivt-solar-canopy-structural-calculationsd01-loadsins01load_types01.csv] =====) Tj T* 0 Tw 1.442782 Tw (====================================== =================================== Sym Load) Tj T* 0 Tw 56.69278 Tw (Effect Notes ===== ======================================) Tj T* 0 Tw (=================================== D Dead load See IBC 1606 and Chapter 3 of this) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 287.3307 cm
+Q
+q
+1 0 0 1 57.02362 275.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (publication) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 275.3307 cm
+Q
+q
+1 0 0 1 57.02362 259.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (E Combined effect of horizontal and See IBC 1613, ASCE/SEI 12.4.2 and) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 244.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (vertical earthquake-induced forces as Chapter 6 of this publication defined in ASCE/SEI 12.4.2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 228.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Em Maximum seismic load effect of See IBC 1613, ASCE/SEI 12.4.3 and) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 213.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (horizontal and vertical forces as set Chapter 6 of this publication forth in ASCE/SEI 12.4.3) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 197.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (H Load due to lateral earth pressures, See IBC 1610 for soil lateral loads) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 182.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ground water pressure or pressure of bulk materials) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 166.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (L Live load, except roof live load, See IBC 1607 and Chapter 3 of this) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 151.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (including any permitted live load publication reduction) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 135.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Li Roof live load including any permitted See IBC 1607 and Chapter 3 of this) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 120.3307 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (live load reduction publication) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 104.3307 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (R Rain load See IBC 1611 and Chapter 3 of this) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 89.33071 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (publication) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 73.33071 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (W Load due to wind pressure See IBC 1609 and Chapter 5 of this) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+15 0 obj
+<<
+/Length 13491
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 750.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (publication) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 744.0236 cm
+Q
+q
+1 0 0 1 57.02362 732.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (CBC 2019 reference Equation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 732.0236 cm
+Q
+q
+1 0 0 1 57.02362 726.0236 cm
+Q
+q
+1 0 0 1 57.02362 600.0236 cm
+q
+1 1 1 rg
+n 0 126 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 108 481.2283 -18 re f*
+1 1 1 rg
+n 0 90 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 72 481.2283 -18 re f*
+1 1 1 rg
+n 0 54 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 36 481.2283 -18 re f*
+1 1 1 rg
+n 0 18 481.2283 -18 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Equation 16-1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 136.0617 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1.4\(D +F\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Equation 16-2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 136.0617 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1.2\(D + F\) + l.6\(L + H\) + 0.5\(L or S or R\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Equation 16-3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 136.0617 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1.2\(D + F\) + l.6\(Lr or S or R\) + l.6H + \(f1L or 0.5W\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Equation 16-4) Tj T* ET
+Q
+Q
+q
+1 0 0 1 136.0617 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1.2\(D + F\) + 1.0W + f1L +1.6H + 0.5\(Lr or S or R\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Equation 16-5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 136.0617 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (1.2\(D + F\) + 1.0E + f1L + l.6H + f2S) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Equation 16-6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 136.0617 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (0.9D+ l.0W+ l.6H) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Equation 16-7) Tj T* ET
+Q
+Q
+q
+1 0 0 1 136.0617 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (0.9\(D + F\) + 1.0E+ l.6H) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 108 m 481.2283 108 l S
+n 0 90 m 481.2283 90 l S
+n 0 72 m 481.2283 72 l S
+n 0 54 m 481.2283 54 l S
+n 0 36 m 481.2283 36 l S
+n 0 18 m 481.2283 18 l S
+n 130.0617 0 m 130.0617 126 l S
+n 0 126 m 481.2283 126 l S
+n 0 0 m 481.2283 0 l S
+n 0 0 m 0 126 l S
+n 481.2283 0 m 481.2283 126 l S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 600.0236 cm
+Q
+q
+1 0 0 1 57.02362 582.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (0101-[3] Gravity Loads and Seismic Mass) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 553.6772 cm
+0 0 0 RG
+n 0 14.17323 m 481.2283 14.17323 l S
+Q
+q
+1 0 0 1 57.02362 535.6772 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (First floor dimensions Eq-01) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 529.6772 cm
+Q
+q
+1 0 0 1 57.02362 385.6772 cm
+q
+1 1 1 rg
+n 0 144 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 126 481.2283 -18 re f*
+1 1 1 rg
+n 0 108 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 90 481.2283 -18 re f*
+1 1 1 rg
+n 0 72 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 54 481.2283 -18 re f*
+1 1 1 rg
+n 0 36 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 18 481.2283 -18 re f*
+0 0 0 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 6 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 21.37196 0 Td (variable) Tj T* -21.37196 0 Td ET
+Q
+Q
+q
+1 0 0 1 98.54391 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 36.74135 0 Td (value) Tj T* -36.74135 0 Td ET
+Q
+Q
+q
+1 0 0 1 209.5966 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 24.15696 0 Td ([value]) Tj T* -24.15696 0 Td ET
+Q
+Q
+q
+1 0 0 1 302.1405 129 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 59.59391 0 Td (description) Tj T* -59.59391 0 Td ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (area1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 98.54391 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (10700.00 sf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 209.5966 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (994.06 SM) Tj T* ET
+Q
+Q
+q
+1 0 0 1 302.1405 111 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (roof area) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (area2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 98.54391 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (100000.00 sf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 209.5966 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (9290.30 SM) Tj T* ET
+Q
+Q
+q
+1 0 0 1 302.1405 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (floor area) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (area3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 98.54391 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (25.00 sf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 209.5966 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2.32 SM) Tj T* ET
+Q
+Q
+q
+1 0 0 1 302.1405 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (floor area) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ht1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 98.54391 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (9.00 ft) Tj T* ET
+Q
+Q
+q
+1 0 0 1 209.5966 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2.74 m) Tj T* ET
+Q
+Q
+q
+1 0 0 1 302.1405 57 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (wall height) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (len1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 98.54391 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (110.00 ft) Tj T* ET
+Q
+Q
+q
+1 0 0 1 209.5966 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (33.53 m) Tj T* ET
+Q
+Q
+q
+1 0 0 1 302.1405 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (interior wall length) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (len2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 98.54391 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (155.00 ft) Tj T* ET
+Q
+Q
+q
+1 0 0 1 209.5966 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (47.24 m) Tj T* ET
+Q
+Q
+q
+1 0 0 1 302.1405 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (exterior wall length) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (udl1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 98.54391 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (12.20 psf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 209.5966 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (584.14 Pa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 302.1405 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (description) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 126 m 481.2283 126 l S
+n 0 108 m 481.2283 108 l S
+n 0 90 m 481.2283 90 l S
+n 0 72 m 481.2283 72 l S
+n 0 54 m 481.2283 54 l S
+n 0 36 m 481.2283 36 l S
+n 0 18 m 481.2283 18 l S
+n 92.54391 0 m 92.54391 144 l S
+n 203.5966 0 m 203.5966 144 l S
+n 296.1405 0 m 296.1405 144 l S
+n 0 144 m 481.2283 144 l S
+n 0 0 m 481.2283 0 l S
+n 0 0 m 0 144 l S
+n 481.2283 0 m 481.2283 144 l S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 385.6772 cm
+Q
+q
+1 0 0 1 57.02362 367.6772 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (A line of text extended text - not formatted) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 361.6772 cm
+Q
+q
+1 0 0 1 57.02362 307.6772 cm
+q
+1 1 1 rg
+n 0 54 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 36 481.2283 -18 re f*
+1 1 1 rg
+n 0 18 481.2283 -18 re f*
+0 0 0 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 24.20493 0 Td (variable) Tj T* -24.20493 0 Td ET
+Q
+Q
+q
+1 0 0 1 104.2099 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 25.40944 0 Td (value) Tj T* -25.40944 0 Td ET
+Q
+Q
+q
+1 0 0 1 192.5987 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 26.98993 0 Td ([value]) Tj T* -26.98993 0 Td ET
+Q
+Q
+q
+1 0 0 1 290.8086 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 65.25987 0 Td (description) Tj T* -65.25987 0 Td ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (floordl1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.2099 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (50.00 psf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 192.5987 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2394.01 Pa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 290.8086 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (interior wall length) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (floordl2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.2099 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (10.00 psf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 192.5987 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (478.80 Pa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 290.8086 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (exterior wall length) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 36 m 481.2283 36 l S
+n 0 18 m 481.2283 18 l S
+n 98.20987 0 m 98.20987 54 l S
+n 186.5987 0 m 186.5987 54 l S
+n 284.8086 0 m 284.8086 54 l S
+n 0 54 m 481.2283 54 l S
+n 0 0 m 481.2283 0 l S
+n 0 0 m 0 54 l S
+n 481.2283 0 m 481.2283 54 l S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 307.6772 cm
+Q
+q
+1 0 0 1 57.02362 289.6772 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ([from file: c:gitrivt-solar-canopy-structural-calculationsvalsv01test1.csv]) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 271.6772 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Equation for floor area Eq-02 .. raw:: math) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 265.6772 cm
+Q
+q
+1 0 0 1 57.02362 253.6772 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (wt) Tj /F4 10 Tf 12 TL (n) Tj /F1 10 Tf 12 TL ( = area) Tj /F4 10 Tf 12 TL (n) Tj /F6 10 Tf 12 TL (\327) Tj /F1 10 Tf 12 TL (floordl) Tj /F4 10 Tf 12 TL (n) Tj /F1 10 Tf 12 TL T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 253.6772 cm
+Q
+q
+1 0 0 1 57.02362 247.6772 cm
+Q
+q
+1 0 0 1 57.02362 193.6772 cm
+q
+1 1 1 rg
+n 0 54 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 36 481.2283 -18 re f*
+1 1 1 rg
+n 0 18 481.2283 -18 re f*
+0 0 0 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 75.03598 0 Td (wt2) Tj T* -75.03598 0 Td ET
+Q
+Q
+q
+1 0 0 1 184.742 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 44.41191 0 Td (floordl1) Tj T* -44.41191 0 Td ET
+Q
+Q
+q
+1 0 0 1 322.2358 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 63.43129 0 Td (area2) Tj T* -63.43129 0 Td ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (5000.00 kips) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184.742 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (50.00 psf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 322.2358 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (100000.00 sf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (22241108.00 N) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184.742 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2394.01 Pa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 322.2358 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (9290.30 SM) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 36 m 481.2283 36 l S
+n 0 18 m 481.2283 18 l S
+n 178.742 0 m 178.742 54 l S
+n 316.2358 0 m 316.2358 54 l S
+n 0 54 m 481.2283 54 l S
+n 0 0 m 481.2283 0 l S
+n 0 0 m 0 54 l S
+n 481.2283 0 m 481.2283 54 l S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 193.6772 cm
+Q
+q
+1 0 0 1 57.02362 175.6772 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Equation for wall area Eq-03 .. raw:: math) Tj T* ET
+Q
+Q
+q
+1 0 0 1 57.02362 169.6772 cm
+Q
+q
+1 0 0 1 57.02362 157.6772 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (wt) Tj /F4 10 Tf 12 TL (n) Tj /F1 10 Tf 12 TL ( = area) Tj /F4 10 Tf 12 TL (n) Tj /F6 10 Tf 12 TL (\327) Tj /F1 10 Tf 12 TL (floordl) Tj /F4 10 Tf 12 TL (n) Tj /F6 10 Tf 12 TL (\327) Tj /F1 10 Tf 12 TL (0.1) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 157.6772 cm
+Q
+q
+1 0 0 1 57.02362 151.6772 cm
+Q
+q
+1 0 0 1 57.02362 97.67717 cm
+q
+1 1 1 rg
+n 0 54 481.2283 -18 re f*
+.878431 .878431 .878431 rg
+n 0 36 481.2283 -18 re f*
+1 1 1 rg
+n 0 18 481.2283 -18 re f*
+0 0 0 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 6 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 59.70013 0 Td (wt3) Tj T* -59.70013 0 Td ET
+Q
+Q
+q
+1 0 0 1 154.0703 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 68.20891 0 Td (floordl2) Tj T* -68.20891 0 Td ET
+Q
+Q
+q
+1 0 0 1 339.1581 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 54.97013 0 Td (area3) Tj T* -54.97013 0 Td ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (25.0 lbs) Tj T* ET
+Q
+Q
+q
+1 0 0 1 154.0703 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (10.00 psf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 339.1581 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (25.00 sf) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (111.2 N) Tj T* ET
+Q
+Q
+q
+1 0 0 1 154.0703 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (478.80 Pa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 339.1581 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (2.32 SM) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+0 0 0 RG
+.25 w
+n 0 36 m 481.2283 36 l S
+n 0 18 m 481.2283 18 l S
+n 148.0703 0 m 148.0703 54 l S
+n 333.1581 0 m 333.1581 54 l S
+n 0 54 m 481.2283 54 l S
+n 0 0 m 481.2283 0 l S
+n 0 0 m 0 54 l S
+n 481.2283 0 m 481.2283 54 l S
+Q
+Q
+Q
+q
+1 0 0 1 57.02362 97.67717 cm
+Q
+q
+1 0 0 1 57.02362 67.67717 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 3.361835 Tw (Exterior wall - total area load Eq-04 ========== ========= ========= ====================) Tj T* 0 Tw 2.881043 Tw (variable value [value] description ========== ========= ========= ==================== len1) Tj T* 0 Tw ET
+Q
+Q
+ 
+endstream
+endobj
+16 0 obj
+<<
+/Length 396
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 57.02362 729.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL .248022 Tw (410.00 ft 124.97 m interior wall length len2 455.00 ft 138.68 m exterior wall length ========== =========) Tj T* 0 Tw 88.39612 Tw (========= ==================== [from file:) Tj T* 0 Tw (c:gitrivt-solar-canopy-structural-calculationsvalsv01test2.csv]) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+17 0 obj
+<<
+/Nums [ 0 18 0 R 1 19 0 R 2 20 0 R ]
+>>
+endobj
+18 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+19 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+20 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000073 00000 n 
+0000000154 00000 n 
+0000000261 00000 n 
+0000000373 00000 n 
+0000000488 00000 n 
+0000000571 00000 n 
+0000000676 00000 n 
+0000000881 00000 n 
+0000000958 00000 n 
+0000001163 00000 n 
+0000001369 00000 n 
+0000001458 00000 n 
+0000001716 00000 n 
+0000001789 00000 n 
+0000009049 00000 n 
+0000022593 00000 n 
+0000023040 00000 n 
+0000023099 00000 n 
+0000023133 00000 n 
+0000023167 00000 n 
+trailer
+<<
+/ID 
+[<9d571ab0cd957284747cead62bdf44a0><9d571ab0cd957284747cead62bdf44a0>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 12 0 R
+/Root 11 0 R
+/Size 21
+>>
+startxref
+23201
+%%EOF

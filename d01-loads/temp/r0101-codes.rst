@@ -1,4 +1,4 @@
-2025-02-21 | 12:37AM
+2025-02-21 | 11:14AM
 
 **0101-[1] Project Summary**
 
@@ -15,9 +15,9 @@ some text  asdfas
 
 ________________________________________________________________________________
 
-This report describes the structural design of a solar canopy covering a
+This report **describes** the structural design of a solar canopy covering a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and stem wall, steel tube frame, and clip attachments
+design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
 of solar panels to the frame.
 
 
@@ -32,7 +32,7 @@ wt₂ = ──────
 
 
   
-Building Codes and Jurisdiction
+**Building Codes and Jurisdiction**
 
 - City of Larkspur, California
 - 2019 California Building Code [CBC]
@@ -118,24 +118,25 @@ udl1           12.20 psf   584.14 Pa  description
 
 A line of text extended text - not formatted    
 
-[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test1.csv]
 ==========  =========  ==========  ====================
 variable        value     [value]  description
 ==========  =========  ==========  ====================
 floordl1    50.00 psf  2394.01 Pa  interior wall length
 floordl2    10.00 psf   478.80 Pa  exterior wall length
 ==========  =========  ==========  ====================
+[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test1.csv]
+
 
 Equation for floor area                                                    Eq-02
 .. raw:: math
 
    wt₂ = area₂⋅floordl₁
-=============  ==========  ============
-     wt2        floordl1      area2
-=============  ==========  ============
-5000.00 kips   50.00 psf   100000.00 sf
-22241108.00 N  2394.01 Pa   9290.30 SM
-=============  ==========  ============
+=============  ============  ==========
+     wt2          area2       floordl1
+=============  ============  ==========
+5000.00 kips   100000.00 sf  50.00 psf
+22241108.00 N   9290.30 SM   2394.01 Pa
+=============  ============  ==========
 
 
 Equation for wall area                                                     Eq-03
@@ -151,11 +152,12 @@ Equation for wall area                                                     Eq-03
 
 
 Exterior wall - total area load                                            Eq-04
-[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test2.csv]
 ==========  =========  =========  ====================
 variable        value    [value]  description
 ==========  =========  =========  ====================
 len1        410.00 ft   124.97 m  interior wall length
 len2        455.00 ft   138.68 m  exterior wall length
 ==========  =========  =========  ====================
+[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test2.csv]
+
 

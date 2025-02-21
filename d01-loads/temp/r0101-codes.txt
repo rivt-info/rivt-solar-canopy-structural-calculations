@@ -1,4 +1,4 @@
-2025-02-21 | 12:37AM
+2025-02-21 | 11:17AM
 
 ________________________________________________________________________________
 0101-[1] Project Summary
@@ -113,13 +113,14 @@ udl1           12.20 psf   584.14 Pa  description
 
 A line of text extended text - not formatted    
 
-[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test1.csv]
 ==========  =========  ==========  ====================
 variable        value     [value]  description
 ==========  =========  ==========  ====================
 floordl1    50.00 psf  2394.01 Pa  interior wall length
 floordl2    10.00 psf   478.80 Pa  exterior wall length
 ==========  =========  ==========  ====================
+[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test1.csv]
+
 
 Equation for floor area                                                    Eq-02
                                                                       ACI-315-05
@@ -146,11 +147,12 @@ wt₃ = area₃⋅floordl₂⋅0.1
 
 
 Exterior wall - total area load                                            Eq-04
-[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test2.csv]
 ==========  =========  =========  ====================
 variable        value    [value]  description
 ==========  =========  =========  ====================
 len1        410.00 ft   124.97 m  interior wall length
 len2        455.00 ft   138.68 m  exterior wall length
 ==========  =========  =========  ====================
+[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test2.csv]
+
 
