@@ -1,13 +1,10 @@
-2025-02-20 | 01:36AM
+2025-02-21 | 12:37AM
 
 **0101-[1] Project Summary**
 
 ________________________________________________________________________________
 
 some text  asdfas
-
-
-::
 
                                 center this text                                
 
@@ -24,16 +21,6 @@ design of a concrete slab and stem wall, steel tube frame, and clip attachments
 of solar panels to the frame.
 
 
-
-.. image:: rivt01.png
-   :width: 60%
-   :align: center
-
-
-
-.. image:: rivt01.png
-   :width: 20%
-   :align: center
 
 
 .. raw:: math
@@ -53,19 +40,21 @@ Building Codes and Jurisdiction
 
 
 **Table 01: Loading
-===================================================  ================  ======
-Category                                             Standard            Year
-===================================================  ================  ======
-Loading                                              ASCE-7              2016
-Concrete                                             ACI-318             2014
-Wood-National Design Specifications                  AWC-NDS             2018
-Wood-Special Design Provisions for Wind and Seismic  AWC-SDPWS           2015
-Wood Frame Construction Manual                               AWC-WFCM    2018
-===================================================  ================  ======
-[table read from file: c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\cbc2019A_stds.csv]
+[from file: c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\cbc2019A_stds.csv]
+===================================================  ==========  ======
+Category                                             Standard      Year
+===================================================  ==========  ======
+Loading                                              ASCE-7        2016
+Concrete                                             ACI-318       2014
+Wood-National Design Specifications                  AWC-NDS       2018
+Wood-Special Design Provisions for Wind and Seismic  AWC-SDPWS     2015
+Wood Frame Construction Manual                       AWC-WFCM      2018
+===================================================  ==========  ======
+
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
+[from file: c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\load_types01.csv]
 =====  ======================================  ===================================
 Sym    Load Effect                             Notes
 =====  ======================================  ===================================
@@ -90,10 +79,11 @@ R      Rain load                               See IBC 1611 and Chapter 3 of thi
 W      Load due to wind pressure               See IBC 1609 and Chapter 5 of this
                                                publication
 =====  ======================================  ===================================
-[table read from file: c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\load_types01.csv]
+
 
 
 **Table 02: Load Combinations
+[from file: c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\asce7_load_comb.csv]
 ====================  ======================================================
  CBC 2019 reference                          Equation
 ====================  ======================================================
@@ -105,7 +95,7 @@ W      Load due to wind pressure               See IBC 1609 and Chapter 5 of thi
    Equation 16-6                         0.9D+ l.0W+ l.6H
    Equation 16-7                      0.9(D + F) + 1.0E+ l.6H
 ====================  ======================================================
-[table read from file: c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\asce7_load_comb.csv]
+
 
 **0101-[3] Gravity Loads and Seismic Mass**
 
@@ -125,46 +115,47 @@ len2           155.00 ft     47.24 m  exterior wall length
 udl1           12.20 psf   584.14 Pa  description
 ==========  ============  ==========  ====================
 
+
 A line of text extended text - not formatted    
 
+[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test1.csv]
 ==========  =========  ==========  ====================
 variable        value     [value]  description
 ==========  =========  ==========  ====================
 floordl1    50.00 psf  2394.01 Pa  interior wall length
 floordl2    10.00 psf   478.80 Pa  exterior wall length
 ==========  =========  ==========  ====================
-[values read from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test1.csv]
 
 Equation for floor area                                                    Eq-02
 .. raw:: math
 
    wt₂ = area₂⋅floordl₁
-=============  ============  ==========
-     wt2          area2       floordl1
-=============  ============  ==========
-5000.00 kips   100000.00 sf  50.00 psf
-22241108.00 N   9290.30 SM   2394.01 Pa
-=============  ============  ==========
+=============  ==========  ============
+     wt2        floordl1      area2
+=============  ==========  ============
+5000.00 kips   50.00 psf   100000.00 sf
+22241108.00 N  2394.01 Pa   9290.30 SM
+=============  ==========  ============
 
 
 Equation for wall area                                                     Eq-03
 .. raw:: math
 
    wt₃ = area₃⋅floordl₂⋅0.1
-========  ========  ==========
-  wt3      area3     floordl2
-========  ========  ==========
-25.0 lbs  25.00 sf  10.00 psf
-111.2 N   2.32 SM   478.80 Pa
-========  ========  ==========
+========  ==========  ========
+  wt3      floordl2    area3
+========  ==========  ========
+25.0 lbs  10.00 psf   25.00 sf
+111.2 N   478.80 Pa   2.32 SM
+========  ==========  ========
 
 
 Exterior wall - total area load                                            Eq-04
+[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test2.csv]
 ==========  =========  =========  ====================
 variable        value    [value]  description
 ==========  =========  =========  ====================
 len1        410.00 ft   124.97 m  interior wall length
 len2        455.00 ft   138.68 m  exterior wall length
 ==========  =========  =========  ====================
-[values read from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test2.csv]
 
