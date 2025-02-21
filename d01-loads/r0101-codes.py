@@ -20,9 +20,9 @@ design of a concrete slab and stem wall, steel tube frame, and clip attachments
 of solar panels to the frame.
 
 
-| IMG | ins01/rivt01.png | Wind Load 1, 30
+# | IMG | ins01/rivt01.png | Wind Load 1, 30
      
-| IMG | ins01/site01.png | Wind Load 2, 30
+# | IMG | ins01/site01.png | Wind Load 2, 30
      
 wt2 = a2 * dl2/2   _[S]
 
@@ -114,9 +114,9 @@ rv.X(""" Abbreviations and References | os | none
 """)
 
 # %%
-rv.X(""" Write | os | none
+rv.W(""" Write | oss | none
 
-|| DOC | docs | pdf
+|| DOC | docs | rpdf
 
 """)
 

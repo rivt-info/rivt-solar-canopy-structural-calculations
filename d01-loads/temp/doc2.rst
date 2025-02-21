@@ -1,4 +1,4 @@
-2025-02-20 | 03:22AM
+2025-02-20 | 11:58PM
 
 **0101-[1] Project Summary**
 
@@ -21,16 +21,6 @@ design of a concrete slab and stem wall, steel tube frame, and clip attachments
 of solar panels to the frame.
 
 
-
-.. image:: ../ins01/rivt01.png
-   :width: 30%
-   :align: center
-
-
-
-.. image:: ../ins01/site01.png
-   :width: 30%
-   :align: center
 
 
 .. raw:: math
@@ -140,24 +130,24 @@ Equation for floor area                                                    Eq-02
 .. raw:: math
 
    wt₂ = area₂⋅floordl₁
-=============  ==========  ============
-     wt2        floordl1      area2
-=============  ==========  ============
-5000.00 kips   50.00 psf   100000.00 sf
-22241108.00 N  2394.01 Pa   9290.30 SM
-=============  ==========  ============
+=============  ============  ==========
+     wt2          area2       floordl1
+=============  ============  ==========
+5000.00 kips   100000.00 sf  50.00 psf
+22241108.00 N   9290.30 SM   2394.01 Pa
+=============  ============  ==========
 
 
 Equation for wall area                                                     Eq-03
 .. raw:: math
 
    wt₃ = area₃⋅floordl₂⋅0.1
-========  ========  ==========
-  wt3      area3     floordl2
-========  ========  ==========
-25.0 lbs  25.00 sf  10.00 psf
-111.2 N   2.32 SM   478.80 Pa
-========  ========  ==========
+========  ==========  ========
+  wt3      floordl2    area3
+========  ==========  ========
+25.0 lbs  10.00 psf   25.00 sf
+111.2 N   478.80 Pa   2.32 SM
+========  ==========  ========
 
 
 Exterior wall - total area load                                            Eq-04
@@ -168,4 +158,10 @@ variable        value    [value]  description
 len1        410.00 ft   124.97 m  interior wall length
 len2        455.00 ft   138.68 m  exterior wall length
 ==========  =========  =========  ====================
+
+**0101-[4] Write**
+
+________________________________________________________________________________
+
+
 
