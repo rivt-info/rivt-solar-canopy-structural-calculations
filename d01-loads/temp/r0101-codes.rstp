@@ -1,4 +1,4 @@
-2025-02-21 | 11:17AM
+2025-02-21 | 12:40PM
 
 **0101-[1] Project Summary**
 
@@ -142,7 +142,9 @@ Equation for floor area                                                    Eq-02
 Equation for wall area                                                     Eq-03
 .. raw:: math
 
-   wt₃ = area₃⋅floordl₂⋅0.1
+   wt₃ = area₃⋅floord ↪
+
+↪ l₂⋅0.1
 ========  ==========  ========
   wt3      floordl2    area3
 ========  ==========  ========

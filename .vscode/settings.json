@@ -18,7 +18,7 @@
     ],
     "seito-openfile.openNewTab": true,
     "seito-openfile.searchPaths": [],
-    "inline-bookmarks.view.expanded": true,
+    "inline-bookmarks.view.expanded": false,
     "editor.formatOnSave": true,
     "triggerTaskOnSave.tasks": {
         "lintpy": [
