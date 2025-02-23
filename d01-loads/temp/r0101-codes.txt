@@ -1,7 +1,7 @@
 
 [0101]  Codes
 ================================================================================
-2025-02-23 | 02:50AM
+2025-02-23 | 03:39AM
 
 0101-[1] Project Summary
 --------------------------------------------------------------------------------
@@ -27,9 +27,12 @@ Fig. Wind Load 1 : c:\git\rivt-solar-canopy-structural-calculations\d01-loads\in
 
 Fig. Wind Load 2 : c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\site01.png
 
-      a₂⋅dl₂
-wt₂ = ──────
-        2   
+.. code::
+
+      a₂⋅dl₂    
+wt₂ = ────── + 4
+        2       
+
 
 
   
@@ -145,12 +148,12 @@ Equation for wall area                                                     Eq-03
                                                                       ACI-315-05
 wt₃ = area₃⋅floordl₂⋅0.1
 
-========  ==========  ========
-  wt3      floordl2    area3
-========  ==========  ========
-25.0 lbs  10.00 psf   25.00 sf
-111.2 N   478.80 Pa   2.32 SM
-========  ==========  ========
+========  ========  ==========
+  wt3      area3     floordl2
+========  ========  ==========
+25.0 lbs  25.00 sf  10.00 psf
+111.2 N   2.32 SM   478.80 Pa
+========  ========  ==========
 
 
 Exterior wall - total area load                                            Eq-04
