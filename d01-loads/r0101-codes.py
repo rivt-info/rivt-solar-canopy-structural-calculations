@@ -24,7 +24,7 @@ of solar panels to the frame.
      
 | IMG | ins01/site01.png | Wind Load 2, 30
      
-wt2 = a2 * dl2/2   _[S]
+wt2 = 4+ a2 * dl2/2   _[S]
 
 # | TEXT | ins01/example1.txt | plain, []
 """)
