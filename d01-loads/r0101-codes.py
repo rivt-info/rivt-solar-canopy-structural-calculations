@@ -4,7 +4,7 @@ import rivtlib.api as rv
 
 rv.I(""" Project Summary | xos | none
 
-some more more text  asdfas
+some more text  asdfas
 
 center this text _[C]
   
