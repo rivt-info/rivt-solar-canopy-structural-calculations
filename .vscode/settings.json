@@ -1,0 +1,28 @@
+{
+    "inline-bookmarks.view.showVisibleFilesOnly": true,
+    "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
+    "insertDateString.formatDate": "MM-DD-YYYY",
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#2a2570",
+        "tab.inactiveBackground": "#505052"
+    },
+    "ShortcutMenuBar.userButton09Command": "cSpell.toggleEnableSpellChecker",
+    "cSpell.words": [
+        "autonumber",
+        "Codespace",
+        "rivt",
+        "rivtcalc",
+        "sympy",
+        "buildable",
+    ],
+    "seito-openfile.openNewTab": true,
+    "seito-openfile.searchPaths": [],
+    "inline-bookmarks.view.expanded": false,
+    "editor.formatOnSave": true,
+    "triggerTaskOnSave.tasks": {
+        "lintpy": [
+            "**/*.py"
+        ],
+    }
+}
