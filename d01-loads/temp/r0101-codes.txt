@@ -1,19 +1,21 @@
-2025-02-21 | 12:40PM
 
-________________________________________________________________________________
+[0101]  Codes
+================================================================================
+2025-02-23 | 02:25AM
+
 0101-[1] Project Summary
-________________________________________________________________________________
+--------------------------------------------------------------------------------
 
-some text  asdfas
+some more more text  asdfas
 
                                 center this text                                
 
 
 
 
-________________________________________________________________________________
+
 0101-[2] Overview and Codes
-________________________________________________________________________________
+--------------------------------------------------------------------------------
 
 This report describes the structural design of a solar canopy covering a
 residential patio located in the City of Larkspur, California. It includes the
@@ -36,7 +38,8 @@ Building Codes and Jurisdiction
 - 2019 California Residential Code [CRC]
 
 Table 1 - Loading
-[from file: c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\cbc2019A_stds.csv]
+[from file: d01-loads\ins01\cbc2019A_stds.csv]
+
 ===================================================  ==========  ======
 Category                                             Standard      Year
 ===================================================  ==========  ======
@@ -50,7 +53,8 @@ Wood Frame Construction Manual                       AWC-WFCM      2018
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-[from file: c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\load_types01.csv]
+[from file: d01-loads\ins01\load_types01.csv]
+
 =====  ======================================  ===================================
 Sym    Load Effect                             Notes
 =====  ======================================  ===================================
@@ -78,7 +82,8 @@ W      Load due to wind pressure               See IBC 1609 and Chapter 5 of thi
 
 
 Table 2 - Load Combinations
-[from file: c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\asce7_load_comb.csv]
+[from file: d01-loads\ins01\asce7_load_comb.csv]
+
 ====================  ======================================================
  CBC 2019 reference                          Equation
 ====================  ======================================================
@@ -92,9 +97,9 @@ Table 2 - Load Combinations
 ====================  ======================================================
 
 
-________________________________________________________________________________
+
 0101-[3] Gravity Loads and Seismic Mass
-________________________________________________________________________________
+--------------------------------------------------------------------------------
 
 First floor dimensions                                                     Eq-01
 
@@ -113,32 +118,30 @@ udl1           12.20 psf   584.14 Pa  description
 
 A line of text extended text - not formatted    
 
+[from file: vals\v01\test1.csv]
+
 ==========  =========  ==========  ====================
 variable        value     [value]  description
 ==========  =========  ==========  ====================
 floordl1    50.00 psf  2394.01 Pa  interior wall length
 floordl2    10.00 psf   478.80 Pa  exterior wall length
 ==========  =========  ==========  ====================
-[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test1.csv]
-
 
 Equation for floor area                                                    Eq-02
                                                                       ACI-315-05
 wt₂ = area₂⋅floordl₁
 
-=============  ==========  ============
-     wt2        floordl1      area2
-=============  ==========  ============
-5000.00 kips   50.00 psf   100000.00 sf
-22241108.00 N  2394.01 Pa   9290.30 SM
-=============  ==========  ============
+=============  ============  ==========
+     wt2          area2       floordl1
+=============  ============  ==========
+5000.00 kips   100000.00 sf  50.00 psf
+22241108.00 N   9290.30 SM   2394.01 Pa
+=============  ============  ==========
 
 
 Equation for wall area                                                     Eq-03
                                                                       ACI-315-05
-wt₃ = area₃⋅floord ↪
-
-↪ l₂⋅0.1
+wt₃ = area₃⋅floordl₂⋅0.1
 
 ========  ==========  ========
   wt3      floordl2    area3
@@ -149,12 +152,12 @@ wt₃ = area₃⋅floord ↪
 
 
 Exterior wall - total area load                                            Eq-04
+[from file: vals\v01\test2.csv]
+
 ==========  =========  =========  ====================
 variable        value    [value]  description
 ==========  =========  =========  ====================
 len1        410.00 ft   124.97 m  interior wall length
 len2        455.00 ft   138.68 m  exterior wall length
 ==========  =========  =========  ====================
-[from file: c:\git\rivt-solar-canopy-structural-calculations\vals\v01\test2.csv]
-
 
