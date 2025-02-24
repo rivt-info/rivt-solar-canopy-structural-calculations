@@ -24,7 +24,6 @@ of solar panels to the frame.
      
 | IMG | ins01/site01.png | Wind Load 2, 30
      
-.. code::
 
     wt2 = 4+ a2 * dl2/2   _[S]
 
@@ -33,7 +32,7 @@ of solar panels to the frame.
 """)
 
 # %%
-rv.I(""" --code tables | xos | none 
+rv.I(""" -- code tables | xos | none 
 
 **Building Codes and Jurisdiction**
 

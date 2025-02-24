@@ -1,7 +1,13 @@
 
 [0101]  Codes
 ================================================================================
-2025-02-23 | 03:39AM
+2025-02-24 | 01:51AM
+
+
+.. contents::
+
+
+
 
 0101-[1] Project Summary
 --------------------------------------------------------------------------------
@@ -17,17 +23,28 @@ some more text  asdfas
 0101-[2] Overview and Codes
 --------------------------------------------------------------------------------
 
-This report describes the structural design of a solar canopy covering a
+This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and stem wall, steel tube frame, and clip attachments
+design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
 of solar panels to the frame.
 
 
-Fig. Wind Load 1 : c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\rivt01.png
 
-Fig. Wind Load 2 : c:\git\rivt-solar-canopy-structural-calculations\d01-loads\ins01\site01.png
 
-.. code::
+.. image:: ..\d01-loads\ins01\rivt01.png
+   :width: 30%
+   :align: center
+
+
+
+
+
+.. image:: ..\d01-loads\ins01\site01.png
+   :width: 30%
+   :align: center
+
+
+
 
       a₂⋅dl₂    
 wt₂ = ────── + 4
@@ -36,14 +53,15 @@ wt₂ = ────── + 4
 
 
   
-Building Codes and Jurisdiction
+**Building Codes and Jurisdiction**
 
 - City of Larkspur, California
 - 2019 California Building Code [CBC]
 - 2019 California Residential Code [CRC]
 
-Table 1 - Loading
-[from file: d01-loads\ins01\cbc2019A_stds.csv]
+
+**Table 01** - Loading
+[from file: ins01\cbc2019A_stds.csv]
 
 ===================================================  ==========  ======
 Category                                             Standard      Year
@@ -58,7 +76,7 @@ Wood Frame Construction Manual                       AWC-WFCM      2018
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-[from file: d01-loads\ins01\load_types01.csv]
+[from file: ins01\load_types01.csv]
 
 =====  ======================================  ===================================
 Sym    Load Effect                             Notes
@@ -86,8 +104,9 @@ W      Load due to wind pressure               See IBC 1609 and Chapter 5 of thi
 =====  ======================================  ===================================
 
 
-Table 2 - Load Combinations
-[from file: d01-loads\ins01\asce7_load_comb.csv]
+
+**Table 02** - Load Combinations
+[from file: ins01\asce7_load_comb.csv]
 
 ====================  ======================================================
  CBC 2019 reference                          Equation
@@ -106,7 +125,9 @@ Table 2 - Load Combinations
 0101-[3] Gravity Loads and Seismic Mass
 --------------------------------------------------------------------------------
 
-First floor dimensions                                                     Eq-01
+
+**Eq 01** -    First floor dimensions
+
 
 ==========  ============  ==========  ====================
 variable           value     [value]  description
@@ -132,31 +153,37 @@ floordl1    50.00 psf  2394.01 Pa  interior wall length
 floordl2    10.00 psf   478.80 Pa  exterior wall length
 ==========  =========  ==========  ====================
 
-Equation for floor area                                                    Eq-02
-                                                                      ACI-315-05
-wt₂ = area₂⋅floordl₁
 
-=============  ==========  ============
-     wt2        floordl1      area2
-=============  ==========  ============
-5000.00 kips   50.00 psf   100000.00 sf
-22241108.00 N  2394.01 Pa   9290.30 SM
-=============  ==========  ============
+**Eq 02** -    Equation for floor area
 
+.. raw:: math
 
-Equation for wall area                                                     Eq-03
-                                                                      ACI-315-05
-wt₃ = area₃⋅floordl₂⋅0.1
-
-========  ========  ==========
-  wt3      area3     floordl2
-========  ========  ==========
-25.0 lbs  25.00 sf  10.00 psf
-111.2 N   2.32 SM   478.80 Pa
-========  ========  ==========
+   wt₂ = area₂⋅floordl₁
+=============  ============  ==========
+     wt2          area2       floordl1
+=============  ============  ==========
+5000.00 kips   100000.00 sf  50.00 psf
+22241108.00 N   9290.30 SM   2394.01 Pa
+=============  ============  ==========
 
 
-Exterior wall - total area load                                            Eq-04
+
+**Eq 03** -    Equation for wall area
+
+.. raw:: math
+
+   wt₃ = area₃⋅floordl₂⋅0.1
+========  ==========  ========
+  wt3      floordl2    area3
+========  ==========  ========
+25.0 lbs  10.00 psf   25.00 sf
+111.2 N   478.80 Pa   2.32 SM
+========  ==========  ========
+
+
+
+**Eq 04** -    Exterior wall - total area load
+
 [from file: vals\v01\test2.csv]
 
 ==========  =========  =========  ====================
