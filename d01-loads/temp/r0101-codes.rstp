@@ -1,7 +1,7 @@
 
 [0101]  Codes
 ================================================================================
-2025-02-24 | 01:51AM
+2025-02-24 | 01:25PM
 
 
 .. contents::
@@ -31,7 +31,7 @@ of solar panels to the frame.
 
 
 
-.. image:: ..\d01-loads\ins01\rivt01.png
+.. image:: ../d01-loads/ins01/rivt01.png
    :width: 30%
    :align: center
 
@@ -39,7 +39,7 @@ of solar panels to the frame.
 
 
 
-.. image:: ..\d01-loads\ins01\site01.png
+.. image:: ../d01-loads/ins01/site01.png
    :width: 30%
    :align: center
 

@@ -3,6 +3,12 @@
 ================================================================================
 2025-02-24 | 01:51AM
 
+
+.. contents::
+
+
+
+
 0101-[1] Project Summary
 --------------------------------------------------------------------------------
 
@@ -17,32 +23,44 @@ some more text  asdfas
 0101-[2] Overview and Codes
 --------------------------------------------------------------------------------
 
-This report describes the structural design of a solar canopy covering a
+This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and stem wall, steel tube frame, and clip attachments
+design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
 of solar panels to the frame.
 
 
-Fig. Wind Load 1 : ins01\rivt01.png
-
-Fig. Wind Load 2 : ins01\site01.png
 
 
-           a₂⋅dl₂    
-     wt₂ = ────── + 4
-             2       
+.. image:: ../d01-loads/ins01/rivt01.png
+   :width: 30%
+   :align: center
+
+
+
+
+
+.. image:: ../d01-loads/ins01/site01.png
+   :width: 30%
+   :align: center
+
+
+
+
+      a₂⋅dl₂    
+wt₂ = ────── + 4
+        2       
 
 
 
   
-Building Codes and Jurisdiction
+**Building Codes and Jurisdiction**
 
 - City of Larkspur, California
 - 2019 California Building Code [CBC]
 - 2019 California Residential Code [CRC]
 
 
-Table 1 - Loading
+**Table 01** - Loading
 [from file: ins01\cbc2019A_stds.csv]
 
 ===================================================  ==========  ======
@@ -87,7 +105,7 @@ W      Load due to wind pressure               See IBC 1609 and Chapter 5 of thi
 
 
 
-Table 2 - Load Combinations
+**Table 02** - Load Combinations
 [from file: ins01\asce7_load_comb.csv]
 
 ====================  ======================================================
@@ -108,7 +126,7 @@ Table 2 - Load Combinations
 --------------------------------------------------------------------------------
 
 
-Eq - 01   First floor dimensions
+**Eq 01** -    First floor dimensions
 
 
 ==========  ============  ==========  ====================
@@ -136,11 +154,11 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
 ==========  =========  ==========  ====================
 
 
-Eq - 02   Equation for floor area
+**Eq 02** -    Equation for floor area
 
-                                                                      ACI-315-05
-wt₂ = area₂⋅floordl₁
+.. raw:: math
 
+   wt₂ = area₂⋅floordl₁
 =============  ============  ==========
      wt2          area2       floordl1
 =============  ============  ==========
@@ -150,11 +168,11 @@ wt₂ = area₂⋅floordl₁
 
 
 
-Eq - 03   Equation for wall area
+**Eq 03** -    Equation for wall area
 
-                                                                      ACI-315-05
-wt₃ = area₃⋅floordl₂⋅0.1
+.. raw:: math
 
+   wt₃ = area₃⋅floordl₂⋅0.1
 ========  ==========  ========
   wt3      floordl2    area3
 ========  ==========  ========
@@ -164,7 +182,7 @@ wt₃ = area₃⋅floordl₂⋅0.1
 
 
 
-Eq - 04   Exterior wall - total area load
+**Eq 04** -    Exterior wall - total area load
 
 [from file: vals\v01\test2.csv]
 
