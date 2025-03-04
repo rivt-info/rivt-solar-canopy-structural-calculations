@@ -1,0 +1,26 @@
+
+fontsAlias:
+    stdFont: DejaVuSansMono.ttf
+    stdBold: DejaVuSansMono-Bold.ttf
+    stdItalic: DejaVuSansMono-Oblique.ttf
+    stdBoldItalic: DejaVuSansMono-BoldOblique.ttf
+
+styles:
+    normal:
+        fontName: stdFont
+        textColor: #383745
+        fontSize: 16
+        alignment: TA_LEFT
+
+    heading:
+        fontSize: 32
+        textColor: #1a8099
+
+    title:
+        parent: heading
+        fontSize: 150%
+
+    heading1:
+        parent: heading
+        fontSize: 26
+        

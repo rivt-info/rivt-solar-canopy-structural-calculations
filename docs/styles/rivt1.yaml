@@ -1,5 +1,4 @@
-embeddedFonts:
-    -[DejaVuSansMono.ttf,DejaVuSansMono-Bold.ttf,DejaVuSansMono-Oblique.ttf,DejaVuSansMono-BoldOblique.ttf]
+embeddedFonts: [DejaVuSansMono.ttf, DejaVuSansMono-Bold.ttf]
 
 fontsAlias:
     stdFont: DejaVuSansMono.ttf

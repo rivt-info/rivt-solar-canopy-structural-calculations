@@ -1,7 +1,7 @@
 
 [0101]  Codes
 ================================================================================
-2025-02-24 | 01:51AM
+2025-03-04 | 12:29AM
 
 
 .. contents::
@@ -31,24 +31,38 @@ of solar panels to the frame.
 
 
 
-.. image:: ../d01-loads/ins01/rivt01.png
+.. image:: ../ins01/rivt01.png
    :width: 30%
    :align: center
 
 
 
 
+some text between
 
-.. image:: ../d01-loads/ins01/site01.png
+
+
+
+.. image:: ../ins01/site01.png
    :width: 30%
    :align: center
 
 
 
 
-      a₂⋅dl₂    
-wt₂ = ────── + 4
-        2       
+some more text
+
+
+
+
+ :: 
+
+
+           a₂⋅dl₂    
+     wt₂ = ────── + 4
+             2       
+
+
 
 
 
@@ -156,9 +170,13 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
 
 **Eq 02** -    Equation for floor area
 
-.. raw:: math
+ACI-315-05
 
-   wt₂ = area₂⋅floordl₁
+ :: 
+
+
+     wt₂ = area₂⋅floordl₁
+
 =============  ============  ==========
      wt2          area2       floordl1
 =============  ============  ==========
@@ -170,9 +188,13 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
 
 **Eq 03** -    Equation for wall area
 
-.. raw:: math
+ACI-315-05
 
-   wt₃ = area₃⋅floordl₂⋅0.1
+ :: 
+
+
+     wt₃ = area₃⋅floordl₂⋅0.1
+
 ========  ==========  ========
   wt3      floordl2    area3
 ========  ==========  ========
