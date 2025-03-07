@@ -2,20 +2,34 @@
 
 
 
-My Title
-=========
+My Report Title
+################
 
 
 My SubTitle
------------
+************
 
+|
+|
+|
+|
 
 
 .. image:: ../ins01/rivt01.png
    :width: 30%
    :align: center
 
+|
+|
+|
+|
+|
 
+
+
+.. class:: center
+
+   **date and time**
 
 
 .. raw:: pdf
@@ -253,14 +267,14 @@ len2        455.00 ft   138.68 m  exterior wall length
 ==========  =========  =========  ====================
 
 
+.. raw:: pdf
+
+   PageBreak mainPage
+
+
 
 [0102]  Loads
 ================================================================================
-
-
-
-.. contents::
-
 
 
 

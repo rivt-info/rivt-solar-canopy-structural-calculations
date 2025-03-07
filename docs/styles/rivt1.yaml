@@ -1,8 +1,8 @@
 fontsAlias:
-    fontSerif: OpenSans-Medium
-    fontSerifBold: OpenSans-SemiBold
-    fontSerifBoldItalic: OpenSans-SemiBoldItalic
-    fontSerifItalic: OpenSans-SemiBoldItalic
+    fontSerif: OpenSans-Regular
+    fontSerifBold: OpenSans-Bold
+    fontSerifBoldItalic: OpenSans-BoldItalic
+    fontSerifItalic: OpenSans-Italic
     fontMono: DejaVuSansMono
     fontMonoBold: DejaVuSansMono-Bold
     fontMonoBoldItalic: DejaVuSansMono-BoldOblique
@@ -17,14 +17,14 @@ fontsAlias:
 pageSetup:
     firstTemplate: coverPage
     height: null
-    margin-bottom: 1.5cm
+    margin-bottom: 1.0cm
     margin-gutter: 0cm
-    margin-left: 1.8cm
-    margin-right: 1.8cm
-    margin-top: 2cm
+    margin-left: 1.5cm
+    margin-right: 1.5cm
+    margin-top: 1.0cm
     size: letter
-    spacing-footer: 5mm
-    spacing-header: 5mm
+    spacing-footer: 10mm
+    spacing-header: 10mm
     width: null
 pageTemplates:
     coverPage:
@@ -33,8 +33,8 @@ pageTemplates:
         showFooter: false
         showHeader: false
     mainPage:
-        defaultFooter: "-----\n\n.. |date| date::\n\n|date| ``|                                                     |`` Page ###Page### of ###Total###"
-        defaultHeader: "###Title### ``|                                     |`` ###Section### \n\n-----"
+        defaultHeader: ".. class:: center\n\n   **###Section###**"
+        defaultFooter: ".. |date| date::\n\n**Date:** |date| ``|                                                   |`` **Page:** ###Page### of ###Total###"
         showFooter: true
         showHeader: true
 styles:
@@ -113,10 +113,10 @@ styles:
         parent: bodytext
     footer:
         alignment: TA_CENTER
-        parent: normal
+        fontName: fontSansBold
     header:
         alignment: TA_CENTER
-        parent: normal
+        fontName: fontSansBold
     heading:
         keepWithNext: true
         parent: normal
@@ -270,7 +270,7 @@ styles:
         fontSize: 125%
         keepWithNext: false
         parent: heading
-        fontName: fontSerifBold
+        fontName: fontSansBold
         spaceAfter: 36
     title-reference:
         fontName: fontSansItalic
