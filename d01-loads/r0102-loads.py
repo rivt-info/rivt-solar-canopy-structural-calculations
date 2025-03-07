@@ -1,76 +1,136 @@
 #! python
 # %%
 import rivtlib.api as rv
+
+rv.I(""" Project Summary | xos | none
+
+This report **describes** the structural design of a solar canopy *covering* a
+residential patio located in the City of Larkspur, California. It includes the
+design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
+of solar panels to the frame.
+
+center this text _[C]
+  
+# | TABLE | ins01/project-data.csv | Title of table, 35, l, [] 
+
+""")
+
+rv.I(""" Overview and Codes | xos | none
+
+This report **describes** the structural design of a solar canopy *covering* a
+residential patio located in the City of Larkspur, California. It includes the
+design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
+of solar panels to the frame.
+
+
+| IMG | ins01/rivt01.png | Wind Load 1, 30
+
+
+some text between
+
+
+| IMG | ins01/site01.png | Wind Load 2, 30
+     
+
+some more text
+
+
+wt2 = 4+ a2 * dl2/2   _[S]
+
+
+# | TEXT | ins01/example1.txt | plain, []
+""")
+
 # %%
-rv.W("""write | pu | non 
-    
-    new Value text
-    
-    """)
+rv.I(""" -- code tables | xos | none 
+
+**Building Codes and Jurisdiction**
+
+- City of Larkspur, California
+- 2019 California Building Code [CBC]
+- 2019 California Residential Code [CRC]
+
+| TABLE | ins01/cbc2019A_stds.csv | My Table, 53, l, []
+
+Design loads for the project are from the California Building and
+Residential Codes and are summarized in the following tables.
+
+| TABLE | ins01/load_types01.csv | Another Table Title, 40, l, [] 
 
 
-rv.I("""Load Combinations | default
- 
-    Basic loads and load combinations are derived from the California Building
-    and Residential Codes.
+Load Combinations _[T]
+| TABLE | ins01/asce7_load_comb.csv | xxx, 55, c, []                        
 
-    || table | load_types01.csv | 30,L | [0:0]
+""")
 
-    || table | asce7_load_comb.csv | 55,C | [0:0]
-
-    [page]_   
-    
-    """)
 # %%
-rv.V("""Gravity Loads and Seismic Mass | nosub | nocolor
- 
-    Roof unit dead loads [t]_
-    || declare | r0102 | dlroof0.csv
+rv.V("""Gravity Loads and Seismic Mass | os | none
 
-    Floor unit dead loads [t]_
-    || value | r0102 | dlfloor0.csv
 
-    Exterior wall unit dead loads [t]_
-    || value | r0102| dlextwall0.csv
-    
-    Areas [t]_
-    arearf1 = 1700             | SF, SM | roof area 
-    areaflr1 = 1200            | SF, SM | floor area
-    htwall1 = 9                | FT, M  | wall height   
-    lenwall1 = 110             | FT, M  | interior wall length 
-    lenwall2 = 155             | FT, M  | exterior wall 2 length
+First floor dimensions _[E]
 
-    Roof weight [e]_                    
-    rfwt1 = arearf1 * roofdl1                           |LBF, KN|2
+_[[V]]   
+area1 = 10700*SF | roof area | SF, SM | 2,2       
 
-    Floor weight [e]_
-    flrwt1 = areaflr1 * floordl1                        |LBF, KN|2   
+area2 = 10000*FT * 10*FT | floor area | SF, SM | 2,2         
 
-    Partition weight [e]_
-    partwt1 =  htwall1 * lenwall1 * intwalldl1          |LBF, KN|2
+area3 = 5*FT * 5*FT | floor area | SF, SM | 2,2         
 
-    Exterior wall weight [e]_                               
-    exwallwt1 = htwall1 * lenwall2 * extwalldl1         |LBF, KN|2
+ht1 = 9.0*FT | wall height  | FT, M | 2,2       
 
-    Total building weight [e]_
-    totwt1 = rfwt1 + flrwt1 + partwt1 + exwallwt1       |LBF, KN|2
-    
-    """)
+len1 = 110*FT | interior wall length | FT, M | 2,2
+
+len2 = 155*FT | exterior wall length | FT, M | 2,2 
+
+udl1 = 12.2*PSF | description | PSF, PA | 2,2 
+_[[Q]]
+
+A line of text extended text - not formatted    
+
+| VALREAD | v01/test1.csv | noprint
+
+
+Equation for floor area _[E]    
+wt2 = area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
+
+
+
+Equation for wall area _[E]
+wt3 = area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
+
+
+
+Exterior wall - total area load _[E]
+| VALREAD | v01/test2.csv | noprint
+
+""")
+
 # %%
-rv.V("""Material Densities - Seismic Models | nosub
+rv.X(""" Abbreviations and References | os | none
 
-    Because the T&G roof is relatively more flexible, the effective floor load
-    for seismic models is calculated as the sum of the floor and all of the
-    partition weight.
+**Reference Standards**
 
-    Floor load including partitions [e]_  
-    eflrdl1 = (flrwt1 + partwt1)/(areaflr1)             |PSF, KPA|2
+| TEXT | text/txt02/references.txt |  plain
 
-    Effective floor, roof and wall densities [e]_  
-    eflrdens1 = eflrdl1/(0.5*IN)                        |PCI, KNCM|2
+**Drawing List**
+     
+| TEXT | text/txt02/drawing_list.txt | plain
 
-    erfdens1 = roofdl1/(1.5*IN)                         |PCI, KNCM|2
+**Abbreviations**
 
-    ewalldens1 = extwalldl1/(0.5*IN)                    |PCI, KNCM|2
-    
-    """)
+| TEXT | ins01/abbrev_terms.tex | latex
+
+**Abbreviations - Math**
+
+| TEXT | ins01/abbrev_math.tex | latex
+
+""")
+
+# %%
+rv.W(""" Write | oss | none
+
+|| DOC | docs | rpdf
+
+""")
+
+rv.Q()

@@ -21,63 +21,63 @@ pageSetup:
   margin-left: 1.8cm
   margin-right: 1.8cm
   margin-top: 2cm
-  size: A4
+  size: letter
   spacing-footer: 5mm
   spacing-header: 5mm
   width: null
 pageTemplates:
   mainPage:
     frames:
-    - - 0%
-      - 0%
-      - 100%
-      - 100%
+      - - 0%
+        - 0%
+        - 100%
+        - 100%
     showFooter: true
     showHeader: true
   decoratedPage:
-    defaultFooter: '###Page###'
-    defaultHeader: '###Section###'
+    defaultFooter: "###Page###"
+    defaultHeader: "###Section###"
     frames:
-    - - 0%
-      - 0%
-      - 100%
-      - 100%
+      - - 0%
+        - 0%
+        - 100%
+        - 100%
     showFooter: true
     showHeader: true
   emptyPage:
     frames:
-    - - 0cm
-      - 0cm
-      - 100%
-      - 100%
+      - - 0cm
+        - 0cm
+        - 100%
+        - 100%
     showFooter: false
     showHeader: false
   coverPage:
     frames:
-    - - 0cm
-      - 0cm
-      - 100%
-      - 100%
+      - - 0cm
+        - 0cm
+        - 100%
+        - 100%
     showFooter: false
     showHeader: false
   oneColumn:
     frames:
-    - - 0cm
-      - 0cm
-      - 100%
-      - 100%
+      - - 0cm
+        - 0cm
+        - 100%
+        - 100%
     showFooter: true
     showHeader: true
   twoColumn:
     frames:
-    - - 0cm
-      - 0cm
-      - 49%
-      - 100%
-    - - 51%
-      - 0cm
-      - 49%
-      - 100%
+      - - 0cm
+        - 0cm
+        - 49%
+        - 100%
+      - - 51%
+        - 0cm
+        - 49%
+        - 100%
     showFooter: true
     showHeader: true
 styles:
@@ -89,18 +89,18 @@ styles:
     backColor: cornsilk
     borderColor: darkgray
     borderPadding:
-    - 16
-    - 16
-    - 16
-    - 16
+      - 16
+      - 16
+      - 16
+      - 16
     borderWidth: 0.5
     commands:
-    - - VALIGN
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - TOP
+      - - VALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - TOP
     parent: normal
     spaceAfter: 6
     spaceBefore: 12
@@ -152,21 +152,21 @@ styles:
     spaceBefore: 6
   bullet-list:
     colWidths:
-    - '20'
-    - null
+      - "20"
+      - null
     commands:
-    - - VALIGN
-      - - 0
+      - - VALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - TOP
+      - - RIGHTPADDING
+        - - 0
+          - 0
+        - - 1
+          - -1
         - 0
-      - - -1
-        - -1
-      - TOP
-    - - RIGHTPADDING
-      - - 0
-        - 0
-      - - 1
-        - -1
-      - 0
     parent: bodytext
   bullet-list-item:
     parent: bodytext
@@ -197,33 +197,33 @@ styles:
   definition:
     bulletIndent: 0
     colWidths:
-    - 20pt
-    - null
+      - 20pt
+      - null
     commands:
-    - - VALIGN
-      - - 0
+      - - VALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - TOP
+      - - LEFTPADDING
+        - - 0
+          - 0
+        - - -1
+          - -1
         - 0
-      - - -1
-        - -1
-      - TOP
-    - - LEFTPADDING
-      - - 0
+      - - BOTTOMPADDING
+        - - 0
+          - 0
+        - - -1
+          - -1
         - 0
-      - - -1
-        - -1
-      - 0
-    - - BOTTOMPADDING
-      - - 0
+      - - RIGHTPADDING
+        - - 0
+          - 0
+        - - -1
+          - -1
         - 0
-      - - -1
-        - -1
-      - 0
-    - - RIGHTPADDING
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - 0
     firstLineIndent: 0
     parent: bodytext
     spaceBefore: 0
@@ -238,33 +238,33 @@ styles:
     spaceBefore: 4
   endnote:
     colWidths:
-    - 3cm
-    - null
+      - 3cm
+      - null
     commands:
-    - - VALIGN
-      - - 0
+      - - VALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - TOP
+      - - TOPPADDING
+        - - 0
+          - 0
+        - - -1
+          - -1
         - 0
-      - - -1
-        - -1
-      - TOP
-    - - TOPPADDING
-      - - 0
+      - - BOTTOMPADDING
+        - - 0
+          - 0
+        - - -1
+          - -1
         - 0
-      - - -1
-        - -1
-      - 0
-    - - BOTTOMPADDING
-      - - 0
+      - - RIGHTPADDING
+        - - 0
+          - 0
+        - - 1
+          - -1
         - 0
-      - - -1
-        - -1
-      - 0
-    - - RIGHTPADDING
-      - - 0
-        - 0
-      - - 1
-        - -1
-      - 0
     parent: bodytext
   error:
     parent: admonition
@@ -272,21 +272,21 @@ styles:
     parent: admonition-heading
   field-list:
     colWidths:
-    - 3cm
-    - null
+      - 3cm
+      - null
     commands:
-    - - VALIGN
-      - - 0
+      - - VALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - TOP
+      - - TOPPADDING
+        - - 0
+          - 0
+        - - -1
+          - -1
         - 0
-      - - -1
-        - -1
-      - TOP
-    - - TOPPADDING
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - 0
     parent: bodytext
     spaceBefore: 6
   fieldname:
@@ -298,20 +298,20 @@ styles:
   figure:
     alignment: TA_CENTER
     colWidths:
-    - 100%
+      - 100%
     commands:
-    - - VALIGN
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - TOP
-    - - ALIGN
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - CENTER
+      - - VALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - TOP
+      - - ALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - CENTER
     parent: bodytext
   figure-caption:
     alignment: TA_CENTER
@@ -363,21 +363,21 @@ styles:
     parent: bodytext
   item-list:
     colWidths:
-    - 20pt
-    - null
+      - 20pt
+      - null
     commands:
-    - - VALIGN
-      - - 0
+      - - VALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - TOP
+      - - RIGHTPADDING
+        - - 0
+          - 0
+        - - 1
+          - -1
         - 0
-      - - -1
-        - -1
-      - TOP
-    - - RIGHTPADDING
-      - - 0
-        - 0
-      - - 1
-        - -1
-      - 0
     parent: bodytext
   item-list-item:
     parent: bodytext
@@ -402,210 +402,210 @@ styles:
     parent: admonition-heading
   option-list:
     colWidths:
-    - null
-    - null
+      - null
+      - null
     commands:
-    - - VALIGN
-      - - 0
+      - - VALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - TOP
+      - - TOPPADDING
+        - - 0
+          - 0
+        - - -1
+          - -1
         - 0
-      - - -1
-        - -1
-      - TOP
-    - - TOPPADDING
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - 0
   pygments-bp:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-c:
     parent: code
-    textColor: '#008800'
+    textColor: "#008800"
   pygments-c1:
     parent: code
-    textColor: '#008800'
+    textColor: "#008800"
   pygments-cm:
     parent: code
-    textColor: '#008800'
+    textColor: "#008800"
   pygments-cp:
     parent: code
-    textColor: '#008800'
+    textColor: "#008800"
   pygments-cs:
     parent: code
-    textColor: '#008800'
+    textColor: "#008800"
   pygments-diml:
     parent: code
-    textColor: '#aaaaaa'
+    textColor: "#aaaaaa"
   pygments-err:
     parent: code
   pygments-gd:
     parent: code
-    textColor: '#A00000'
+    textColor: "#A00000"
   pygments-ge:
     parent: code
   pygments-gh:
     parent: code
-    textColor: '#000080'
+    textColor: "#000080"
   pygments-gi:
     parent: code
-    textColor: '#00A000'
+    textColor: "#00A000"
   pygments-go:
     parent: code
-    textColor: '#808080'
+    textColor: "#808080"
   pygments-gp:
     parent: code
-    textColor: '#000080'
+    textColor: "#000080"
   pygments-gr:
     parent: code
-    textColor: '#FF0000'
+    textColor: "#FF0000"
   pygments-gs:
     parent: code
   pygments-gt:
     parent: code
-    textColor: '#0040D0'
+    textColor: "#0040D0"
   pygments-gu:
     parent: code
-    textColor: '#800080'
+    textColor: "#800080"
   pygments-hll:
-    backColor: '#ffffcc'
+    backColor: "#ffffcc"
     parent: code
   pygments-il:
     parent: code
-    textColor: '#666666'
+    textColor: "#666666"
   pygments-k:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-kc:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-kd:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-kn:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-kp:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-kr:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-kt:
     parent: code
-    textColor: '#00BB00'
+    textColor: "#00BB00"
   pygments-m:
     parent: code
-    textColor: '#666666'
+    textColor: "#666666"
   pygments-mf:
     parent: code
-    textColor: '#666666'
+    textColor: "#666666"
   pygments-mh:
     parent: code
-    textColor: '#666666'
+    textColor: "#666666"
   pygments-mi:
     parent: code
-    textColor: '#666666'
+    textColor: "#666666"
   pygments-mo:
     parent: code
-    textColor: '#666666'
+    textColor: "#666666"
   pygments-n:
     parent: code
   pygments-na:
     parent: code
-    textColor: '#BB4444'
+    textColor: "#BB4444"
   pygments-nb:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-nc:
     parent: code
-    textColor: '#0000FF'
+    textColor: "#0000FF"
   pygments-nd:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-ne:
     parent: code
-    textColor: '#D2413A'
+    textColor: "#D2413A"
   pygments-nf:
     parent: code
-    textColor: '#00A000'
+    textColor: "#00A000"
   pygments-ni:
     parent: code
-    textColor: '#999999'
+    textColor: "#999999"
   pygments-nl:
     parent: code
-    textColor: '#A0A000'
+    textColor: "#A0A000"
   pygments-nn:
     parent: code
-    textColor: '#0000FF'
+    textColor: "#0000FF"
   pygments-no:
     parent: code
-    textColor: '#880000'
+    textColor: "#880000"
   pygments-nt:
     parent: code
-    textColor: '#008000'
+    textColor: "#008000"
   pygments-nv:
     parent: code
-    textColor: '#B8860B'
+    textColor: "#B8860B"
   pygments-nx:
     parent: code
   pygments-o:
     parent: code
-    textColor: '#666666'
+    textColor: "#666666"
   pygments-ow:
     parent: code
-    textColor: '#AA22FF'
+    textColor: "#AA22FF"
   pygments-p:
     parent: code
   pygments-s:
     parent: code
-    textColor: '#BB4444'
+    textColor: "#BB4444"
   pygments-s1:
     parent: code
-    textColor: '#BB4444'
+    textColor: "#BB4444"
   pygments-s2:
     parent: code
-    textColor: '#BB4444'
+    textColor: "#BB4444"
   pygments-sb:
     parent: code
-    textColor: '#BB4444'
+    textColor: "#BB4444"
   pygments-sc:
     parent: code
-    textColor: '#BB4444'
+    textColor: "#BB4444"
   pygments-sd:
     parent: code
-    textColor: '#BB4444'
+    textColor: "#BB4444"
   pygments-se:
     parent: code
-    textColor: '#BB6622'
+    textColor: "#BB6622"
   pygments-sh:
     parent: code
-    textColor: '#BB4444'
+    textColor: "#BB4444"
   pygments-si:
     parent: code
-    textColor: '#BB6688'
+    textColor: "#BB6688"
   pygments-sr:
     parent: code
-    textColor: '#BB6688'
+    textColor: "#BB6688"
   pygments-ss:
     parent: code
-    textColor: '#B8860B'
+    textColor: "#B8860B"
   pygments-sx:
     parent: code
-    textColor: '#008000'
+    textColor: "#008000"
   pygments-vc:
     parent: code
-    textColor: '#B8860B'
+    textColor: "#B8860B"
   pygments-vg:
     parent: code
-    textColor: '#B8860B'
+    textColor: "#B8860B"
   pygments-vi:
     parent: code
-    textColor: '#B8860B'
+    textColor: "#B8860B"
   pygments-w:
     parent: code
-    textColor: '#bbbbbb'
+    textColor: "#bbbbbb"
   right:
     alignment: right
     parent: bodytext
@@ -635,33 +635,33 @@ styles:
     parent: normal
     alignment: TA_CENTER
     commands:
-    - - VALIGN
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - TOP
-    - - INNERGRID
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - 0.25
-      - black
-    - - ROWBACKGROUNDS
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - - white
-        - '#E0E0E0'
-    - - BOX
-      - - 0
-        - 0
-      - - -1
-        - -1
-      - 0.25
-      - black
+      - - VALIGN
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - TOP
+      - - INNERGRID
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - 0.25
+        - black
+      - - ROWBACKGROUNDS
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - - white
+          - "#E0E0E0"
+      - - BOX
+        - - 0
+          - 0
+        - - -1
+          - -1
+        - 0.25
+        - black
     spaceAfter: 0
     spaceBefore: 6
   table-body:
@@ -744,4 +744,3 @@ styles:
     parent: admonition
   warning-heading:
     parent: admonition-heading
-

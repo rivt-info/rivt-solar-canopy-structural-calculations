@@ -1,7 +1,8 @@
 
+
 [0101]  Codes
 ================================================================================
-2025-03-04 | 12:29AM
+
 
 
 .. contents::
@@ -9,10 +10,13 @@
 
 
 
-0101-[1] Project Summary
+[ 1 ] Project Summary
 --------------------------------------------------------------------------------
 
-some more text  asdfas
+This report **describes** the structural design of a solar canopy *covering* a
+residential patio located in the City of Larkspur, California. It includes the
+design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
+of solar panels to the frame.
 
                                 center this text                                
 
@@ -20,7 +24,7 @@ some more text  asdfas
 
 
 
-0101-[2] Overview and Codes
+[ 2 ] Overview and Codes
 --------------------------------------------------------------------------------
 
 This report **describes** the structural design of a solar canopy *covering* a
@@ -74,8 +78,7 @@ some more text
 - 2019 California Residential Code [CRC]
 
 
-**Table 01** - Loading
-[from file: ins01\cbc2019A_stds.csv]
+**Table 01** - My Table [from file: ins01/cbc2019A_stds.csv]
 
 ===================================================  ==========  ======
 Category                                             Standard      Year
@@ -90,7 +93,8 @@ Wood Frame Construction Manual                       AWC-WFCM      2018
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-[from file: ins01\load_types01.csv]
+
+**Table 02** - Another Table Title [from file: ins01/load_types01.csv]
 
 =====  ======================================  ===================================
 Sym    Load Effect                             Notes
@@ -119,8 +123,9 @@ W      Load due to wind pressure               See IBC 1609 and Chapter 5 of thi
 
 
 
-**Table 02** - Load Combinations
-[from file: ins01\asce7_load_comb.csv]
+**Table 03** - Load Combinations
+
+**Table 04** - xxx [from file: ins01/asce7_load_comb.csv]
 
 ====================  ======================================================
  CBC 2019 reference                          Equation
@@ -136,11 +141,13 @@ W      Load due to wind pressure               See IBC 1609 and Chapter 5 of thi
 
 
 
-0101-[3] Gravity Loads and Seismic Mass
+[ 3 ] Gravity Loads and Seismic Mass
 --------------------------------------------------------------------------------
 
 
-**Eq 01** -    First floor dimensions
+
+**E01** -    First floor dimensions
+
 
 
 ==========  ============  ==========  ====================
@@ -168,13 +175,14 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
 ==========  =========  ==========  ====================
 
 
-**Eq 02** -    Equation for floor area
+**E02** -    Equation for floor area
 
-ACI-315-05
+
 
  :: 
 
 
+                                                                      ACI-315-05
      wt₂ = area₂⋅floordl₁
 
 =============  ============  ==========
@@ -186,13 +194,14 @@ ACI-315-05
 
 
 
-**Eq 03** -    Equation for wall area
+**E03** -    Equation for wall area
 
-ACI-315-05
+
 
  :: 
 
 
+                                                                      ACI-315-05
      wt₃ = area₃⋅floordl₂⋅0.1
 
 ========  ==========  ========
@@ -204,7 +213,7 @@ ACI-315-05
 
 
 
-**Eq 04** -    Exterior wall - total area load
+**E04** -    Exterior wall - total area load
 
 [from file: vals\v01\test2.csv]
 
