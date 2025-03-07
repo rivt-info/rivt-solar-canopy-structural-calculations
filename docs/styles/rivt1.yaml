@@ -212,7 +212,7 @@ styles:
     sidebar-title:
         parent: heading3
     subtitle:
-        fontSize: 75%
+        fontSize: 85%
         parent: title
         spaceBefore: 12
     table:

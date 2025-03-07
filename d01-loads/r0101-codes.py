@@ -129,7 +129,7 @@ rv.X(""" Abbreviations and References | os | none
 # %%
 rv.W(""" Write | oss | none
 
-|| DOC | docs | rpdf
+|| DOC | docs | rst2pdf
 
 """)
 

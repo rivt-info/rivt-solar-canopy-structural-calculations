@@ -1,14 +1,27 @@
 
 
+My Report Title2
+###################
 
 
-My Report Title
-################
+.. center:
 
 
-My SubTitle
-************
+|
+|
 
+   **My SubTitle2**
+|
+|
+|
+
+   **date and time**
+
+
+
+|
+|
+|
 |
 |
 |
@@ -19,23 +32,19 @@ My SubTitle
    :width: 30%
    :align: center
 
-|
-|
-|
-|
-|
-
-
-
-.. class:: center
-
-   **date and time**
 
 
 .. raw:: pdf
 
    PageBreak coverPage 
 
+
+   SetPageCounter 0
+
+
+**My Document Title**
+
+|
 
 .. contents::
 
