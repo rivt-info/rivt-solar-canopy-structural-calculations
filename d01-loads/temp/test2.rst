@@ -42,11 +42,7 @@ subtitle
 
 
 
-
-|
-
 .. contents::   My Document Title 
-
 
 
 

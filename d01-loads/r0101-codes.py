@@ -87,7 +87,7 @@ _[[Q]]
 
 A line of text extended text - not formatted    
 
-| VALREAD | v01/test1.csv | noprint
+| VALUES | v01/test1.csv | noprint
 
 
 Equation for floor area _[E]    
@@ -96,12 +96,14 @@ wt2 = area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
 
 
 Equation for wall area _[E]
+
 wt3 = area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
 
 
 
 Exterior wall - total area load _[E]
-| VALREAD | v01/test2.csv | noprint
+
+| VALUES | v01/test2.csv | noprint
 
 """)
 
@@ -127,9 +129,11 @@ rv.X(""" Abbreviations and References | os | none
 """)
 
 # %%
-rv.W(""" Write | oss | none
+rv.W(""" Write | os | none
 
-|| DOC | docs | rst2pdf
+|| DOC | ../docs/pdf2 | rstpdf2, cover
+
+# || REPORT | ../docs/pdf2 | rstpdf2
 
 """)
 
