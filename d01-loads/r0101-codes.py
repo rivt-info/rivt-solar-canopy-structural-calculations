@@ -11,7 +11,7 @@ of solar panels to the frame.
 
 center this text _[C]
   
-# | TABLE | ins01/project-data.csv | Title of table, 35, l, [] 
+# |TABLE| ..ins/i01/project-data.csv | Title of table, 35, l, [] 
 
 """)
 
@@ -23,13 +23,13 @@ design of a concrete slab and *stem* wall, steel tube frame, and clip attachment
 of solar panels to the frame.
 
 
-| IMG | ins01/rivt01.png | Wind Load 1, 30
+|IMG| ../ins/i01/rivt01.png | Wind Load 1, 30, _[F]
 
 
 some text between
 
 
-| IMG | ins01/site01.png | Wind Load 2, 30
+|IMG| ../ins/i01/site01.png | Wind Load 2, 30, _[F]
      
 
 some more text
@@ -38,7 +38,15 @@ some more text
 wt2 = 4+ a2 * dl2/2   _[S]
 
 
-# | TEXT | ins01/example1.txt | plain, []
+New Table _[T]
+======= ====== =======
+col1     col2   col3
+======= ====== =======
+ A1       23     10
+ B1      11.1    15.0
+======= ====== =======
+
+# |TEXT| ../ins/ins01/example1.txt | plain
 """)
 
 # %%
@@ -50,60 +58,45 @@ rv.I(""" -- code tables | xos | none
 - 2019 California Building Code [CBC]
 - 2019 California Residential Code [CRC]
 
-| TABLE | ins01/cbc2019A_stds.csv | My Table, 53, l, []
+|TABLE| ../ins/i01/cbc2019A_stds.csv | My Table, 53, l, [], _[T]
 
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-| TABLE | ins01/load_types01.csv | Another Table Title, 40, l, [] 
+|TABLE| ../ins/i01/load_types01.csv | Another Table Title, 40, l, [], _[T] 
 
 
-Load Combinations _[T]
-| TABLE | ins01/asce7_load_comb.csv | xxx, 55, c, []                        
+|TABLE| ../ins/i01/asce7_load_comb.csv | xxx, 55, c, [], _[T]                        
 
 """)
 
 # %%
 rv.V("""Gravity Loads and Seismic Mass | os | none
 
+A line of text.
 
-First floor dimensions _[E]
-
+First floor dimensions  _[V]
 _[[V]]   
-area1 = 10700*SF | roof area | SF, SM | 2,2       
-
-area2 = 10000*FT * 10*FT | floor area | SF, SM | 2,2         
-
-area3 = 5*FT * 5*FT | floor area | SF, SM | 2,2         
-
-ht1 = 9.0*FT | wall height  | FT, M | 2,2       
-
-len1 = 110*FT | interior wall length | FT, M | 2,2
-
-len2 = 155*FT | exterior wall length | FT, M | 2,2 
-
-udl1 = 12.2*PSF | description | PSF, PA | 2,2 
+area1 := 10700*SF | roof area | SF, SM | 2,2       
+area2 := 10000*FT * 10*FT | floor area | SF, SM | 2,2         
+area3 := 5*FT * 5*FT | floor area | SF, SM | 2,2         
+ht1 := 9.0*FT | wall height  | FT, M | 2,2       
+len1 := 110*FT | interior wall length | FT, M | 2,2
+len2 := 155*FT | exterior wall length | FT, M | 2,2 
+udl1 := 12.2*PSF | description | PSF, PA | 2,2 
 _[[Q]]
 
-A line of text extended text - not formatted    
+A line of extended text - not formatted    
 
-| VALUES | v01/test1.csv | noprint
-
+|VALUES| ../vals/v01/test1.csv | Another values table, _[V]
 
 Equation for floor area _[E]    
-wt2 = area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
-
-
+wt2 := area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
 
 Equation for wall area _[E]
+wt3 := area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
 
-wt3 = area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
-
-
-
-Exterior wall - total area load _[E]
-
-| VALUES | v01/test2.csv | noprint
+|VALUES| ../vals/v01/test2.csv | Exterior wall - total area load, _[V]
 
 """)
 
@@ -112,28 +105,31 @@ rv.X(""" Abbreviations and References | os | none
 
 **Reference Standards**
 
-| TEXT | text/txt02/references.txt |  plain
+|TEXT| ..ins/i02/references.txt |  plain
 
 **Drawing List**
      
-| TEXT | text/txt02/drawing_list.txt | plain
+|TEXT| ..ins/i02/drawing_list.txt | plain
 
 **Abbreviations**
 
-| TEXT | ins01/abbrev_terms.tex | latex
+|TEXT| ..ins/i01/abbrev_terms.tex | latex
 
 **Abbreviations - Math**
 
-| TEXT | ins01/abbrev_math.tex | latex
+|TEXT| ../ins/i01/abbrev_math.tex | latex
 
 """)
 
 # %%
 rv.W(""" Write | os | none
 
-|| DOC | ../docs/pdf2 | rstpdf2, cover
+||DOC| ../docs/pdf2 | rstpdf2, cover
 
-# || REPORT | ../docs/pdf2 | rstpdf2
+# ||REPORT| ../docs/pdf2 | rstpdf2
+     
+# ||APPEND| ../docs/pdf2 | file.pdf
+
 
 """)
 
