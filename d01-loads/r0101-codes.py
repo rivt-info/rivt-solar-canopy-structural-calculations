@@ -46,7 +46,7 @@ col1     col2   col3
  B1      11.1    15.0
 ======= ====== =======
 
-# |TEXT| ../ins/ins01/example1.txt | plain
+# |TEXT| ../ins/i01/example1.txt | plain
 """)
 
 # %%
