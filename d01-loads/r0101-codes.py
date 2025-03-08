@@ -2,7 +2,7 @@
 # %%
 import rivtlib.api as rv
 
-rv.I(""" Project Summary | xos | none
+rv.I(""" Project Summary | xopen | none
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
@@ -11,11 +11,11 @@ of solar panels to the frame.
 
 center this text _[C]
   
-# |TABLE| ..ins/i01/project-data.csv | Title of table, 35, l, [] 
+# |TABLE| ..ins/i01/project-data.csv | Title of table, 35, l, [], _[T] 
 
 """)
 
-rv.I(""" Overview and Codes | xos | none
+rv.I(""" Overview and Codes | xopen | none
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
@@ -50,7 +50,7 @@ col1     col2   col3
 """)
 
 # %%
-rv.I(""" -- code tables | xos | none 
+rv.I(""" -- code tables | open | none 
 
 **Building Codes and Jurisdiction**
 
@@ -122,7 +122,7 @@ rv.X(""" Abbreviations and References | os | none
 """)
 
 # %%
-rv.W(""" Write | os | none
+rv.W(""" Write | open | none
 
 ||DOC| ../docs/pdf2 | rstpdf2, cover
 
