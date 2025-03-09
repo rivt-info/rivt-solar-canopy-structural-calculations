@@ -122,7 +122,7 @@ rv.X(""" Abbreviations and References | os | none
 """)
 
 # %%
-rv.W(""" Write | open | none
+rv.X(""" Write | open | none
 
 ||DOC| ../docs/pdf2 | rstpdf2, cover
 
