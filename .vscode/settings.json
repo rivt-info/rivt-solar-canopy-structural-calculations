@@ -1,5 +1,4 @@
 {
-    "inline-bookmarks.view.showVisibleFilesOnly": true,
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
     "insertDateString.formatDate": "MM-DD-YYYY",
     "workbench.colorTheme": "Default Dark Modern",
@@ -18,12 +17,21 @@
     ],
     "seito-openfile.openNewTab": true,
     "seito-openfile.searchPaths": [],
-    "inline-bookmarks.view.expanded": false,
     "editor.formatOnSave": true,
     "triggerTaskOnSave.tasks": {
         "lintpy": [
             "**/*.py"
         ],
     },
-    "iis.configDir": ""
+    "fsdeploy.nodes": [
+        {
+            "source": "C:/git/rivt-solar-canopy-structural-calculations",
+            "target": "E:/GooDrive/My Drive/StL-Projects/Solar-Canopy-2023",
+            "include": "**/*.*",
+            "exclude": "",
+            "deleteTargetOnDeploy": false,
+        }
+    ],
+    "fsdeploy.deployOnSave": true,
+    "fsdeploy.deployWorkspaceOnSave": false,
 }
