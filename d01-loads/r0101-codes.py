@@ -73,7 +73,7 @@ Residential Codes and are summarized in the following tables.
 # %%
 rv.V("""Gravity Loads and Seismic Mass | os | none
 
-A line of text.
+A line of text - and some more xxxxxxxx.
 
 First floor dimensions  _[V]
 _[[V]]   
@@ -88,7 +88,7 @@ _[[Q]]
 
 A line of extended text - not formatted    
 
-|VALUES| ../vals/v01/test1.csv | Another values table, _[V]
+|VALUES| ../vals/v01/test1.csv | Another values table _[V]
 
 Equation for floor area _[E]    
 wt2 := area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
@@ -96,7 +96,7 @@ wt2 := area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
 Equation for wall area _[E]
 wt3 := area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
 
-|VALUES| ../vals/v01/test2.csv | Exterior wall - total area load, _[V]
+|VALUES| ../vals/v01/test2.csv | Exterior wall - total area load _[V]
 
 """)
 

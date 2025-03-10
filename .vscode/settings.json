@@ -26,7 +26,7 @@
     "fsdeploy.nodes": [
         {
             "source": "C:/git/rivt-solar-canopy-structural-calculations",
-            "target": "E:/GooDrive/My Drive/StL-Projects/Solar-Canopy-2023",
+            "target": "E:/GooDrive/My Drive/StL-Projects/Solar-Canopy-2023/canopy-2025",
             "include": "**/*.*",
             "exclude": "",
             "deleteTargetOnDeploy": false,
