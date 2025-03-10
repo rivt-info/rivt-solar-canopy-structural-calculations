@@ -2,7 +2,7 @@
 # %%
 import rivtlib.api as rv
 
-rv.I(""" Project Summary | xopen | none
+rv.I(""" Project Summaryx | xopen | none
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
@@ -122,11 +122,11 @@ rv.X(""" Abbreviations and References | os | none
 """)
 
 # %%
-rv.X(""" Write | open | none
+rv.W(""" Write | open | none
 
-||DOC| ../docs/pdf2 | rstpdf2, cover
+||DOC| ../docs/pdf2 | pdf2, cover
 
-# ||REPORT| ../docs/pdf2 | rstpdf2
+# ||REPORT| ../docs/pdf2 | pdf2
      
 # ||APPEND| ../docs/pdf2 | file.pdf
 
