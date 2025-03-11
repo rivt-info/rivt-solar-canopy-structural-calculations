@@ -1,12 +1,52 @@
 
 
-[0101]  Codes
-================================================================================
+My Report Title2
+###################
 
 
 
-.. contents::
+subtitle
+++++++++
 
+
+
+.. class:: center
+
+   **My SubTitle2**
+
+   **date and time**
+
+
+
+|
+|
+|
+|
+|
+|
+
+
+.. image:: ../ins/i01/rivt01.png
+   :width: 30%
+   :align: center
+
+
+.. raw:: pdf
+
+   PageBreak coverPage 
+
+
+   SetPageCounter 0
+
+
+
+.. contents::   My Document Title 
+
+
+
+.. raw:: pdf
+
+   PageBreak mainPage
 
 
 
@@ -38,10 +78,9 @@ of solar panels to the frame.
 .. image:: ../ins/i01/rivt01.png
    :width: 30% 
    :align: center 
-   :caption: Fig. 1Wind Load 1
 
 
-
+Fig. 1-Wind Load 1
 |
 |
 some text between
@@ -52,10 +91,9 @@ some text between
 .. image:: ../ins/i01/site01.png
    :width: 30% 
    :align: center 
-   :caption: Fig. 1Wind Load 2
 
 
-
+Fig. 2-Wind Load 2
 |
 |
 some more text
@@ -211,12 +249,12 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
                                                                       ACI-315-05
      wt₃ = area₃⋅floordl₂⋅0.1
 
-========  ========  ==========
-  wt3      area3     floordl2
-========  ========  ==========
-25.0 lbs  25.00 sf  10.00 psf
-111.2 N   2.32 SM   478.80 Pa
-========  ========  ==========|
+========  ==========  ========
+  wt3      floordl2    area3
+========  ==========  ========
+25.0 lbs  10.00 psf   25.00 sf
+111.2 N   478.80 Pa   2.32 SM
+========  ==========  ========|
 ==========  =========  =========  ====================
 variable        value    [value]  description
 ==========  =========  =========  ====================

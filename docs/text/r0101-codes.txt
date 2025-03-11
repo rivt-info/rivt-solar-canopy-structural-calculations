@@ -1,4 +1,4 @@
-                                                            2025-03-10 | 02:37PM
+                                                            2025-03-11 | 01:32AM
 [0101]  Codes
 ================================================================================
 
@@ -26,13 +26,13 @@ design of a concrete slab and stem wall, steel tube frame, and clip attachments
 of solar panels to the frame.
 
 
-Fig. 1Wind Load 1 [file: ..\ins\i01\rivt01.png\..\ins\i01\rivt01.png ] 
+Fig. 1-Wind Load 1 [file: ..\ins\i01\rivt01.png\..\ins\i01\rivt01.png ] 
 
 
 some text between
 
 
-Fig. 1Wind Load 2 [file: ..\ins\i01\site01.png\..\ins\i01\site01.png ] 
+Fig. 2-Wind Load 2 [file: ..\ins\i01\site01.png\..\ins\i01\site01.png ] 
 
 
 some more text
@@ -171,12 +171,12 @@ E02 - Equation for wall area
                                                                       ACI-315-05
      wt₃ = area₃⋅floordl₂⋅0.1
 
-========  ========  ==========
-  wt3      area3     floordl2
-========  ========  ==========
-25.0 lbs  25.00 sf  10.00 psf
-111.2 N   2.32 SM   478.80 Pa
-========  ========  ==========
+========  ==========  ========
+  wt3      floordl2    area3
+========  ==========  ========
+25.0 lbs  10.00 psf   25.00 sf
+111.2 N   478.80 Pa   2.32 SM
+========  ==========  ========
 ==========  =========  =========  ====================
 variable        value    [value]  description
 ==========  =========  =========  ====================
