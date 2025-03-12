@@ -26,7 +26,7 @@ subtitle
 |
 
 
-.. image:: ../ins/i01/rivt01.png
+.. image:: ../../docs/_styles/rivt01.png
    :width: 30%
    :align: center
 
@@ -50,7 +50,7 @@ subtitle
 
 
 
-[ 1 ] Project Summaryx
+[ 1 ] Project Summary
 --------------------------------------------------------------------------------
 |
 This report **describes** the structural design of a solar canopy *covering* a
@@ -61,6 +61,28 @@ of solar panels to the frame.
                                 center this text                                
 
 |
+
+**Table 01 -** Title of table [file: ins/i01/project-data.csv]
+
+==========================  =================
+    Client                   Aaron Kahn
+==========================  =================
+    Address                  10 Fairfield Ave
+    City                     Corte Madera
+    State                    California
+    Zip                      94947
+    County                   Marin
+    Project Name             Solar Canopy
+    Project Number           24-001
+    Contract Amount          "$1
+    Total Amount             "$1
+    Building Code            2015 CRC
+    Date Started             01-01-2020
+    Date Completed           01-01-2021
+    Construction Started     06-01-2022
+    Construction Completed   06-01-2023
+    Materials                "steel
+==========================  =================
 |
 |
 
@@ -75,7 +97,7 @@ of solar panels to the frame.
 |
 
 
-.. image:: ../ins/i01/rivt01.png
+.. image:: c:/git/rivt-solar-canopy-structural-calculations/ins/i01/rivt01.png
    :width: 30% 
    :align: center 
 
@@ -88,7 +110,7 @@ some text between
 |
 
 
-.. image:: ../ins/i01/site01.png
+.. image:: c:/git/rivt-solar-canopy-structural-calculations/ins/i01/site01.png
    :width: 30% 
    :align: center 
 
@@ -112,13 +134,15 @@ some more text
 |
 |
 
-**Table 01**: New Table
+**Table 02**: New Table
+|
 ======= ====== =======
 col1     col2   col3
 ======= ====== =======
  A1       23     10
  B1      11.1    15.0
 ======= ====== =======
+|
 |
 |
   |
@@ -129,7 +153,7 @@ col1     col2   col3
 - 2019 California Residential Code [CRC]
 |
 
-**Table 02 -** My Table [file: ins/i01/cbc2019A_stds.csv]
+**Table 03 -** My Table [file: ins/i01/cbc2019A_stds.csv]
 
 ===================================================  ==========  ======
 Category                                             Standard      Year
@@ -145,7 +169,7 @@ Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 |
 
-**Table 03 -** Another Table Title [file: ins/i01/load_types01.csv]
+**Table 04 -** Another Table Title [file: ins/i01/load_types01.csv]
 
 =====  ======================================  ===================================
 Sym    Load Effect                             Notes
@@ -174,7 +198,7 @@ W      Load due to wind pressure               See IBC 1609 and Chapter 5 of thi
 |
 |
 
-**Table 04 -** xxx [file: ins/i01/asce7_load_comb.csv]
+**Table 05 -** xxx [file: ins/i01/asce7_load_comb.csv]
 
 ====================  ======================================================
  CBC 2019 reference                          Equation
@@ -221,9 +245,11 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
 ==========  =========  ==========  ====================[from file: vals\v01\test1.csv]
 
  |
+|
 
 **E01** -    Equation for floor area
 
+|
 
 
  :: 
@@ -238,9 +264,11 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
 5000.00 kips   100000.00 sf  50.00 psf
 22241108.00 N   9290.30 SM   2394.01 Pa
 =============  ============  ==========|
+|
 
 **E02** -    Equation for wall area
 
+|
 
 
  :: 
@@ -255,6 +283,7 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
 25.0 lbs  10.00 psf   25.00 sf
 111.2 N   478.80 Pa   2.32 SM
 ========  ==========  ========|
+|
 ==========  =========  =========  ====================
 variable        value    [value]  description
 ==========  =========  =========  ====================
