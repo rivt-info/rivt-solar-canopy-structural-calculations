@@ -30,17 +30,16 @@ subtitle
    :width: 30%
    :align: center
 
+   
+
 
 .. raw:: pdf
 
-   PageBreak coverPage 
-
-
-   SetPageCounter 0
-
+   PageBreak mainPage
 
 
 .. contents::   My Document Title 
+
 
 
 
@@ -48,6 +47,7 @@ subtitle
 
    PageBreak mainPage
 
+   
 
 
 [ 1 ] Project Summary
@@ -277,12 +277,12 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
                                                                       ACI-315-05
      wt₃ = area₃⋅floordl₂⋅0.1
 
-========  ==========  ========
-  wt3      floordl2    area3
-========  ==========  ========
-25.0 lbs  10.00 psf   25.00 sf
-111.2 N   478.80 Pa   2.32 SM
-========  ==========  ========|
+========  ========  ==========
+  wt3      area3     floordl2
+========  ========  ==========
+25.0 lbs  25.00 sf  10.00 psf
+111.2 N   2.32 SM   478.80 Pa
+========  ========  ==========|
 |
 ==========  =========  =========  ====================
 variable        value    [value]  description
