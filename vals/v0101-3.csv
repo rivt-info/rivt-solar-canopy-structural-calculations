@@ -1,4 +1,4 @@
-area1 := 10700*SF , roof area , SF, SM , 2,2       
+coverSarea1 := 10700*SF , roof area , SF, SM , 2,2       
 area2 := 10000*FT * 10*FT , floor area , SF, SM , 2,2         
 area3 := 5*FT * 5*FT , floor area , SF, SM , 2,2         
 ht1 := 9.0*FT , wall height  , FT, M , 2,2       

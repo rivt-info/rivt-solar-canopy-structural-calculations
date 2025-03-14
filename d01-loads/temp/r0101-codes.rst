@@ -1,23 +1,22 @@
 
 
-My Report Title2
-###################
 
 
-
-subtitle
-++++++++
-
+|
+|
 
 
+.. class:: title
+
+   **My Report 1**
+
+   
 .. class:: center
 
-   **My SubTitle2**
+   **written by R Holland**
 
-   **date and time**
-
-
-
+   
+|
 |
 |
 |
@@ -26,9 +25,26 @@ subtitle
 |
 
 
-.. image:: ../../docs/_styles/rivt01.png
+.. image::  ../../docs/_styles/rivt01.png
    :width: 30%
    :align: center
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+
+.. class:: bottom
+
+   **bottom text**
 
    
 
@@ -37,8 +53,13 @@ subtitle
 
    PageBreak mainPage
 
+.. class:: title
 
-.. contents::   My Document Title 
+
+   My Report 1
+
+
+.. contents:: Contents 
 
 
 
@@ -258,12 +279,12 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
                                                                       ACI-315-05
      wt₂ = area₂⋅floordl₁
 
-=============  ============  ==========
-     wt2          area2       floordl1
-=============  ============  ==========
-5000.00 kips   100000.00 sf  50.00 psf
-22241108.00 N   9290.30 SM   2394.01 Pa
-=============  ============  ==========|
+=============  ==========  ============
+     wt2        floordl1      area2
+=============  ==========  ============
+5000.00 kips   50.00 psf   100000.00 sf
+22241108.00 N  2394.01 Pa   9290.30 SM
+=============  ==========  ============|
 |
 
 **E02** -    Equation for wall area
@@ -277,12 +298,12 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
                                                                       ACI-315-05
      wt₃ = area₃⋅floordl₂⋅0.1
 
-========  ========  ==========
-  wt3      area3     floordl2
-========  ========  ==========
-25.0 lbs  25.00 sf  10.00 psf
-111.2 N   2.32 SM   478.80 Pa
-========  ========  ==========|
+========  ==========  ========
+  wt3      floordl2    area3
+========  ==========  ========
+25.0 lbs  10.00 psf   25.00 sf
+111.2 N   478.80 Pa   2.32 SM
+========  ==========  ========|
 |
 ==========  =========  =========  ====================
 variable        value    [value]  description

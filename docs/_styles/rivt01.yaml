@@ -73,6 +73,12 @@ styles:
     hyphenation: true
     parent: normal
     spaceBefore: 6
+  bottom:
+    alignment: TA_CENTER
+    fontSize: 115%
+    keepWithNext: false
+    parent: heading
+    fontName: fontSansBold
   center:
     alignment: center
     parent: bodytext
@@ -267,7 +273,7 @@ styles:
     parent: admonition-heading
   title:
     alignment: TA_CENTER
-    fontSize: 125%
+    fontSize: 140%
     keepWithNext: false
     parent: heading
     fontName: fontSansBold

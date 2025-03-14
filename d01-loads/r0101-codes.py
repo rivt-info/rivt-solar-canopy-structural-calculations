@@ -131,8 +131,10 @@ rv.X(""" Abbreviations and References | os | none
 # %%
 rv.W(""" Write | open | none
 
-||DOC| docs/pdf2/ | pdf2, cover, rivt01
+||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png 
 
+||DOC| docs/pdf2/ | pdf2, cover, rivt01
+     
 # ||REPORT| docs/pdf2/ | pdf2
      
 # ||APPEND| docs/pdf2/ | file.pdf
