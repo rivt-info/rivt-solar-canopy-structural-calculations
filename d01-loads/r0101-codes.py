@@ -139,6 +139,9 @@ rv.W(""" Write | open | none
 # ||REPORT| docs/pdf2/ | pdf2
      
 # ||APPEND| docs/pdf2/ | file.pdf
+     
+# ||PREPEND| docs/pdf2/ | file.pdf
+
 
 """)
 
