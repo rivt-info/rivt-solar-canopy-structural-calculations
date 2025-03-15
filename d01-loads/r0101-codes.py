@@ -2,12 +2,12 @@
 # %%
 import rivtlib.api as rv
 
-rv.I(""" Project Summary | xopen | none
+rv.I(""" Project Summary | yes | none
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
-of solar panels to the frame.
+design of a concrete slab and *stem* wall, steel tube frame, and clip
+attachments of solar panels to the frame.
 
 center this text _[C]
   
@@ -15,12 +15,12 @@ center this text _[C]
 
 """)
 
-rv.I(""" Overview and Codes | xopen | none
+rv.I(""" Overview and Codes | yes | none
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
-of solar panels to the frame.
+design of a concrete slab and *stem* wall, steel tube frame, and clip
+attachments of solar panels to the frame.xxxx
 
 
 |IMG| ins/i01/rivt01.png | Wind Load 1, 30, _[F]
@@ -39,7 +39,8 @@ wt2 = 4+ a2 * dl2/2   _[S]
 
 
 New Table _[T]
-     
+
+      
 ======= ====== =======
 col1     col2   col3
 ======= ====== =======
@@ -47,12 +48,12 @@ col1     col2   col3
  B1      11.1    15.0
 ======= ====== =======
 
-     
+         
 # |TEXT| ins/i01/example1.txt | plain
 """)
 
 # %%
-rv.I(""" -- code tables | open | none 
+rv.I(""" -- code tables | yes | none 
 
 **Building Codes and Jurisdiction**
 
@@ -73,9 +74,9 @@ Residential Codes and are summarized in the following tables.
 """)
 
 # %%
-rv.V("""Gravity Loads and Seismic Mass | os | none
+rv.V("""Gravity Loads and Seismic Mass | yes | none
 
-A line of text - and some more xxxxxxxx.
+A line of text - and some more.
 
 First floor dimensions  _[V]
 _[[V]]   
@@ -108,7 +109,7 @@ wt3 := area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
 """)
 
 # %%
-rv.X(""" Abbreviations and References | os | none
+rv.X(""" Abbreviations and References | yes | none
 
 **Reference Standards**
 

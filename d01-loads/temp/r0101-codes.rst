@@ -73,15 +73,15 @@
 
 [ 1 ] Project Summary
 --------------------------------------------------------------------------------
-|
+ 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
-of solar panels to the frame.
-|
+design of a concrete slab and *stem* wall, steel tube frame, and clip
+attachments of solar panels to the frame.
+ 
                                 center this text                                
 
-|
+ 
 
 **Table 01 -** Title of table [file: ins/i01/project-data.csv]
 
@@ -104,18 +104,18 @@ of solar panels to the frame.
     Construction Completed   06-01-2023
     Materials                "steel
 ==========================  =================
-|
-|
+ 
+ 
 
 [ 2 ] Overview and Codes
 --------------------------------------------------------------------------------
-|
+ 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
-of solar panels to the frame.
-|
-|
+design of a concrete slab and *stem* wall, steel tube frame, and clip
+attachments of solar panels to the frame.xxxx
+ 
+ 
 
 
 .. image:: c:/git/rivt-solar-canopy-structural-calculations/ins/i01/rivt01.png
@@ -123,12 +123,14 @@ of solar panels to the frame.
    :align: center 
 
 
-Fig. 1-Wind Load 1
-|
-|
+.. class:: center 
+
+**Fig. 1 -** Wind Load 1
+ 
+ 
 some text between
-|
-|
+ 
+ 
 
 
 .. image:: c:/git/rivt-solar-canopy-structural-calculations/ins/i01/site01.png
@@ -136,15 +138,17 @@ some text between
    :align: center 
 
 
-Fig. 2-Wind Load 2
-|
-|
+.. class:: center 
+
+**Fig. 2 -** Wind Load 2
+ 
+ 
 some more text
-|
-|
+ 
+ 
 
 
- :: 
+.. code:: 
 
 
            a₂⋅dl₂    
@@ -152,27 +156,28 @@ some more text
              2       
 
 
-|
-|
+ 
+ 
 
 **Table 02**: New Table
-|
+ 
+ 
 ======= ====== =======
 col1     col2   col3
 ======= ====== =======
  A1       23     10
  B1      11.1    15.0
 ======= ====== =======
-|
-|
-|
-  |
+ 
+ 
+ 
+   
 **Building Codes and Jurisdiction**
-|
+ 
 - City of Larkspur, California
 - 2019 California Building Code [CBC]
 - 2019 California Residential Code [CRC]
-|
+ 
 
 **Table 03 -** My Table [file: ins/i01/cbc2019A_stds.csv]
 
@@ -185,15 +190,15 @@ Wood-National Design Specifications                  AWC-NDS       2018
 Wood-Special Design Provisions for Wind and Seismic  AWC-SDPWS     2015
 Wood Frame Construction Manual                       AWC-WFCM      2018
 ===================================================  ==========  ======
-|
+ 
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
-|
+ 
 
 **Table 04 -** Another Table Title [file: ins/i01/load_types01.csv]
 
 =====  ======================================  ===================================
-Sym    Load Effect                             Notes
+Var    Load Effect                             Notes
 =====  ======================================  ===================================
 D      Dead load                               See IBC 1606 and Chapter 3 of this
                                                publication
@@ -216,8 +221,8 @@ R      Rain load                               See IBC 1611 and Chapter 3 of thi
 W      Load due to wind pressure               See IBC 1609 and Chapter 5 of this
                                                publication
 =====  ======================================  ===================================
-|
-|
+ 
+ 
 
 **Table 05 -** xxx [file: ins/i01/asce7_load_comb.csv]
 
@@ -232,14 +237,14 @@ W      Load due to wind pressure               See IBC 1609 and Chapter 5 of thi
    Equation 16-6                         0.9D+ l.0W+ l.6H
    Equation 16-7                      0.9(D + F) + 1.0E+ l.6H
 ====================  ======================================================
-|
-|
+ 
+ 
 
 [ 3 ] Gravity Loads and Seismic Mass
 --------------------------------------------------------------------------------
-|
-A line of text - and some more xxxxxxxx.
-|
+ 
+A line of text - and some more.
+ 
 
 **Value Table 01**: First floor dimensions
 
@@ -255,62 +260,66 @@ len2           155.00 ft     47.24 m  exterior wall length
 udl1           12.20 psf   584.14 Pa  description
 ==========  ============  ==========  ====================
 
-|
+ 
 A line of extended text - not formatted    
-|
+ 
+
+**Value Table 01 -** Another values table [from file: vals/v01/test1.csv]
+
 ==========  =========  ==========  ====================
 variable        value     [value]  description
 ==========  =========  ==========  ====================
 floordl1    50.00 psf  2394.01 Pa  interior wall length
 floordl2    10.00 psf   478.80 Pa  exterior wall length
-==========  =========  ==========  ====================[from file: vals\v01\test1.csv]
-
- |
-|
+==========  =========  ==========  ====================
+ 
+ 
 
 **E01** -    Equation for floor area
 
-|
+ 
 
 
- :: 
+..  code:: 
 
 
                                                                       ACI-315-05
-     wt₂ = area₂⋅floordl₁
+    wt₂ = area₂⋅floordl₁
 
-=============  ==========  ============
-     wt2        floordl1      area2
-=============  ==========  ============
-5000.00 kips   50.00 psf   100000.00 sf
-22241108.00 N  2394.01 Pa   9290.30 SM
-=============  ==========  ============|
-|
+=============  ============  ==========
+     wt2          area2       floordl1
+=============  ============  ==========
+5000.00 kips   100000.00 sf  50.00 psf
+22241108.00 N   9290.30 SM   2394.01 Pa
+=============  ============  ========== 
+ 
 
 **E02** -    Equation for wall area
 
-|
+ 
 
 
- :: 
+..  code:: 
 
 
                                                                       ACI-315-05
-     wt₃ = area₃⋅floordl₂⋅0.1
+    wt₃ = area₃⋅floordl₂⋅0.1
 
-========  ==========  ========
-  wt3      floordl2    area3
-========  ==========  ========
-25.0 lbs  10.00 psf   25.00 sf
-111.2 N   478.80 Pa   2.32 SM
-========  ==========  ========|
-|
+========  ========  ==========
+  wt3      area3     floordl2
+========  ========  ==========
+25.0 lbs  25.00 sf  10.00 psf
+111.2 N   2.32 SM   478.80 Pa
+========  ========  ========== 
+ 
+
+**Value Table 02 -** Exterior wall - total area load [from file: vals/v01/test2.csv]
+
 ==========  =========  =========  ====================
 variable        value    [value]  description
 ==========  =========  =========  ====================
 len1        410.00 ft   124.97 m  interior wall length
 len2        455.00 ft   138.68 m  exterior wall length
-==========  =========  =========  ====================[from file: vals\v01\test2.csv]
-
- |
-|
+==========  =========  =========  ====================
+ 
+ 

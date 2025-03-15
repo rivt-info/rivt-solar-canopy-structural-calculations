@@ -37,6 +37,8 @@ pageTemplates:
     defaultFooter: ".. |date| date::\n\n**Date:** |date| ``|                                                   |`` **Page:** ###Page### of ###Total###"
     showFooter: true
     showHeader: true
+    spaceAfter: 24
+    spaceBefore: 24
 styles:
   base:
     alignment: TA_LEFT
@@ -75,7 +77,7 @@ styles:
     spaceBefore: 6
   bottom:
     alignment: TA_CENTER
-    fontSize: 115%
+    fontSize: 120%
     keepWithNext: false
     parent: heading
     fontName: fontSansBold
@@ -83,14 +85,15 @@ styles:
     alignment: center
     parent: bodytext
   code:
-    backColor: white
+    spaceAfter: 12
+    spaceBefore: 12
+    backColor: "#e0ebeb"
     borderColor: darkgray
     borderPadding: 6
     borderWidth: 0.5
     leftIndent: 0
     parent: literal
-    spaceAfter: 8
-    spaceBefore: 8
+
   contents:
     parent: normal
   figure:
@@ -222,6 +225,8 @@ styles:
     parent: title
     spaceBefore: 12
   table:
+    spaceAfter: 24
+    spaceBefore: 12
     parent: normal
     alignment: TA_CENTER
     commands:
@@ -252,8 +257,6 @@ styles:
           - -1
         - 0.25
         - black
-    spaceAfter: 0
-    spaceBefore: 6
   table-body:
     parent: normal
   table-heading:
