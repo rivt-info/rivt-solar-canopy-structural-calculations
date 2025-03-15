@@ -1,2 +1,2 @@
-floordl1=50*PSF, interior wall length,  PSF, PA , 2,2
-floordl2=10*PSF, exterior wall length, PSF, PA, 2,2 
+floordl1 := 50*PSF, interior wall length,  PSF, PA , 2,2
+floordl2 := 10*PSF, exterior wall length, PSF, PA, 2,2 

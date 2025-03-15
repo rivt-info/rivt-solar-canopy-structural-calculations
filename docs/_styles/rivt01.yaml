@@ -37,8 +37,6 @@ pageTemplates:
     defaultFooter: ".. |date| date::\n\n**Date:** |date| ``|                                                   |`` **Page:** ###Page### of ###Total###"
     showFooter: true
     showHeader: true
-    spaceAfter: 24
-    spaceBefore: 24
 styles:
   base:
     alignment: TA_LEFT
@@ -61,8 +59,8 @@ styles:
     leftIndent: 0
     parent: null
     rightIndent: 0
-    spaceAfter: 0
-    spaceBefore: 0
+    spaceAfter: 6
+    spaceBefore: 6
     strike: false
     textColor: black
     underline: false
@@ -85,8 +83,8 @@ styles:
     alignment: center
     parent: bodytext
   code:
+    spaceBefore: 6
     spaceAfter: 12
-    spaceBefore: 12
     backColor: "#e0ebeb"
     borderColor: darkgray
     borderPadding: 6
@@ -97,6 +95,8 @@ styles:
   contents:
     parent: normal
   figure:
+    spaceBefore: 18
+    spaceAfter: 12
     alignment: TA_CENTER
     colWidths:
       - 100%
@@ -154,6 +154,8 @@ styles:
   hint-heading:
     parent: admonition-heading
   image:
+    spaceBefore: 18
+    spaceAfter: 12
     alignment: TA_CENTER
     parent: bodytext
   important:
@@ -225,8 +227,8 @@ styles:
     parent: title
     spaceBefore: 12
   table:
-    spaceAfter: 24
-    spaceBefore: 12
+    spaceBefore: 0
+    spaceAfter: 6
     parent: normal
     alignment: TA_CENTER
     commands:

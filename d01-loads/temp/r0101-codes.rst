@@ -20,9 +20,6 @@
 |
 |
 |
-|
-|
-|
 
 
 .. image::  ../../docs/_styles/rivt01.png
@@ -35,10 +32,7 @@
 |
 |
 |
-|
-|
-|
-|
+
 |
 
 
@@ -305,12 +299,12 @@ floordl2    10.00 psf   478.80 Pa  exterior wall length
                                                                       ACI-315-05
     wt₃ = area₃⋅floordl₂⋅0.1
 
-========  ========  ==========
-  wt3      area3     floordl2
-========  ========  ==========
-25.0 lbs  25.00 sf  10.00 psf
-111.2 N   2.32 SM   478.80 Pa
-========  ========  ========== 
+========  ==========  ========
+  wt3      floordl2    area3
+========  ==========  ========
+25.0 lbs  10.00 psf   25.00 sf
+111.2 N   478.80 Pa   2.32 SM
+========  ==========  ======== 
  
 
 **Value Table 02 -** Exterior wall - total area load [from file: vals/v01/test2.csv]

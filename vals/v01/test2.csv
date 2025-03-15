@@ -1,2 +1,2 @@
-len1 = 410*FT, interior wall length,  FT, M , 2,2
-len2 = 455*FT, exterior wall length, FT, M, 2,2 
+len1 := 410*FT, interior wall length,  FT, M , 2,2
+len2 := 455*FT, exterior wall length, FT, M, 2,2 
