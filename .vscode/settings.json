@@ -7,22 +7,30 @@
         "tab.inactiveBackground": "#505052"
     },
     "ShortcutMenuBar.userButton09Command": "cSpell.toggleEnableSpellChecker",
-    "cSpell.words": [
+    "files.associations": {
+        "*.py": "python"
+    },
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "right",
+    "notes.notesLocation": "c:\\_lib\\vsnotes",
+    "cSpell.userWords": [
+        "buildable",
+        "rivt",
         "autonumber",
         "Codespace",
-        "rivt",
         "rivtcalc",
         "sympy",
-        "buildable",
     ],
     "seito-openfile.openNewTab": true,
     "seito-openfile.searchPaths": [],
+    "seito-openfile.notFoundTriggerQuickOpen": false,
     "editor.formatOnSave": true,
     "triggerTaskOnSave.tasks": {
         "lintpy": [
             "**/*.py"
         ],
     },
+    "editor.formatOnType": false,
     "fsdeploy.nodes": [
         {
             "source": "C:/git/rivt-solar-canopy-structural-calculations",
@@ -34,4 +42,136 @@
     ],
     "fsdeploy.deployOnSave": true,
     "fsdeploy.deployWorkspaceOnSave": false,
+    "editor.parameterHints.cycle": false,
+    "editor.hover.enabled": false,
+    "editor.tabCompletion": "on",
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        {
+            "column": 80,
+            "color": "#3d3d3d"
+        }
+    ],
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.codeLens": false,
+    "githubRepositories.indexing.verboseDownloadNotification": false,
+    "ShortcutMenuBar.beautify": false,
+    "ShortcutMenuBar.showCommands": true,
+    "ShortcutMenuBar.navigateBack": false,
+    "ShortcutMenuBar.navigateForward": false,
+    "ShortcutMenuBar.commentLine": true,
+    "ShortcutMenuBar.toggleWordWrap": true,
+    "editor.renderWhitespace": "none",
+    "editor.guides.indentation": false,
+    "pdf-preview.default.sidebar": true,
+    "pdf-preview.default.scale": "page-actual",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "git:/**/*.code-snippets": "default",
+        "gitlens:/**/*.code-snippets": "default",
+        "*.svg": "default",
+        "*.csv": "gc-excelviewer-csv-editor"
+    },
+    "git.postCommitCommand": "sync",
+    "explorer.confirmDragAndDrop": false,
+    "ShortcutMenuBar.openSettings": true,
+    "editor.inlayHints.enabled": "off",
+    "latex-workshop.message.warning.show": false,
+    "editor.suggest.showTypeParameters": false,
+    "explorer.sortOrder": "default",
+    "toggle.settingTitle": "explorer.sortOrder",
+    "toggle.settingState1": "type",
+    "toggle.settingState2": "default",
+    "editor.fontSize": 16,
+    "jupyter.themeMatplotlibPlots": true,
+    "python.terminal.executeInFileDir": true,
+    "projectManager.git.baseFolders": [
+        "c:\\git"
+    ],
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.scrollback": 5000,
+    "editor.formatOnPaste": false,
+    "editor.mouseWheelZoom": true,
+    "workbench.editor.empty.hint": "hidden",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "accessibility.verbosity.notification": false,
+    "gutterpreview.imagePreviewMaxHeight": 0,
+    "gutterpreview.imagePreviewMaxWidth": 0,
+    "gutterpreview.enableReferenceLookup": true,
+    "gutterpreview.sourceFolder": "",
+    "cSpell.enabled": false,
+    "actionButtons": {
+        "reloadButton": "♻️", /* Custom reload button text */
+        "defaultColor": "#ff0034", /* Can also use string color names */
+        "loadNpmCommands": false, /* Disables automatic generation of actions for npm commands */
+        "commands": [
+            {
+                "cwd": "/home/custom_folder", /* Terminal initial folder */
+                "name": "X",
+                "color": "green",
+                "singleInstance": true,
+                "command": "cargo run ${file}", /* This is executed in the terminal */
+            },
+            {
+                "name": "Run Cell",
+                "color": "red",
+                "useVsCodeApi": true,
+                "command": "jupyter.runcurrentcell",
+            },
+            {
+                "name": "Fold",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.foldAll"
+            },
+            {
+                "name": "FoldX",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.foldAllExcept"
+            },
+            {
+                "name": "Unfold",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.unfoldAll"
+            },
+            {
+                "name": "Unfold Recursive",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.unfoldRecursively"
+            },
+            {
+                /* example for esp-idf oriented command */
+                "name": "Flash",
+                "terminalName": "ESP-IDF 4.4 CMD",
+                "color": "blue",
+                "useVsCodeApi": false,
+                "ignoreCwd": true,
+                "ignoreClear": true,
+                "command": "idf.py -p ${port} flash",
+                "extraCommands": [
+                    "idf.py -p ${port} monitor"
+                ]
+            }
+        ]
+    },
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "jupyter.askForKernelRestart": false,
+    "editor.foldingStrategy": "auto",
+    "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
+    "explicitFolding.rules": {
+        "*": [
+            {
+                "begin": "rv.",
+                "end": "\"\"\")"
+            },
+        ]
+    },
 }
