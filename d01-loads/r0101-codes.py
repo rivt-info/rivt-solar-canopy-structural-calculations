@@ -2,7 +2,7 @@
 # %%
 import rivtlib.api as rv
 
-rv.I(""" Project Summary | yes | none
+rv.I(""" Project Summary | | oss
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
@@ -15,31 +15,24 @@ center this text _[C]
 
 """)
 
-rv.I(""" Overview and Codes | yes | none
+rv.I(""" Overview and Codes | |
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
 design of a concrete slab and *stem* wall, steel tube frame, and clip
 attachments of solar panels to the frame.xxxx
 
-
 |IMG| ins/i01/rivt01.png | Wind Load 1, 30, _[F]
-
 
 some text between
 
-
 |IMG| ins/i01/site01.png | Wind Load 2, 30, _[F]
      
-
 some more text
-
 
 wt2 = 4+ a2 * dl2/2   _[S]
 
-
 New Table _[T]
-
       
 ======= ====== =======
 col1     col2   col3
@@ -53,7 +46,7 @@ col1     col2   col3
 """)
 
 # %%
-rv.I(""" -- code tables | yes | none 
+rv.I(""" -- code tables | |
 
 **Building Codes and Jurisdiction**
 
@@ -74,7 +67,7 @@ Residential Codes and are summarized in the following tables.
 """)
 
 # %%
-rv.V("""Gravity Loads and Seismic Mass | yes | none
+rv.V("""Gravity Loads and Seismic Mass | |
 
 A line of text - and some more.
 
@@ -92,7 +85,6 @@ _[[Q]]
 A line of extended text - not formatted    
 
 |VALUES| vals/v01/test1.csv | Another values table _[V]
-
      
 Equation for floor area _[E]  
        
@@ -102,7 +94,6 @@ Equation for wall area _[E]
      
 wt3 := area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
 
-     
 |VALUES| vals/v01/test2.csv | Exterior wall - total area load _[V]
 
 """)
@@ -129,7 +120,7 @@ rv.X(""" Abbreviations and References | yes | none
 """)
 
 # %%
-rv.W(""" Write | open | none
+rv.W(""" Write | |
 
 ||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png 
 

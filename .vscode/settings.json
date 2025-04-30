@@ -36,7 +36,6 @@
     },
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "right",
-    "notes.notesLocation": "./.vscode/notes",
     "cSpell.userWords": [
         "buildable",
         "rivt",
@@ -132,7 +131,7 @@
                 "name": "Notes",
                 "color": "green",
                 "useVsCodeApi": false,
-                "command": "code .vscode/notes.txt && exit",
+                "command": "code ./vsnotes/notes.txt && exit",
             },
             {
                 "name": "Run Cell",
@@ -244,11 +243,23 @@
             "color": "red",
         },
         {
-            "text": "||DOC||",
+            "text": "||DOC|",
             "color": "white",
         },
         {
-            "text": "||REPORT||",
+            "text": "||REPORT|",
+            "color": "white",
+        },
+        {
+            "text": "||COVER|",
+            "color": "white",
+        },
+        {
+            "text": "||APPEND|",
+            "color": "white",
+        },
+        {
+            "text": "||PREPEND|",
             "color": "white",
         },
         {
@@ -265,6 +276,10 @@
         },
         {
             "text": "_[V]",
+            "color": "#3498db",
+        },
+        {
+            "text": "_[C]",
             "color": "#3498db",
         },
         {
