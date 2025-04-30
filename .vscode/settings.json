@@ -4,7 +4,31 @@
     "workbench.colorTheme": "Default Dark Modern",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
-        "tab.inactiveBackground": "#505052"
+        "tab.inactiveBackground": "#606068"
+    },
+    "editor.tokenColorCustomizations": {
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "string.quoted.multi.python",
+                        "meta.function-call.arguments.python",
+                        "meta.function-call.python",
+                        "meta.member.access.python",
+                        "source.python"
+                    ],
+                    "settings": {
+                        "foreground": "#acacb3"
+                    }
+                },
+            ]
+        }
+    },
+    "workbench.editorAssociations": {
+        "git:/**/*.code-snippets": "default",
+        "gitlens:/**/*.code-snippets": "default",
+        "*.svg": "default",
+        "*.csv": "gc-excelviewer-csv-editor"
     },
     "ShortcutMenuBar.userButton09Command": "cSpell.toggleEnableSpellChecker",
     "files.associations": {
@@ -12,7 +36,7 @@
     },
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "right",
-    "notes.notesLocation": "c:\\_lib\\vsnotes",
+    "notes.notesLocation": "./.vscode/notes",
     "cSpell.userWords": [
         "buildable",
         "rivt",
@@ -68,12 +92,6 @@
     "pdf-preview.default.scale": "page-actual",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "explorer.confirmDelete": false,
-    "workbench.editorAssociations": {
-        "git:/**/*.code-snippets": "default",
-        "gitlens:/**/*.code-snippets": "default",
-        "*.svg": "default",
-        "*.csv": "gc-excelviewer-csv-editor"
-    },
     "git.postCommitCommand": "sync",
     "explorer.confirmDragAndDrop": false,
     "ShortcutMenuBar.openSettings": true,
@@ -111,11 +129,10 @@
         "loadNpmCommands": false, /* Disables automatic generation of actions for npm commands */
         "commands": [
             {
-                "cwd": "/home/custom_folder", /* Terminal initial folder */
-                "name": "X",
+                "name": "Notes",
                 "color": "green",
-                "singleInstance": true,
-                "command": "cargo run ${file}", /* This is executed in the terminal */
+                "useVsCodeApi": false,
+                "command": "code .vscode/notes.txt && exit",
             },
             {
                 "name": "Run Cell",
@@ -124,7 +141,7 @@
                 "command": "jupyter.runcurrentcell",
             },
             {
-                "name": "Fold",
+                "name": "FoldAll",
                 "color": "orange",
                 "useVsCodeApi": true,
                 "command": "editor.foldAll"
@@ -147,19 +164,6 @@
                 "useVsCodeApi": true,
                 "command": "editor.unfoldRecursively"
             },
-            {
-                /* example for esp-idf oriented command */
-                "name": "Flash",
-                "terminalName": "ESP-IDF 4.4 CMD",
-                "color": "blue",
-                "useVsCodeApi": false,
-                "ignoreCwd": true,
-                "ignoreClear": true,
-                "command": "idf.py -p ${port} flash",
-                "extraCommands": [
-                    "idf.py -p ${port} monitor"
-                ]
-            }
         ]
     },
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
@@ -174,4 +178,80 @@
             },
         ]
     },
+    "todohighlight.include": [
+        "**/*.py"
+    ],
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.defaultStyle": {
+        "color": "grey",
+        "backgroundColor": "editor.background",
+        "border": "none",
+        "isWholeLine": false,
+    },
+    "todohighlight.keywords": [
+        {
+            "text": "rv.R",
+            "color": "#f7dc6f",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.I",
+            "color": "#f7dc6f",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.V",
+            "color": "#f7dc6f",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.T",
+            "color": "#f7dc6f",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.W",
+            "color": "white",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.X",
+            "color": "purple",
+        },
+        {
+            "text": "rv.Q",
+            "color": "purple",
+        },
+        {
+            "text": "|IMG|",
+            "color": "green",
+        },
+        {
+            "text": "|TABLE|",
+            "color": "green",
+        },
+        {
+            "text": "|TEXT|",
+            "color": "green",
+        },
+        {
+            "text": "|VALUES|",
+            "color": "red",
+        },
+        {
+            "text": ":=",
+            "color": "red",
+        },
+        {
+            "text": "||DOC||",
+            "color": "white",
+        },
+        {
+            "text": "||REPORT||",
+            "color": "white",
+        },
+    ],
+    "todohighlight.maxFilesForSearch": 5120,
+    "todohighlight.toggleURI": false,
 }

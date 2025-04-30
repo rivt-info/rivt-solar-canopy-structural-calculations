@@ -2,12 +2,12 @@
 # %%
 import rivtlib.api as rv
 
-rv.I(""" Project Summary | xos | none
+rv.I(""" Project Summary | | oss
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
-of solar panels to the frame.
+design of a concrete slab and *stem* wall, steel tube frame, and clip
+attachments of solar panels to the frame.
 
 center this text _[C]
   
@@ -15,12 +15,12 @@ center this text _[C]
 
 """)
 
-rv.I(""" Overview and Codes | xos | none
+rv.I(""" Overview and Codes | |
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
-design of a concrete slab and *stem* wall, steel tube frame, and clip attachments
-of solar panels to the frame.
+design of a concrete slab and *stem* wall, steel tube frame, and clip
+attachments of solar panels to the frame.
 
 
 | IMG | ins01/rivt01.png | Wind Load 1, 30
@@ -42,7 +42,7 @@ wt2 = 4+ a2 * dl2/2   _[S]
 """)
 
 # %%
-rv.I(""" -- code tables | xos | none 
+rv.I(""" -- code tables | |
 
 **Building Codes and Jurisdiction**
 
@@ -50,21 +50,21 @@ rv.I(""" -- code tables | xos | none
 - 2019 California Building Code [CBC]
 - 2019 California Residential Code [CRC]
 
-| TABLE | ins01/cbc2019A_stds.csv | My Table, 53, l, []
+|TABLE| ins01/cbc2019A_stds.csv | My Table, 53, l, []
 
 Design loads for the project are from the California Building and
 Residential Codes and are summarized in the following tables.
 
-| TABLE | ins01/load_types01.csv | Another Table Title, 40, l, [] 
+|TABLE| ins01/load_types01.csv | Another Table Title, 40, l, [] 
 
 
 Load Combinations _[T]
-| TABLE | ins01/asce7_load_comb.csv | xxx, 55, c, []                        
+|TABLE| ins01/asce7_load_comb.csv | xxx, 55, c, []                        
 
 """)
 
 # %%
-rv.V("""Gravity Loads and Seismic Mass | os | none
+rv.V("""Gravity Loads and Seismic Mass | |
 
 
 First floor dimensions _[E]
@@ -106,7 +106,7 @@ Exterior wall - total area load _[E]
 """)
 
 # %%
-rv.X(""" Abbreviations and References | os | none
+rv.X(""" Abbreviations and References | |
 
 **Reference Standards**
 
@@ -127,7 +127,7 @@ rv.X(""" Abbreviations and References | os | none
 """)
 
 # %%
-rv.W(""" Write | oss | none
+rv.W(""" Write | |
 
 || DOC | docs | rpdf
 
