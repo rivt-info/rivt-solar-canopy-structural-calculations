@@ -42,7 +42,7 @@ col1     col2   col3
 ======= ====== =======
 
          
-# |TEXT| ins/i01/example1.txt | plain
+# |TEXT| ins/i01/example1.txt | preformat
      
 """)
 
