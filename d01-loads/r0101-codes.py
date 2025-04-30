@@ -43,6 +43,7 @@ col1     col2   col3
 
          
 # |TEXT| ins/i01/example1.txt | plain
+     
 """)
 
 # %%
@@ -71,8 +72,7 @@ rv.V("""Gravity Loads and Seismic Mass | |
 
 A line of text - and some more.
 
-First floor dimensions  _[V]
-_[[V]]   
+_[[V]]  First Floor Dimensions  _[T]
 area1 := 10700*SF | roof area | SF, SM | 2,2       
 area2 := 10000*FT * 10*FT | floor area | SF, SM | 2,2         
 area3 := 5*FT * 5*FT | floor area | SF, SM | 2,2         
@@ -84,7 +84,7 @@ _[[Q]]
 
 A line of extended text - not formatted    
 
-|VALUES| vals/v01/test1.csv | Another values table _[V]
+|VALUES| vls/v01/test1.csv | Another values table _[T]
      
 Equation for floor area _[E]  
        
@@ -94,7 +94,7 @@ Equation for wall area _[E]
      
 wt3 := area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
 
-|VALUES| vals/v01/test2.csv | Exterior wall - total area load _[V]
+|VALUES| vls/v01/test2.csv | Exterior wall - total area load _[T]
 
 """)
 
