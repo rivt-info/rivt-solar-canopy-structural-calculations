@@ -98,7 +98,6 @@ Equation for floor area _[E]
        
 wt2 := area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
 
-     
 Equation for wall area _[E]
      
 wt3 := area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2

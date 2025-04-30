@@ -217,11 +217,11 @@
         },
         {
             "text": "rv.X",
-            "color": "purple",
+            "color": "#af7ac5",
         },
         {
             "text": "rv.Q",
-            "color": "purple",
+            "color": "#af7ac5",
         },
         {
             "text": "|IMG|",
@@ -250,6 +250,30 @@
         {
             "text": "||REPORT||",
             "color": "white",
+        },
+        {
+            "text": "_[T]",
+            "color": "#3498db",
+        },
+        {
+            "text": "_[F]",
+            "color": "#3498db",
+        },
+        {
+            "text": "_[E]",
+            "color": "#3498db",
+        },
+        {
+            "text": "_[V]",
+            "color": "#3498db",
+        },
+        {
+            "text": "_[[V]]",
+            "color": "#ca6f1e",
+        },
+        {
+            "text": "_[[Q]]",
+            "color": "#ca6f1e",
         },
     ],
     "todohighlight.maxFilesForSearch": 5120,
