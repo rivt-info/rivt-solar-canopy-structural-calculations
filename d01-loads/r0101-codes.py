@@ -2,9 +2,25 @@
 # %%
 import rivtlib.api as rv
 
+# %%
+rv.X(""" Write | |
+
+||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png 
+          
+||DOC| docs/pdf/ | pdf, cover, rivt01
+     
+# ||REPORT| docs/pdf2/ | pdf2
+     
+# ||APPEND| docs/pdf2/ | file.pdf
+     
+# ||PREPEND| docs/pdf2/ | file.pdf
+
+
+""")
+# %%
 rv.I(""" Project Summary | | oss
 
-This report **describes** the structural design of a solar canopy *covering* a
+This report **describes** the structural design of a solar canopy that covers a
 residential patio located in the City of Larkspur, California. It includes the
 design of a concrete slab and *stem* wall, steel tube frame, and clip
 attachments of solar panels to the frame.
@@ -57,8 +73,8 @@ rv.I(""" -- code tables | |
 
 |TABLE| ins/i01/cbc2019A_stds.csv | My Table, 53, l, [], _[T]
 
-Design loads for the project are from the California Building and
-Residential Codes and are summarized in the following tables.
+Design load combinations are from *California Building and Residential Codes*
+and are summarized in the following tables.
 
 |TABLE| ins/i01/load_types01.csv | Another Table Title, 40, l, [], _[T] 
 
@@ -70,9 +86,9 @@ Residential Codes and are summarized in the following tables.
 # %%
 rv.V("""Gravity Loads and Seismic Mass | |
 
-A line of text - and some more.
+Dimensions for the first floor structural layout are as follows.
 
-_[[V]]  First Floor Dimensions  _[T]
+First Floor Dimensions _[[V]]   
 area1 := 10700*SF | roof area | SF, SM | 2,2       
 area2 := 10000*FT * 10*FT | floor area | SF, SM | 2,2         
 area3 := 5*FT * 5*FT | floor area | SF, SM | 2,2         
@@ -82,7 +98,7 @@ len2 := 155*FT | exterior wall length | FT, M | 2,2
 udl1 := 12.2*PSF | description | PSF, PA | 2,2 
 _[[Q]]
 
-A line of extended text - not formatted    
+Additional values from a file.   
 
 |VALUES| vls/v01/test1.csv | Another values table _[T]
      
@@ -118,22 +134,3 @@ rv.X(""" Abbreviations and References | yes | none
 |TEXT| ins/i01/abbrev_math.tex | latex
 
 """)
-
-# %%
-rv.W(""" Write | |
-
-||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png 
-
-||DOC| docs/pdf2/ | pdf2, cover, rivt01
-     
-# ||REPORT| docs/pdf2/ | pdf2
-     
-# ||APPEND| docs/pdf2/ | file.pdf
-     
-# ||PREPEND| docs/pdf2/ | file.pdf
-
-
-""")
-
-
-rv.Q()
