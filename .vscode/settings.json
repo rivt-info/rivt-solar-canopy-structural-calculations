@@ -1,6 +1,65 @@
 {
+    "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
+    "fsdeploy.nodes": [
+        {
+            "source": "E:/G_Drive/My Drive/StL-Projects/Solar-Canopy-2023/canopy-2025/gitbak/rivt-solar-canopy-structural-calculations",
+            "target": "C:/git/rivt-solar-canopy-structural-calculations",
+            "include": "**/*.*",
+            "exclude": "",
+            "deleteTargetOnDeploy": true,
+        }
+    ],
+    "fsdeploy.deployOnSave": true,
+    "fsdeploy.deployWorkspaceOnSave": false,
+    "actionButtons": {
+        "reloadButton": "♻️", /* Custom reload button text */
+        "defaultColor": "#ff0034", /* Can also use string color names */
+        "loadNpmCommands": false, /* Disables automatic generation of actions for npm commands */
+        "commands": [
+            {
+                "name": "Notes",
+                "color": "green",
+                "useVsCodeApi": false,
+                "command": "code notes.txt && exit",
+            },
+            {
+                "name": "Run Cell",
+                "color": "red",
+                "useVsCodeApi": true,
+                "command": "jupyter.runcurrentcell",
+            },
+            {
+                "name": "FoldAll",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.foldAll"
+            },
+            {
+                "name": "FoldX",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.foldAllExcept"
+            },
+            {
+                "name": "Unfold",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.unfoldAll"
+            },
+            {
+                "name": "Unfold Recursive",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.unfoldRecursively"
+            },
+        ]
+    },
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
     "insertDateString.formatDate": "MM-DD-YYYY",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
     "workbench.colorTheme": "Default Dark Modern",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
@@ -48,23 +107,7 @@
     "seito-openfile.searchPaths": [],
     "seito-openfile.notFoundTriggerQuickOpen": false,
     "editor.formatOnSave": true,
-    "triggerTaskOnSave.tasks": {
-        "lintpy": [
-            "**/*.py"
-        ],
-    },
     "editor.formatOnType": false,
-    "fsdeploy.nodes": [
-        {
-            "source": "C:/git/rivt-solar-canopy-structural-calculations",
-            "target": "E:/GooDrive/My Drive/StL-Projects/Solar-Canopy-2023/canopy-2025/rivt-solar-canopy",
-            "include": "**/*.*",
-            "exclude": "",
-            "deleteTargetOnDeploy": false,
-        }
-    ],
-    "fsdeploy.deployOnSave": true,
-    "fsdeploy.deployWorkspaceOnSave": false,
     "editor.parameterHints.cycle": false,
     "editor.hover.enabled": false,
     "editor.tabCompletion": "on",
@@ -122,49 +165,6 @@
     "gutterpreview.enableReferenceLookup": true,
     "gutterpreview.sourceFolder": "",
     "cSpell.enabled": false,
-    "actionButtons": {
-        "reloadButton": "♻️", /* Custom reload button text */
-        "defaultColor": "#ff0034", /* Can also use string color names */
-        "loadNpmCommands": false, /* Disables automatic generation of actions for npm commands */
-        "commands": [
-            {
-                "name": "Notes",
-                "color": "green",
-                "useVsCodeApi": false,
-                "command": "code ./vsnotes/notes.txt && exit",
-            },
-            {
-                "name": "Run Cell",
-                "color": "red",
-                "useVsCodeApi": true,
-                "command": "jupyter.runcurrentcell",
-            },
-            {
-                "name": "FoldAll",
-                "color": "orange",
-                "useVsCodeApi": true,
-                "command": "editor.foldAll"
-            },
-            {
-                "name": "FoldX",
-                "color": "orange",
-                "useVsCodeApi": true,
-                "command": "editor.foldAllExcept"
-            },
-            {
-                "name": "Unfold",
-                "color": "orange",
-                "useVsCodeApi": true,
-                "command": "editor.unfoldAll"
-            },
-            {
-                "name": "Unfold Recursive",
-                "color": "orange",
-                "useVsCodeApi": true,
-                "command": "editor.unfoldRecursively"
-            },
-        ]
-    },
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "jupyter.askForKernelRestart": false,
     "editor.foldingStrategy": "auto",

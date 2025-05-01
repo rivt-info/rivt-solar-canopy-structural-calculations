@@ -1,0 +1,13 @@
+abc
+123
+
+    "triggerTaskOnSave.tasks": {
+        "lintpy": [
+            "**/*.py"
+        ],
+    },
+
+
+    qqqq
+
+    rrr
