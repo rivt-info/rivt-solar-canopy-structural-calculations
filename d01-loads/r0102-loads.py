@@ -2,21 +2,6 @@
 # %% 1
 import rivtlib.api as rv
 
-rv.S(""" Write | |
-
-||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png 
-          
-||DOC| docs/pdf/ | pdf, cover, rivt01
-     
-# ||REPORT| docs/pdf2/ | pdf2
-     
-# ||APPEND| docs/pdf2/ | file.pdf
-     
-# ||PREPEND| docs/pdf2/ | file.pdf
-
-""")
-
-# %%  2
 rv.I(""" Project Summary | | oss
 
 This report **describes** the structural design of a solar canopy *covering* a

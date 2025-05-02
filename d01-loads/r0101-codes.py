@@ -3,20 +3,20 @@
 # %%
 import rivtlib.api as rv
 
+
 rv.S(""" Write | |
 
-||COVER| My Report 2 | written by R Holland | bottom text |  rivt01.png 
+||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png 
           
 ||DOC| docs/pdf/ | pdf, cover, rivt01
      
-# ||APPEND| docs/pdf/ | file.pdf
+# ||REPORT| docs/pdf2/ | pdf2
+     
+# ||APPEND| docs/pdf2/ | file.pdf
+     
+# ||PREPEND| docs/pdf2/ | file.pdf
 
-# ||PREPEND| docs/pdf/ | file.pdf
-     
-# ||REPORT| docs/pdf/ | pdf
-     
-# ||APPEND| docs/pdf/ | file.pdf
-     
+
 """)
 
 rv.I(""" Project Summary | | oss
@@ -46,7 +46,7 @@ some text between
      
 some more text
 
-wt2 = 4 + a2 * dl2/2   _[S]
+wt2 = 4+ a2 * dl2/2   _[S]
 
 New Table _[T]
       
@@ -61,6 +61,7 @@ col1     col2   col3
 # |TEXT| ins/i01/example1.txt | preformat
      
 """)
+
 
 # %%
 rv.I(""" -- code tables | |
@@ -81,6 +82,7 @@ and are summarized in the following tables.
 
 |TABLE| ins/i01/asce7_load_comb.csv | xxx, 55, c, [], _[T]                        
 """)
+
 
 # %%
 rv.V("""Gravity Loads and Seismic Mass | |
@@ -112,6 +114,7 @@ wt3 := area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
 |VALUES| vls/v01/test2.csv | Exterior wall - total area load _[T]
 
 """)
+
 
 # %%
 rv.X(""" Abbreviations and References | yes | none
