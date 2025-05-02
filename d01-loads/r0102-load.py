@@ -2,6 +2,7 @@
 
 import rivtlib.api as rv
 
+# %% Write
 rv.S(""" Write | |
 
 ||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png
@@ -16,8 +17,8 @@ rv.S(""" Write | |
 
 """)
 
+# %% Project
 rv.I(""" Project Summary | | oss
-
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
@@ -77,7 +78,7 @@ Load Combinations _[T]
 |TABLE| ins01/asce7_load_comb.csv | xxx, 55, c, []
 """)
 
-# %% 4
+# %% Gravity
 rv.V("""Gravity Loads and Seismic Mass | |
 
 

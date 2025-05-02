@@ -9,7 +9,7 @@
         "editor.selectionBackground": "#264f78",
         "editor.selectionHighlightBorder": "#264f78",
         "editor.lineHighlightBorder": "#34495d",
-        "list.inactiveSelectionBackground": "#1c2a3d",
+        "list.inactiveSelectionBackground": "#213148",
     },
     "python.languageServer": "None",
     "notebook.defaultFormatter": "eeyore.yapf",
@@ -47,10 +47,22 @@
         "loadNpmCommands": false, /* Disables automatic generation of actions for npm commands */
         "commands": [
             {
-                "name": "Notes",
+                "name": "Note",
                 "color": "green",
                 "useVsCodeApi": false,
                 "command": "code notes.txt && exit",
+            },
+            {
+                "name": "Setting",
+                "color": "green",
+                "useVsCodeApi": true,
+                "command": "workbench.action.openSettings2",
+            },
+            {
+                "name": "KeyBind",
+                "color": "green",
+                "useVsCodeApi": true,
+                "command": "workbench.action.openGlobalKeybindings",
             },
             {
                 "name": "GoTo",
@@ -59,7 +71,7 @@
                 "command": "workbench.action.gotoLine",
             },
             {
-                "name": "Run Cell",
+                "name": "RunCell",
                 "color": "red",
                 "useVsCodeApi": true,
                 "command": "jupyter.runcurrentcell",
@@ -151,7 +163,7 @@
         },
         {
             "text": "\"\"\")",
-            "color": "#e8c468",
+            "color": "gray",
             "isWholeLine": true,
         },
         {
