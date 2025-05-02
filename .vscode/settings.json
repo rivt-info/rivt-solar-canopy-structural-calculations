@@ -1,9 +1,12 @@
+// ========================================================================== //
+// top of file
 {
     "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
+    "python.languageServer": "Jedi",
     "fsdeploy.nodes": [
         {
             "source": "E:/G_Drive/My Drive/StL-Projects/Solar-Canopy-2023/canopy-2025/gitbak/rivt-solar-canopy-structural-calculations",
-            "target": "C:/git/rivt-solar-canopy-structural-calculations",
+            "target": "C:/git/git-rivt-solar-canopy-structural-calculations",
             "include": "**/*.*",
             "exclude": "",
             "deleteTargetOnDeploy": true,
@@ -11,9 +14,17 @@
     ],
     "fsdeploy.deployOnSave": true,
     "fsdeploy.deployWorkspaceOnSave": false,
+    "explicitFolding.rules": {
+        "*": [
+            {
+                "begin": "rv.S",
+                "end": "\"\"\")"
+            },
+        ]
+    },
     "actionButtons": {
-        "reloadButton": "♻️", /* Custom reload button text */
         "defaultColor": "#ff0034", /* Can also use string color names */
+        "reloadButton": "♻️", /* Custom reload button text */
         "loadNpmCommands": false, /* Disables automatic generation of actions for npm commands */
         "commands": [
             {
@@ -23,22 +34,34 @@
                 "command": "code notes.txt && exit",
             },
             {
+                "name": "GoTo",
+                "color": "red",
+                "useVsCodeApi": true,
+                "command": "workbench.action.gotoLine",
+            },
+            {
                 "name": "Run Cell",
                 "color": "red",
                 "useVsCodeApi": true,
                 "command": "jupyter.runcurrentcell",
             },
             {
-                "name": "FoldAll",
+                "name": "Fold-S",
                 "color": "orange",
                 "useVsCodeApi": true,
                 "command": "editor.foldAll"
             },
             {
+                "name": "FoldAll",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "blahblah.foldDocstrings"
+            },
+            {
                 "name": "FoldX",
                 "color": "orange",
                 "useVsCodeApi": true,
-                "command": "editor.foldAllExcept"
+                "command": "editor.foldAll"
             },
             {
                 "name": "Unfold",
@@ -47,23 +70,29 @@
                 "command": "editor.unfoldAll"
             },
             {
-                "name": "Unfold Recursive",
+                "name": "Recursive",
                 "color": "orange",
                 "useVsCodeApi": true,
                 "command": "editor.unfoldRecursively"
             },
         ]
     },
+    "notebook.output.textLineLimit": 400,
+    "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
     "insertDateString.formatDate": "MM-DD-YYYY",
     "[python]": {
         "editor.formatOnType": true,
-        "editor.defaultFormatter": "ms-python.autopep8"
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "eeyore.yapf"
     },
     "workbench.colorTheme": "Default Dark Modern",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
-        "tab.inactiveBackground": "#606068"
+        "tab.inactiveBackground": "#606068",
+        "editor.selectionBackground": "#264f78",
+        "editor.selectionHighlightBorder": "#264f78",
+        "editor.lineHighlightBorder": "#323d47"
     },
     "editor.tokenColorCustomizations": {
         "[*Dark*]": {
@@ -77,12 +106,132 @@
                         "source.python"
                     ],
                     "settings": {
-                        "foreground": "#acacb3"
+                        "foreground": "#bfc0c0"
                     }
                 },
             ]
         }
     },
+    "todohighlight.include": [
+        "**/*.py"
+    ],
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.maxFilesForSearch": 5120,
+    "todohighlight.toggleURI": false,
+    "todohighlight.defaultStyle": {
+        "color": "grey",
+        "backgroundColor": "editor.background",
+        "border": "none",
+        "isWholeLine": false,
+    },
+    "todohighlight.keywords": [
+        {
+            "text": "rv.R",
+            "color": "#e8c468",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.I",
+            "color": "#e8c468",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.V",
+            "color": "#e8c468",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.T",
+            "color": "#e8c468",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.W",
+            "color": "#e8c468",
+            "isWholeLine": true,
+        },
+        {
+            "text": "rv.S",
+            "color": "gray",
+            "isWholeLine": true,
+        },
+        {
+            "text": "#",
+            "color": "gray",
+            "isWholeLine": true,
+        },
+        {
+            "text": "# %%",
+            "color": "#284b62",
+            "isWholeLine": true,
+        },
+        {
+            "text": "|IMG|",
+            "color": "#2a9d90",
+        },
+        {
+            "text": "|TABLE|",
+            "color": "#2a9d90",
+        },
+        {
+            "text": "|TEXT|",
+            "color": "#2a9d90",
+        },
+        {
+            "text": "|VALUES|",
+            "color": "#2a9d90",
+        },
+        {
+            "text": ":=",
+            "color": "#e76e50",
+        },
+        {
+            "text": "||DOC|",
+            "color": "#f4a462",
+        },
+        {
+            "text": "||REPORT|",
+            "color": "#f4a462",
+        },
+        {
+            "text": "||COVER|",
+            "color": "#f4a462",
+        },
+        {
+            "text": "||APPEND|",
+            "color": "#f4a462",
+        },
+        {
+            "text": "||PREPEND|",
+            "color": "#f4a462",
+        },
+        {
+            "text": "_[T]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[F]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[E]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[C]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[[V]]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[[Q]]",
+            "color": "#4989a2",
+        },
+    ],
+    "notebook.outline.showCodeCells": true,
     "workbench.editorAssociations": {
         "git:/**/*.code-snippets": "default",
         "gitlens:/**/*.code-snippets": "default",
@@ -121,7 +270,6 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.codeLens": false,
-    "githubRepositories.indexing.verboseDownloadNotification": false,
     "ShortcutMenuBar.beautify": false,
     "ShortcutMenuBar.showCommands": true,
     "ShortcutMenuBar.navigateBack": false,
@@ -169,124 +317,6 @@
     "jupyter.askForKernelRestart": false,
     "editor.foldingStrategy": "auto",
     "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
-    "explicitFolding.rules": {
-        "*": [
-            {
-                "begin": "rv.",
-                "end": "\"\"\")"
-            },
-        ]
-    },
-    "todohighlight.include": [
-        "**/*.py"
-    ],
-    "todohighlight.isEnable": true,
-    "todohighlight.isCaseSensitive": true,
-    "todohighlight.defaultStyle": {
-        "color": "grey",
-        "backgroundColor": "editor.background",
-        "border": "none",
-        "isWholeLine": false,
-    },
-    "todohighlight.keywords": [
-        {
-            "text": "rv.R",
-            "color": "#f7dc6f",
-            "isWholeLine": true,
-        },
-        {
-            "text": "rv.I",
-            "color": "#f7dc6f",
-            "isWholeLine": true,
-        },
-        {
-            "text": "rv.V",
-            "color": "#f7dc6f",
-            "isWholeLine": true,
-        },
-        {
-            "text": "rv.T",
-            "color": "#f7dc6f",
-            "isWholeLine": true,
-        },
-        {
-            "text": "rv.W",
-            "color": "white",
-            "isWholeLine": true,
-        },
-        {
-            "text": "rv.X",
-            "color": "#af7ac5",
-        },
-        {
-            "text": "rv.Q",
-            "color": "#af7ac5",
-        },
-        {
-            "text": "|IMG|",
-            "color": "green",
-        },
-        {
-            "text": "|TABLE|",
-            "color": "green",
-        },
-        {
-            "text": "|TEXT|",
-            "color": "green",
-        },
-        {
-            "text": "|VALUES|",
-            "color": "red",
-        },
-        {
-            "text": ":=",
-            "color": "red",
-        },
-        {
-            "text": "||DOC|",
-            "color": "white",
-        },
-        {
-            "text": "||REPORT|",
-            "color": "white",
-        },
-        {
-            "text": "||COVER|",
-            "color": "white",
-        },
-        {
-            "text": "||APPEND|",
-            "color": "white",
-        },
-        {
-            "text": "||PREPEND|",
-            "color": "white",
-        },
-        {
-            "text": "_[T]",
-            "color": "#3498db",
-        },
-        {
-            "text": "_[F]",
-            "color": "#3498db",
-        },
-        {
-            "text": "_[E]",
-            "color": "#3498db",
-        },
-        {
-            "text": "_[C]",
-            "color": "#3498db",
-        },
-        {
-            "text": "_[[V]]",
-            "color": "#ca6f1e",
-        },
-        {
-            "text": "_[[Q]]",
-            "color": "#ca6f1e",
-        },
-    ],
-    "todohighlight.maxFilesForSearch": 5120,
-    "todohighlight.toggleURI": false,
 }
+// ========================================================================== //
+// bottom of file

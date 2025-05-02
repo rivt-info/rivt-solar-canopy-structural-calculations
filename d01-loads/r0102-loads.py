@@ -1,8 +1,8 @@
 #! python
-# %%
+# %% r0102
 import rivtlib.api as rv
-# %%
-rv.X(""" Write | |
+
+rv.S(""" Write | |
 
 ||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png 
           
@@ -14,8 +14,9 @@ rv.X(""" Write | |
      
 # ||PREPEND| docs/pdf2/ | file.pdf
 
+# %% 2
+
 """)
-# %%
 rv.I(""" Project Summary | | oss
 
 This report **describes** the structural design of a solar canopy *covering* a
@@ -55,7 +56,7 @@ wt2 = 4+ a2 * dl2/2   _[S]
 # | TEXT | ins01/example1.txt | plain, []
 """)
 
-# %%
+# %% 3
 rv.I(""" -- code tables | |
 
 **Building Codes and Jurisdiction**
@@ -77,7 +78,7 @@ Load Combinations _[T]
 
 """)
 
-# %%
+# %% 4
 rv.V("""Gravity Loads and Seismic Mass | |
 
 
@@ -119,8 +120,8 @@ Exterior wall - total area load _[E]
 
 """)
 
-# %%
-rv.X(""" Abbreviations and References | |
+# %% 5
+rv.S(""" Abbreviations and References | |
 
 **Reference Standards**
 
@@ -139,12 +140,3 @@ rv.X(""" Abbreviations and References | |
 | TEXT | ins01/abbrev_math.tex | latex
 
 """)
-
-# %%
-rv.W(""" Write | |
-
-|| DOC | docs | rpdf
-
-""")
-
-rv.Q()
