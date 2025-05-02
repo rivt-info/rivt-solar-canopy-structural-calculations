@@ -16,6 +16,11 @@ rv.S(""" Write | |
 # ||PREPEND| docs/pdf2/ | file.pdf
 
 
+# ||APPEND| docs/pdf2/ | file.pdf
+     
+# ||PREPEND| docs/pdf2/ | file.pdf
+
+
 """)
 
 rv.I(""" Project Summary | | oss

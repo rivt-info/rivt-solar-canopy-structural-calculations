@@ -22,6 +22,14 @@
             },
         ]
     },
+    "explicitFolding.rules": {
+        "*": [
+            {
+                "begin": "rv.S",
+                "end": "\"\"\")"
+            },
+        ]
+    },
     "actionButtons": {
         "defaultColor": "#ff0034", /* Can also use string color names */
         "reloadButton": "♻️", /* Custom reload button text */
