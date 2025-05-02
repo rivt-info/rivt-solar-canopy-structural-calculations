@@ -1,9 +1,8 @@
 #! python
 
-
 import rivtlib.api as rv
 
-# rv.S(""" Write | |
+rv.S(""" Write | |
 
 | | COVER | My Report 1 | written by R Holland | bottom text | rivt01.png
 
@@ -14,15 +13,10 @@ import rivtlib.api as rv
 # ||APPEND| docs/pdf2/ | file.pdf
 
 # ||PREPEND| docs/pdf2/ | file.pdf
-
-
 """)
 
-
-
-
-
-# rv.I(""" Project Summary | | oss
+# %% Project
+rv.I(""" Project Summary | | oss
 
 This report ** describes ** the structural design of a solar canopy that covers a
 residential patio located in the City of Larkspur, California. It includes the
@@ -32,12 +26,10 @@ attachments of solar panels to the frame.
 center this text _[C]
 
 |TABLE | ins / i01 / project - data.csv | Title of table, 35, l, [], _[T]
-
 """)
 
-
-
-# rv.I(""" Overview and Codes | |
+# %% Overview
+rv.I(""" Overview and Codes | |
 
 This report ** describes ** the structural design of a solar canopy * covering * a
 residential patio located in the City of Larkspur, California. It includes the
@@ -56,19 +48,19 @@ wt2 = 4 + a2 * dl2 / 2   _[S]
 
 New Table _[T]
 
-== == == = == == == == == == =
-col1     col2   col3
-== == == = == == == == == == =
+======= ======== =====
+col1     col2    col3
+======= ======== =====
  A1       23     10
  B1      11.1    15.0
-== == == = == == == == == == =
-
+======= ======== =====
 
 # |TEXT| ins/i01/example1.txt | preformat
 
 """)
 
-# rv.I(""" - - code tables | |
+# %% code
+rv.I(""" -- code tables | |
 
 **Building Codes and Jurisdiction**
 
@@ -87,7 +79,8 @@ and are summarized in the following tables.
 |TABLE | ins / i01 / asce7_load_comb.csv | xxx, 55, c, [], _[T]
 """)
 
-# rv.V("""Gravity Loads and Seismic Mass | |
+# %% Gravity
+rv.V("""Gravity Loads and Seismic Mass | |
 
 Dimensions for the first floor structural layout are as follows.
 
@@ -117,7 +110,8 @@ wt3 := area3 * (floordl2 * .1) | ACI - 315 - 05 | LBF, N | 1, 2
 
 """)
 
-# rv.S(""" Abbreviations and References | yes | none
+# %% Abbreviations
+rv.S(""" Abbreviations and References | yes | none
 
 **Reference Standards**
 

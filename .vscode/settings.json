@@ -1,8 +1,25 @@
 // ========================================================================== //
-// top of file
+// top
 {
     "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
-    "python.languageServer": "Jedi",
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#2a2570",
+        "tab.inactiveBackground": "#606068",
+        "editor.selectionBackground": "#264f78",
+        "editor.selectionHighlightBorder": "#264f78",
+        "editor.lineHighlightBorder": "#34495d",
+        "list.inactiveSelectionBackground": "#1c2a3d",
+    },
+    "python.languageServer": "None",
+    "notebook.defaultFormatter": "eeyore.yapf",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "eeyore.yapf",
+        "editor.stickyScroll.enabled": false,
+    },
+    "notebook.outline.showCodeCells": true,
     "fsdeploy.nodes": [
         {
             "source": "E:/G_Drive/My Drive/StL-Projects/Solar-Canopy-2023/canopy-2025/gitbak/rivt-solar-canopy-structural-calculations",
@@ -14,18 +31,12 @@
     ],
     "fsdeploy.deployOnSave": true,
     "fsdeploy.deployWorkspaceOnSave": false,
+    "editor.foldingStrategy": "auto",
+    "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
     "explicitFolding.rules": {
         "*": [
             {
-                "begin": "rv.S",
-                "end": "\"\"\")"
-            },
-        ]
-    },
-    "explicitFolding.rules": {
-        "*": [
-            {
-                "begin": "rv.S",
+                "begin": "rv.",
                 "end": "\"\"\")"
             },
         ]
@@ -54,28 +65,28 @@
                 "command": "jupyter.runcurrentcell",
             },
             {
-                "name": "Fold-S",
-                "color": "orange",
-                "useVsCodeApi": true,
-                "command": "editor.foldAll"
-            },
-            {
                 "name": "FoldAll",
                 "color": "orange",
                 "useVsCodeApi": true,
-                "command": "blahblah.foldDocstrings"
+                "command": "editor.foldAll"
             },
             {
                 "name": "FoldX",
                 "color": "orange",
                 "useVsCodeApi": true,
-                "command": "editor.foldAll"
+                "command": "editor.foldAllExcept"
             },
             {
                 "name": "Unfold",
                 "color": "orange",
                 "useVsCodeApi": true,
                 "command": "editor.unfoldAll"
+            },
+            {
+                "name": "UnFoldX",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.unfoldAllExcept"
             },
             {
                 "name": "Recursive",
@@ -89,37 +100,6 @@
     "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
     "insertDateString.formatDate": "MM-DD-YYYY",
-    "[python]": {
-        "editor.formatOnType": true,
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "eeyore.yapf"
-    },
-    "workbench.colorTheme": "Default Dark Modern",
-    "workbench.colorCustomizations": {
-        "tab.activeBackground": "#2a2570",
-        "tab.inactiveBackground": "#606068",
-        "editor.selectionBackground": "#264f78",
-        "editor.selectionHighlightBorder": "#264f78",
-        "editor.lineHighlightBorder": "#323d47"
-    },
-    "editor.tokenColorCustomizations": {
-        "[*Dark*]": {
-            "textMateRules": [
-                {
-                    "scope": [
-                        "string.quoted.multi.python",
-                        "meta.function-call.arguments.python",
-                        "meta.function-call.python",
-                        "meta.member.access.python",
-                        "source.python"
-                    ],
-                    "settings": {
-                        "foreground": "#bfc0c0"
-                    }
-                },
-            ]
-        }
-    },
     "todohighlight.include": [
         "**/*.py"
     ],
@@ -170,8 +150,8 @@
             "isWholeLine": true,
         },
         {
-            "text": "# %%",
-            "color": "#284b62",
+            "text": "\"\"\")",
+            "color": "#e8c468",
             "isWholeLine": true,
         },
         {
@@ -239,7 +219,24 @@
             "color": "#4989a2",
         },
     ],
-    "notebook.outline.showCodeCells": true,
+    "editor.tokenColorCustomizations": {
+        "[*Dark*]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "string.quoted.multi.python",
+                        "meta.function-call.arguments.python",
+                        "meta.function-call.python",
+                        "meta.member.access.python",
+                        "source.python"
+                    ],
+                    "settings": {
+                        "foreground": "#bfc0c0"
+                    }
+                },
+            ]
+        }
+    },
     "workbench.editorAssociations": {
         "git:/**/*.code-snippets": "default",
         "gitlens:/**/*.code-snippets": "default",
@@ -323,8 +320,7 @@
     "cSpell.enabled": false,
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "jupyter.askForKernelRestart": false,
-    "editor.foldingStrategy": "auto",
-    "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
+    "python.analysis.enablePytestSupport": false,
 }
 // ========================================================================== //
-// bottom of file
+// bottom

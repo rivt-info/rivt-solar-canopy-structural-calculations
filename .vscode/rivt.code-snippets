@@ -1,4 +1,12 @@
 {
+    "cell (cel}": {
+        "prefix": "cel",
+        "description": "insert cell label",
+        "scope": "python",
+        "body": [
+            "# %% ${0:paste}"
+        ]
+    },
     "rivtlib ( rvapi )": {
         "prefix": "rvapi",
         "description": "import rivt api",
@@ -12,7 +20,7 @@
         "description": "Run method",
         "scope": "python",
         "body": [
-            "rv.R(\"\"\"${1:run-section} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
+            "rv.R(\"\"\"${1:run-section} | ${2:color} ${3:none} | ${4:oss} ${0:private} ",
             "",
             "    # run",
             "    ",

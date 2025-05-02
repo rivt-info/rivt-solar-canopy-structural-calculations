@@ -1,5 +1,5 @@
 #! python
-# %% r0102
+
 import rivtlib.api as rv
 
 rv.S(""" Write | |
@@ -16,8 +16,8 @@ rv.S(""" Write | |
 
 """)
 
-# %% 2
 rv.I(""" Project Summary | | oss
+
 
 This report **describes** the structural design of a solar canopy *covering* a
 residential patio located in the City of Larkspur, California. It includes the
@@ -55,6 +55,7 @@ wt2 = 4+ a2 * dl2/2   _[S]
 
 # | TEXT | ins01/example1.txt | plain, []
 """)
+
 # %% 3
 rv.I(""" -- code tables | |
 
@@ -74,7 +75,6 @@ Residential Codes and are summarized in the following tables.
 
 Load Combinations _[T]
 |TABLE| ins01/asce7_load_comb.csv | xxx, 55, c, []
-
 """)
 
 # %% 4
@@ -116,7 +116,6 @@ wt3 = area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
 
 Exterior wall - total area load _[E]
 | VALREAD | v01/test2.csv | noprint
-
 """)
 
 # %% 5
