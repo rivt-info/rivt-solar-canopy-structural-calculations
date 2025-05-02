@@ -1,0 +1,51 @@
+abc
+123
+
+    "triggerTaskOnSave.tasks": {
+        "lintpy": [
+            "**/*.py"
+        ],
+    },
+
+
+    qqqq
+
+    rrr
+
+    xxx
+
+    none
+
+    "native": "/(?:^def|^class|^\\s+def|^\\s+class)\\s\\w+\\s*\\((?:\\s*|\\w+|[\\w\\*,\\s\\'\"=\\(\\)\\{\\}\\[\\]\\/\\.]+)\\):/img"
+"display": "/.*\\)/"
+
+
+    {
+    "settingsSync.ignoredSettings": [
+        "fsdeploy.deployOnSave",
+        "fsdeploy.deployWorkspaceOnSave",
+        "fsdeploy.nodes",
+        "editor.rulers"
+    ],
+    "window.titleBarStyle": "native",
+    "workbench.settings.applyToAllProfiles": [
+        "window.title"
+    ],
+    "projectManager.sortList": "Path",
+    "window.confirmBeforeClose": "never",
+    "window.menuBarVisibility": "visible",
+}
+
+
+    "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
+    "fsdeploy.nodes": [
+        {
+            "source": "E:/G_Drive/My Drive/StL-Projects/Solar-Canopy-2023/canopy-2025/gitbak/rivt-solar-canopy-structural-calculations",
+            "target": "C:/git/git-rivt-solar-canopy-structural-calculations",
+            "include": "**/*.*",
+            "exclude": "",
+            "deleteTargetOnDeploy": true,
+        }
+    ],
+    "fsdeploy.deployOnSave": true,
+    "fsdeploy.deployWorkspaceOnSave": false,

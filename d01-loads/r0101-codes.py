@@ -1,23 +1,24 @@
 #! python
+
 # %%
 import rivtlib.api as rv
 
-# %%
-rv.X(""" Write | |
+rv.S(""" Write | |
 
-||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png 
+||COVER| My Report 2 | written by R Holland | bottom text |  rivt01.png 
           
 ||DOC| docs/pdf/ | pdf, cover, rivt01
      
-# ||REPORT| docs/pdf2/ | pdf2
-     
-# ||APPEND| docs/pdf2/ | file.pdf
-     
-# ||PREPEND| docs/pdf2/ | file.pdf
+# ||APPEND| docs/pdf/ | file.pdf
 
-
+# ||PREPEND| docs/pdf/ | file.pdf
+     
+# ||REPORT| docs/pdf/ | pdf
+     
+# ||APPEND| docs/pdf/ | file.pdf
+     
 """)
-# %%
+
 rv.I(""" Project Summary | | oss
 
 This report **describes** the structural design of a solar canopy that covers a
@@ -30,7 +31,6 @@ center this text _[C]
 |TABLE| ins/i01/project-data.csv | Title of table, 35, l, [], _[T] 
 
 """)
-
 rv.I(""" Overview and Codes | |
 
 This report **describes** the structural design of a solar canopy *covering* a
@@ -46,7 +46,7 @@ some text between
      
 some more text
 
-wt2 = 4+ a2 * dl2/2   _[S]
+wt2 = 4 + a2 * dl2/2   _[S]
 
 New Table _[T]
       
@@ -80,7 +80,6 @@ and are summarized in the following tables.
 
 
 |TABLE| ins/i01/asce7_load_comb.csv | xxx, 55, c, [], _[T]                        
-
 """)
 
 # %%
