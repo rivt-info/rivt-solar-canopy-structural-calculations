@@ -197,15 +197,7 @@
             "color": "#0f8f69",
         },
         {
-            "text": ":=",
-            "color": "#e76e50",
-        },
-        {
             "text": "||DOC|",
-            "color": "#f4a462",
-        },
-        {
-            "text": "||REPORT|",
             "color": "#f4a462",
         },
         {
@@ -219,6 +211,10 @@
         {
             "text": "||PREPEND|",
             "color": "#f4a462",
+        },
+        {
+            "text": ":=",
+            "color": "#e76e50",
         },
         {
             "text": "_[T]",

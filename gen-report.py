@@ -1,5 +1,7 @@
 #! python
 
+from rivtlib import genreport
+
 """ generate a rivt report
 
 This run file contains settings for generating a rivt report. Instructions and
@@ -14,12 +16,12 @@ There 10 settings:
     4 - override_distribution
     5 - exclude_divisions
     6 - exclude_documents
-    7 - rename_divisions
-    8 - rename_documents
-    9 - append_end
-    10 - prepend_start
+    7 - rename_parts
+    8 - append_end
+    9 - prepend_start
 
-After settings are completed run the file.
+After completing settings run this file to generate the report. Output will be
+written to
 
 """
 
@@ -36,14 +38,15 @@ def exclude_divisions():
     quotes for each division to be excluded from the report, separated by
     commas.
 
-    Example: To exclude divisions 02 and 05 provide the following entry:
+    Example:
+    To exclude divisions 02 and 05 provide the following entry:
 
-    exclude_div = ["02", "05"]
+        return exclude_div := ["02", "05"]
 
     To include all divisions leave the list empty.
     """
 
-    exclude_div = []
+    return exclude_divs := []
 
 # ============================================================================ #
 # 6 - exclude documents
@@ -57,16 +60,17 @@ def exclude_documents():
     Each document starts with a four digit number. List the numbers in quotes
     for each document to be excluded from the report, separated by commas.
 
-    Example: To exclude documents 02 and 03 from division 01 and document 04
+    Example:
+    To exclude documents 02 and 03 from division 01 and document 04
     from division 02 provide the following entry:
 
-    exclude_docs = ["0102", "0103", "0204"]
+        return exclude_docs = ["0102", "0103", "0204"]
 
     To include all documents leave the list empty.
 
     """
 
-    exclude_docs = []
+    return exclude_docs := []
 
 # ============================================================================ #
 # rename divisions
@@ -88,3 +92,11 @@ def rename_divisions():
     r0301 = Slab
     r0302 = Walls
     """
+
+
+s1 = exclude_documents()
+s2 = exclude_divisions()
+s3 = rename_divisions()
+
+
+genreport.run(s1, s2, s3, s4, s5, s6, s7, s8, s9)
