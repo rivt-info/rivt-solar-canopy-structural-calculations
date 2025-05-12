@@ -1,6 +1,6 @@
 #! python
 
-import rivtlib.api as rv
+import rivtlib.rapi as rv
 
 # %% Write
 rv.S(""" Write | |
