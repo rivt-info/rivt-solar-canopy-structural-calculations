@@ -28,7 +28,7 @@
         ]
     },
     "I method ( rvl )": {
-        "prefix": "rvI",
+        "prefix": "rvi",
         "description": "Insert method",
         "scope": "python",
         "body": [
@@ -141,14 +141,6 @@
             "_[s]"
         ]
     },
-    "tag right justify [ _r ]": {
-        "prefix": "_r",
-        "description": "right justify line",
-        "scope": "python",
-        "body": [
-            "_[r]"
-        ]
-    },
     "tag center [ _c ]": {
         "prefix": "_c",
         "description": "center line",
@@ -170,15 +162,15 @@
         "description": "tag footnote description",
         "scope": "python",
         "body": [
-            "_[foot]"
+            "_[D]"
         ]
     },
-    "tag horizontal line  [ _- ]": {
+    "tag horizontal line  _[ h ]": {
         "prefix": "_-",
         "description": "insert horizontal line",
         "scope": "python",
         "body": [
-            "_[-]"
+            "_[H]"
         ]
     },
     "tag new page [ _n ]": {
@@ -238,7 +230,7 @@
         ]
     },
     "block tag quit [ _[q ]": {
-        "prefix": "_[q",
+        "prefix": "__q",
         "description": "tag block quit",
         "scope": "python",
         "body": [

@@ -2,28 +2,6 @@
 // top
 {
     "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
-    "workbench.colorTheme": "Default Dark Modern",
-    "workbench.colorCustomizations": {
-        "tab.activeBackground": "#2a2570",
-        "tab.inactiveBackground": "#606068",
-        "editor.selectionBackground": "#264f78",
-        "editor.selectionHighlightBorder": "#264f78",
-        "editor.lineHighlightBorder": "#34495d",
-        "list.inactiveSelectionBackground": "#213148",
-    },
-    "python.languageServer": "Pylance",
-    "[python]": {
-        "editor.formatOnType": true,
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "ms-python.autopep8",
-        "editor.stickyScroll.enabled": false,
-    },
-    "autopep8.args": [
-        "--aggressive",
-        "--aggressive"
-    ],
-    "notebook.defaultFormatter": "ms-python.autopep8",
-    "notebook.outline.showCodeCells": true,
     "fsdeploy.nodes": [
         {
             "source": "E:/G_Drive/My Drive/StL-Projects/Solar-Canopy-2023/canopy-2025/gitbak/rivt-solar-canopy-structural-calculations",
@@ -35,20 +13,30 @@
     ],
     "fsdeploy.deployOnSave": true,
     "fsdeploy.deployWorkspaceOnSave": false,
-    "editor.foldingStrategy": "auto",
-    "editor.defaultFoldingRangeProvider": "zokugun.explicit-folding",
-    "explicitFolding.rules": {
-        "*": [
-            {
-                "begin": "rv.",
-                "end": "\"\"\")"
-            },
-        ]
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#2a2570",
+        "tab.inactiveBackground": "#606068",
+        "editor.selectionBackground": "#264f78",
+        "editor.selectionHighlightBorder": "#264f78",
+        "editor.lineHighlightBorder": "#34495d",
+        "list.inactiveSelectionBackground": "#213148",
     },
+    "python.languageServer": "Pylance",
+    "[python]": {
+        "editor.indentSize": "tabSize",
+        "editor.formatOnType": false,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.stickyScroll.enabled": false,
+    },
+    "notebook.defaultFormatter": "ms-python.autopep8",
+    "notebook.outline.showCodeCells": true,
+    "editor.foldingStrategy": "auto",
     "actionButtons": {
-        "defaultColor": "#ff0034", /* Can also use string color names */
-        "reloadButton": "♻️", /* Custom reload button text */
-        "loadNpmCommands": false, /* Disables automatic generation of actions for npm commands */
+        "defaultColor": "#ff0034",
+        "reloadButton": "♻️",
+        "loadNpmCommands": false,
         "commands": [
             {
                 "name": "Note",
@@ -90,19 +78,19 @@
                 "name": "FoldAll",
                 "color": "orange",
                 "useVsCodeApi": true,
-                "command": "editor.foldAll"
-            },
-            {
-                "name": "FoldX",
-                "color": "orange",
-                "useVsCodeApi": true,
-                "command": "editor.foldAllExcept"
+                "command": "editor.foldLevel2"
             },
             {
                 "name": "Unfold",
                 "color": "orange",
                 "useVsCodeApi": true,
                 "command": "editor.unfoldAll"
+            },
+            {
+                "name": "FoldX",
+                "color": "orange",
+                "useVsCodeApi": true,
+                "command": "editor.foldAllExcept"
             },
             {
                 "name": "UnFoldX",
@@ -117,13 +105,19 @@
                 "command": "editor.unfoldRecursively"
             },
             {
-                "name": "ToggleDocStr",
+                "name": "ExplorerSort",
                 "color": "orange",
                 "useVsCodeApi": true,
-                "command": "extension.toggleDocstrings"
+                "command": "explorer.sortOrder:type"
             },
         ]
     },
+    "editor.rulers": [
+        {
+            "column": 80,
+            "color": "#3d3d3d"
+        },
+    ],
     "notebook.output.textLineLimit": 400,
     "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
     "insertDateString.format": "MM-DD-YYYY hh:mm:ss",
@@ -142,6 +136,11 @@
         "isWholeLine": false,
     },
     "todohighlight.keywords": [
+        {
+            "text": "#",
+            "color": "#899f90",
+            "isWholeLine": true,
+        },
         {
             "text": "rv.R",
             "color": "#e8c468",
@@ -169,12 +168,7 @@
         },
         {
             "text": "rv.S",
-            "color": "gray",
-            "isWholeLine": true,
-        },
-        {
-            "text": "#",
-            "color": "gray",
+            "color": "#f3ffbd",
             "isWholeLine": true,
         },
         {
@@ -184,19 +178,23 @@
         },
         {
             "text": "|IMG|",
-            "color": "#2a9d90",
+            "color": "#0f8f69",
+        },
+        {
+            "text": "|IMG2|",
+            "color": "#0f8f69",
         },
         {
             "text": "|TABLE|",
-            "color": "#2a9d90",
+            "color": "#0f8f69",
         },
         {
             "text": "|TEXT|",
-            "color": "#2a9d90",
+            "color": "#0f8f69",
         },
         {
-            "text": "|VALUES|",
-            "color": "#2a9d90",
+            "text": "|VALUE|",
+            "color": "#0f8f69",
         },
         {
             "text": ":=",
@@ -236,6 +234,10 @@
         },
         {
             "text": "_[C]",
+            "color": "#4989a2",
+        },
+        {
+            "text": "_[S]",
             "color": "#4989a2",
         },
         {
@@ -293,20 +295,14 @@
     "editor.hover.enabled": false,
     "editor.tabCompletion": "on",
     "editor.minimap.enabled": false,
-    "editor.rulers": [
-        {
-            "column": 80,
-            "color": "#3d3d3d"
-        }
-    ],
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "editor.codeLens": false,
+    "editor.codeLens": true,
     "ShortcutMenuBar.beautify": false,
     "ShortcutMenuBar.showCommands": true,
     "ShortcutMenuBar.navigateBack": false,
     "ShortcutMenuBar.navigateForward": false,
-    "ShortcutMenuBar.commentLine": true,
+    "ShortcutMenuBar.commentLine": false,
     "ShortcutMenuBar.toggleWordWrap": true,
     "editor.renderWhitespace": "none",
     "editor.guides.indentation": false,
@@ -316,14 +312,10 @@
     "explorer.confirmDelete": false,
     "git.postCommitCommand": "sync",
     "explorer.confirmDragAndDrop": false,
-    "ShortcutMenuBar.openSettings": true,
+    "ShortcutMenuBar.openSettings": false,
     "editor.inlayHints.enabled": "off",
     "latex-workshop.message.warning.show": false,
     "editor.suggest.showTypeParameters": false,
-    "explorer.sortOrder": "default",
-    "toggle.settingTitle": "explorer.sortOrder",
-    "toggle.settingState1": "type",
-    "toggle.settingState2": "default",
     "editor.fontSize": 16,
     "jupyter.themeMatplotlibPlots": true,
     "python.terminal.executeInFileDir": true,
@@ -357,6 +349,7 @@
         "stds",
         "yapf"
     ],
+    "ShortcutMenuBar.openFilesList": false,
 }
 // ========================================================================== //
 // bottom

@@ -14,7 +14,10 @@ rv.S(""" Write | |
     # ||APPEND| docs/pdf2/ | file.pdf
 
     # ||PREPEND| docs/pdf2/ | file.pdf
+
 """)
+
+
 # %% Project
 rv.I(""" Project Summary | | oss
 
@@ -26,7 +29,10 @@ rv.I(""" Project Summary | | oss
     center this text _[C]
 
     # | TABLE | ins01/project-data.csv | Title of table, 35, l, []
+
 """)
+
+
 # %% Overview
 rv.I(""" Overview and Codes | |
 
@@ -46,7 +52,9 @@ rv.I(""" Overview and Codes | |
     wt2 = 4+ a2 * dl2/2   _[S]
 
     # | TEXT | ins01/example1.txt | plain, []
+
 """)
+
 
 rv.I(""" -- code tables | |
 
@@ -66,7 +74,10 @@ rv.I(""" -- code tables | |
 
     Load Combinations _[T]
     |TABLE| ins01/asce7_load_comb.csv | xxx, 55, c, []
+
 """)
+
+
 # %% Gravity
 rv.V("""Gravity Loads and Seismic Mass | |
 
@@ -101,7 +112,10 @@ rv.V("""Gravity Loads and Seismic Mass | |
 
     Exterior wall - total area load _[E]
     | VALREAD | v01/test2.csv | noprint
+
 """)
+
+
 # %% Abbreviations
 rv.S(""" Abbreviations and References | |
 
