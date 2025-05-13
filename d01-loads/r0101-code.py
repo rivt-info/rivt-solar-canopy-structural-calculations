@@ -67,16 +67,16 @@ rv.I("""-- code tables | |
     - 2019 California Building Code[CBC]
     - 2019 California Residential Code[CRC]
 
-    |TABLE| ins/i01/cbc2019A_stds.csv | My Table, 53, l, [], _[T]
+    |TABLE| i01/cbc2019A_stds.csv | My Table, 53, l, [], _[T]
 
-    Design load combinations are from *California Building and Residential
-    Codes* and are summarized in the following tables.
+    Design load combinations are from *California Building and Residential*
+    *Codes* and are summarized in the following tables.
 
-    |TABLE| ins/i01/load_types01.csv | Another Table Title, 40, l, [], _[T]
+    |TABLE| i01/load_types01.csv | Another Table Title, 40, l, [], _[T]
 
     # this is a comment
 
-    |TABLE| ins/i01/asce7_load_comb.csv | xxx, 55, c, [], _[T]
+    |TABLE| i01/asce7_load_comb.csv | Load Combinations 2, 55, c, [], _[T]
     """)
 
 
@@ -95,9 +95,9 @@ rv.V("""Gravity Loads and Seismic Mass | |
     udl1 := 12.2 * PSF  | PSF, PA | 2, 2 | description
     _[[Q]]
 
-    Additional values from a values file.
+    Additional values from a file.
 
-    |VALUE| src/vls/v01/test1.csv | Another values table _[T]
+    |VALUE| v01/test1.csv | Another values table _[T]
 
     Floor and wall areas _[E]
 
@@ -105,7 +105,7 @@ rv.V("""Gravity Loads and Seismic Mass | |
 
     wt3 := area3 * (floordl2 * .1) | LBF, N | 1, 2 | ACI-315 - 05 
 
-    |VALUE| src/vls/v01/test2.csv | Exterior wall - total area load _[T]
+    |VALUE| v01/test2.csv | Exterior wall - total area load _[T]
     """)
 
 
