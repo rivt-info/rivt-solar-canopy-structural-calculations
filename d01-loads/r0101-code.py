@@ -3,9 +3,9 @@
 import rivtlib.rapi as rv
 rv.S(""" Write | |
 
-    ||COVER| My Report 1 | written by R Holland | bottom text | rivt01.png
+    |COVER| My Report 1 | written by R Holland | bottom text | rivt01.png
 
-    ||DOC| docs/pdf/ | pdf, cover, rivt01
+    |DOC| docs/pdf/ | pdf, cover, rivt01
 
     # ||REPORT| docs/pdf2/ | pdf2
 
@@ -103,7 +103,7 @@ rv.V("""Gravity Loads and Seismic Mass | |
 
     wt2 := area2 * floordl1  | KIPS, N, 2, 2 | ACI-315-05
 
-    wt3 := area3 * (floordl2 * .1) | LBF, N, 1, 2 | ACI-315 - 05 
+    wt3 := area3 * floordl2 * 30/40 | LBF, N, 1, 2 | ACI-315 - 05 
 
     |VALUE| v01/test2.csv | Exterior wall - total area load _[T]
     """)
@@ -114,17 +114,17 @@ rv.S(""" Abbreviations and References | yes | none
 
     **Reference Standards**
 
-    |TEXT| ins/i02/references.txt | plain
+    |TEXT| i02/references.txt | plain
 
     **Drawing List**
 
-    |TEXT| ins/i02/drawing_list.txt | plain
+    |TEXT| i02/drawing_list.txt | plain
 
     **Abbreviations**
 
-    |TEXT| ins/i01/abbrev_terms.tex | latex
+    |TEXT| i01/abbrev_terms.tex | latex
 
     **Abbreviations - Math**
 
-    |TEXT| ins/i01/abbrev_math.tex | latex
+    |TEXT| i01/abbrev_math.tex | latex
     """)
