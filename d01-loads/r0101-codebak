@@ -45,7 +45,7 @@ rv.I(""" Overview and Codes | osr |
 
     some more text
 
-    wt2 = 4 + a2 * dl2 / 2   _[S]
+    wt2 = (1/sin(x)) + 4 + a2 * dl2 / 2   _[S]
 
     New Table _[T]
 
