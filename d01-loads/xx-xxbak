@@ -86,13 +86,13 @@ rv.V("""Gravity Loads and Seismic Mass | |
     Dimensions for the first floor structural layout.
 
     First Floor Dimensions _[[V]]
-    area1 := 10700 * SF |  SF, SM | 2, 2 | roof area
-    area2 := 10000 * FT * 10 * FT | SF, SM | 2, 2 | floor area
-    area3 := 5 * FT * 5 * FT | SF, SM | 2, 2 | floor area
-    ht1 := 9.0 * FT | FT, M | 2, 2 | wall height 
-    len1 := 110 * FT | FT, M | 2, 2 | interior wall length 
-    len2 := 155 * FT  | FT, M | 2, 2 | exterior wall length
-    udl1 := 12.2 * PSF  | PSF, PA | 2, 2 | description
+    area1 := 10700 * SF |  SF, SM, 2 | roof area
+    area2 := 10000 * FT * 10 * FT | SF, SM , 2| floor area
+    area3 := 5 * FT * 5 * FT | SF, SM, 2| floor area
+    ht1 := 9.0 * FT | FT, M, 2 | wall height 
+    len1 := 110 * FT | FT, M, 2 | interior wall length 
+    len2 := 155 * FT  | FT, M, 2 | exterior wall length
+    udl1 := 12.2 * PSF  | PSF, PA, 2 | description
     _[[Q]]
 
     Additional values from a file.
@@ -101,9 +101,9 @@ rv.V("""Gravity Loads and Seismic Mass | |
 
     Floor and wall areas _[E]
 
-    wt2 := area2 * floordl1  | KIPS, N | 2, 2 | ACI-315-05
+    wt2 := area2 * floordl1  | KIPS, N, 2, 2 | ACI-315-05
 
-    wt3 := area3 * (floordl2 * .1) | LBF, N | 1, 2 | ACI-315 - 05 
+    wt3 := area3 * (floordl2 * .1) | LBF, N, 1, 2 | ACI-315 - 05 
 
     |VALUE| v01/test2.csv | Exterior wall - total area load _[T]
     """)

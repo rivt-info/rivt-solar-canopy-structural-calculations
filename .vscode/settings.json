@@ -1,6 +1,7 @@
 // ========================================================================== //
 // top
 {
+    "editor.parameterHints.enabled": false,
     "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
     "fsdeploy.nodes": [
         {
