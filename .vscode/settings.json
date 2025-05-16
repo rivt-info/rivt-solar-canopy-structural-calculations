@@ -109,7 +109,7 @@
                 "name": "ExplorerSort",
                 "color": "orange",
                 "useVsCodeApi": true,
-                "command": "explorer.sortOrder:type"
+                "command": "extension.toggleExplorerSortOrder",
             },
         ]
     },

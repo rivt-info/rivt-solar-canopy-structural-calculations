@@ -3,15 +3,14 @@
 import rivtlib.rapi as rv
 rv.S(""" Write | |
 
-    |COVER| My Report 1 | written by R Holland | bottom text | rivt01.png
 
     |DOC| docs/pdf/ | pdf, cover, rivt01
 
-    # ||REPORT| docs/pdf2/ | pdf2
+    # |BLOCK| 
 
-    # ||APPEND| docs/pdf2/ | file.pdf
+    # |APPEND| docs/pdf2/ | file.pdf
 
-    # ||PREPEND| docs/pdf2/ | file.pdf    hsl(71, 100%, 87%)hsl(71, 100%, 87%)
+    # |PREPEND| docs/pdf2/ | file.pdf  
     """)
 
 
