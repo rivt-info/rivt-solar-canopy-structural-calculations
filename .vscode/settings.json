@@ -198,19 +198,19 @@
             "color": "#0f8f69",
         },
         {
-            "text": "||DOC|",
+            "text": "|DOC|",
             "color": "#f4a462",
         },
         {
-            "text": "||COVER|",
+            "text": "|BLOCK|",
             "color": "#f4a462",
         },
         {
-            "text": "||APPEND|",
+            "text": "|APPEND|",
             "color": "#f4a462",
         },
         {
-            "text": "||PREPEND|",
+            "text": "|PREPEND|",
             "color": "#f4a462",
         },
         {
