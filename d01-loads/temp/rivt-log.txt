@@ -1,0 +1,21 @@
+05-16 04:13  rparam   INFO     rivt file : r0101-code.py
+05-16 04:13  rparam   INFO     rivt path : e:\rivt-solar-canopy-structural-calculations\d01-loads
+05-16 04:13  rparam   INFO     rivt backup : e:\rivt-solar-canopy-structural-calculations\d01-loads\r0101-code.bak
+05-16 04:13  rparam   INFO     rivt function : I
+05-16 04:13  rparam   INFO     tag : _[C]
+05-16 04:13  rparam   INFO     command : TABLE
+05-16 04:13  rparam   INFO     rivt function : I
+05-16 04:13  rparam   INFO     command : IMG
+05-16 04:13  rparam   INFO     command : IMG
+05-16 04:13  rparam   INFO     tag : _[S]
+05-16 04:13  rparam   INFO     tag : _[T]
+05-16 04:13  rparam   INFO     command : TEXT
+05-16 04:13  rparam   INFO     rivt function : I
+05-16 04:13  rparam   INFO     command : TABLE
+05-16 04:13  rparam   INFO     command : TABLE
+05-16 04:13  rparam   INFO     command : TABLE
+05-16 04:13  rparam   INFO     rivt function : V
+05-16 04:13  rparam   INFO     tag : _[[V]]
+05-16 04:13  rparam   INFO     command : VALUE
+05-16 04:13  rparam   INFO     tag : _[E]
+05-16 04:13  rparam   INFO     command : VALUE
