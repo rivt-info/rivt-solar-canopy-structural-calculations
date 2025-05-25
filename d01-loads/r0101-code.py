@@ -1,6 +1,7 @@
 #! python
 # %% Start
 import rivtlib.rapi as rv
+
 rv.S(""" Write | |
 
 
@@ -57,6 +58,7 @@ rv.I(""" Overview and Codes | osr |
 
     |TEXT| i01/example1.txt | preformat
     """)
+
 
 rv.I("""-- code tables | |
 

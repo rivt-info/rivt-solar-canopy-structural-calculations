@@ -5,7 +5,7 @@
     "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
     "fsdeploy.nodes": [
         {
-            "source": "E:/G_Drive/My Drive/StL-Projects/Solar-Canopy-2023/canopy-2025/gitbak/rivt-solar-canopy-structural-calculations",
+            "source": "E:/Solar-Canopy-2023/canopy-2025/gitbak/rivt-solar-canopy-structural-calculations",
             "target": "C:/git/git-rivt-solar-canopy-structural-calculations",
             "include": "**/*.*",
             "exclude": "",
@@ -28,7 +28,7 @@
         "editor.indentSize": "tabSize",
         "editor.formatOnType": false,
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.stickyScroll.enabled": false,
     },
     "notebook.defaultFormatter": "ms-python.autopep8",
@@ -107,7 +107,7 @@
             },
             {
                 "name": "ExplorerSort",
-                "color": "orange",
+                "color": "yellow",
                 "useVsCodeApi": true,
                 "command": "explorer.sortOrder:type"
             },
