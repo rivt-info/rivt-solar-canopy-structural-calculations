@@ -1,20 +1,6 @@
 #! python
 # %% Start
 import rivtlib.rapi as rv
-
-rv.S(""" Write | |
-
-
-    |DOC| docs/pdf/ | pdf, cover, rivt01
-
-    # |BLOCK| 
-
-    # |APPEND| docs/pdf2/ | file.pdf
-
-    # |PREPEND| docs/pdf2/ | file.pdf  
-    """)
-
-
 # %% Project
 rv.I(""" Project Summary | | 
 
@@ -58,7 +44,6 @@ rv.I(""" Overview and Codes | osr |
 
     |TEXT| i01/example1.txt | preformat
     """)
-
 
 rv.I("""-- code tables | |
 
@@ -128,4 +113,16 @@ rv.S(""" Abbreviations and References | yes | none
     **Abbreviations - Math**
 
     |TEXT| i01/abbrev_math.tex | latex
+    """)
+# %% Write
+rv.S(""" Write |  |
+
+
+    |DOC| docs/rst2pdf/style | rst2pdf, rivt01
+
+    # |BLOCK| 
+
+    # |APPEND| docs/pdf2/ | file.pdf
+
+    # |PREPEND| docs/pdf2/ | file.pdf  
     """)

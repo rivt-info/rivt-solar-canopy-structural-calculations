@@ -2,24 +2,9 @@
 
 import rivtlib.rapi as rv
 
-# %% Write
-rv.S(""" Write | |
-
-    ||COVER| My Report 1 | written by R Holland | bottom text |  rivt01.png
-
-    ||DOC| docs/pdf/ | pdf, cover, rivt01
-
-    # ||REPORT| docs/pdf2/ | pdf2
-
-    # ||APPEND| docs/pdf2/ | file.pdf
-
-    # ||PREPEND| docs/pdf2/ | file.pdf
-
-""")
-
 
 # %% Project
-rv.I(""" Project Summary | osr | 
+rv.I(""" Project Summary | ros | 
 
     This report **describes** the structural design of a solar canopy
     *covering* a residential patio located in the City of Larkspur, California.
@@ -28,7 +13,7 @@ rv.I(""" Project Summary | osr |
 
     center this text _[C]
 
-    |TABLE| ins01/project-data.csv | Title of table, 35, l, [] _[T]
+    |TABLE| i01/project-data.csv | Title of table, 35, l, [] _[T]
 
 """)
 
@@ -41,17 +26,17 @@ rv.I(""" Overview and Codes | |
     It includes the design of a concrete slab and *stem* wall, steel tube
     frame, and clip attachments of solar panels to the frame.
 
-    |IMG| ins01/rivt01.png | Wind Load 1, 30
+    |IMG| i01/rivt01.png | Wind Load 1, 30
 
     some text between
 
-    |IMG| ins01/site01.png | Wind Load 2, 30
+    |IMG| i01/site01.png | Wind Load 2, 30
 
     some more text
 
     wt2 = 4+ a2 * dl2/2   _[S]
 
-    |TEXT| ins01/example1.txt | plain, []
+    |TEXT| i01/example1.txt | plain, []
 
 """)
 
@@ -64,14 +49,14 @@ rv.I(""" -- code tables | |
     - 2019 California Building Code [CBC]
     - 2019 California Residential Code [CRC]
 
-    |TABLE| ins01/cbc2019A_stds.csv | My Table, 53, l, []
+    |TABLE| i01/cbc2019A_stds.csv | My Table, 53, l, []
 
     Design loads for the project are from the California Building and
     Residential Codes and are summarized in the following tables.
 
-    |TABLE| ins01/load_types01.csv | Another Table Title, 40, l, []
+    |TABLE| i01/load_types01.csv | Another Table Title, 40, l, []
 
-    |TABLE| ins01/asce7_load_comb.csv | Load Combinations, 55, c, [] _[T]
+    |TABLE| i01/asce7_load_comb.csv | Load Combinations, 55, c, [] _[T]
     """)
 
 
@@ -80,14 +65,15 @@ rv.V("""Gravity Loads and Seismic Mass | |
 
     Some calculations
 
+
     First Floor Dimensions _[[V]]
-    area1 := 10700*SF | roof area | SF, SM | 2,2
-    area2 := 10000*FT * 10*FT | floor area | SF, SM | 2,2
-    area3 := 5*FT * 5*FT | floor area | SF, SM | 2,2
-    ht1 := 9.0*FT | wall height  | FT, M | 2,2
-    len1 := 110*FT | interior wall length | FT, M | 2,2
-    len2 := 155*FT | exterior wall length | FT, M | 2,2
-    udl1 := 12.2*PSF | description | PSF, PA | 2,2
+    area1 := 10700 * SF |  SF, SM, 2 | roof area
+    area2 := 10000 * FT * 10 * FT | SF, SM , 2| floor area
+    area3 := 5 * FT * 5 * FT | SF, SM, 2| floor area
+    ht1 := 9.0 * FT | FT, M, 2 | wall height 
+    len1 := 110 * FT | FT, M, 2 | interior wall length 
+    len2 := 155 * FT  | FT, M, 2| exterior wall length
+    udl1 := 12.2 * PSF  | PSF, PA | 2, - | description
     _[[Q]]
 
     A line of text extended text - not formatted
@@ -95,10 +81,8 @@ rv.V("""Gravity Loads and Seismic Mass | |
     |VALUE| v01/test1.csv | noprint
 
     Equation for floor area _[E]
-    wt2 := area2 * floordl1 | ACI-315-05 | KIPS, N | 2,2
-
-    Equation for wall area _[E]
-    wt3 := area3 * (floordl2 * .1) | ACI-315-05 | LBF, N | 1,2
+    wt2 := area2 * floordl1  | KIPS, N, 2, 2 | ACI-315-05
+    wt3 := area3 * floordl2 * 30/40 | LBF, N, 3, 2 | ACI-315 - 05 
 
     Exterior wall - total area load _[E]
     |VALUE| v01/test2.csv | noprint
@@ -124,3 +108,15 @@ rv.S(""" Abbreviations and References | |
 
     | TEXT | ins01/abbrev_math.tex | latex
     """)
+# %% Write
+rv.S(""" Write |  |
+
+    |DOC| docs/pdf/ | pdf, cover, rivt01
+
+    # ||REPORT| docs/pdf2/ | pdf2
+
+    # ||APPEND| docs/pdf2/ | file.pdf
+
+    # ||PREPEND| docs/pdf2/ | file.pdf
+
+""")
