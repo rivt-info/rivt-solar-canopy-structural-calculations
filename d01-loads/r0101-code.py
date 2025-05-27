@@ -118,11 +118,12 @@ rv.S(""" Abbreviations and References | yes | none
 rv.S(""" Write |  |
 
 
-    |DOC| docs/rst2pdf/style | rst2pdf, rivt01
+    |DOC| docs/rst2pdf/style | rstpdf, rivt01
 
-    # |BLOCK| 
+    # |APPEND| docs/pdf2/ | nodivider
 
-    # |APPEND| docs/pdf2/ | file.pdf
+    # |PREPEND| docs/pdf2/ | nodivider
 
-    # |PREPEND| docs/pdf2/ | file.pdf  
+    # |REPORT| docs/pdf2/ | overwrite
+
     """)
