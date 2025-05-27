@@ -117,8 +117,7 @@ rv.S(""" Abbreviations and References | yes | none
 # %% Write
 rv.S(""" Write |  |
 
-
-    |DOC| docs/rst2pdf/style | rstpdf, rivt01
+    |DOC| docs/rstpdf/ | rstpdf, rivt01
 
     # |APPEND| docs/pdf2/ | nodivider
 
