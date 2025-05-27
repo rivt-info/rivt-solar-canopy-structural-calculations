@@ -96,7 +96,7 @@ rv.V("""Gravity Loads and Seismic Mass | |
 
 
 # %% Abbreviations
-rv.S(""" Abbreviations and References | yes | none
+rv.S(""" Abbreviations and References | ros | none
 
     **Reference Standards**
 

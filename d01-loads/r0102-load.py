@@ -90,7 +90,7 @@ rv.V("""Gravity Loads and Seismic Mass | |
 
 
 # %% Abbreviations
-rv.S(""" Abbreviations and References | |
+rv.S(""" Abbreviations and References | ros |
 
     **Reference Standards**
 
@@ -109,7 +109,7 @@ rv.S(""" Abbreviations and References | |
     | TEXT | ins01/abbrev_math.tex | latex
     """)
 # %% Write
-rv.S(""" Write |  |
+rv.S(""" Write | ros |
 
     |DOC| docs/pdf/ | pdf, cover, rivt01
 
