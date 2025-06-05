@@ -1,8 +1,8 @@
 #! python
 # %% Start
-import rivtlib.rapi as rv
+import rivtlib.api as rv
 # %% Project
-rv.I(""" Project Summary | | 
+rv.I(""" Project Summary | rivtos | 
 
     This report **describes** the structural design of a solar canopy that
     covers a residential patio located in the City of Larkspur, California. It
@@ -16,7 +16,7 @@ rv.I(""" Project Summary | |
 
 
 # %% Overview
-rv.I(""" Overview and Codes | osr |
+rv.I(""" Overview and Codes | rivtos |
 
     This report **describes** the structural design of a solar canopy
     *covering* a residential patio located in the City of Larkspur, California.
@@ -45,7 +45,7 @@ rv.I(""" Overview and Codes | osr |
     |TEXT| i01/example1.txt | preformat
     """)
 
-rv.I("""-- code tables | |
+rv.I("""-- code tables | rivtos |
 
     **Building Codes and Jurisdiction**
 
@@ -96,7 +96,7 @@ rv.V("""Gravity Loads and Seismic Mass | |
 
 
 # %% Abbreviations
-rv.S(""" Abbreviations and References | ros | none
+rv.S(""" Abbreviations and References | rivtos | none
 
     **Reference Standards**
 
@@ -117,12 +117,11 @@ rv.S(""" Abbreviations and References | ros | none
 # %% Write
 rv.S(""" Write |  |
 
-    |DOC| docs/rstpdf/ | rstpdf, rivt01
+    |DOC| rst2pdf | rivtdoc1.ini
 
     # |APPEND| docs/pdf2/ | nodivider
 
     # |PREPEND| docs/pdf2/ | nodivider
 
-    # |REPORT| docs/pdf2/ | overwrite
 
     """)
