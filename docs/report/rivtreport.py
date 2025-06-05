@@ -1,8 +1,8 @@
 #! python
 
-from rivtlib.rvreport import *
+from rivtlib.rvreport import *  # noqa: F403
 
-""" generate a rivt report
+""" generate rivt report
 
 This run file contains settings for generating a rivt report. Instructions and
 examples are provided in the docstrings for each function. Different report
@@ -25,19 +25,21 @@ written to
 
 """
 
+cover_pdf = "path"
 cover_title1 = "Solar Canopy"
 cover_title2 = "Larkspur, Ca."
 cover_title3 = "<datetime>"
 cover_image = "img.png"
 cover_author = "rhh"
-coverpdf = "path"
-
 header = "<datetime > | Solar Canopy - Larkspur, Ca. | page < page >"
 footer = "<datetime > | Solar Canopy - Larkspur, Ca. | page < page >"
 charwidth = "80"
 pagesize = "letter"
 
 report_include = "all"
-report_exclude = "0101,0201"
+report_exclude = ""
+toc = True
+attach_num = True
 
-genreport()
+
+genreport("rst2pdf")  # noqa: F405

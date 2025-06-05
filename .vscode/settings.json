@@ -5,7 +5,7 @@
     "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
     "fsdeploy.nodes": [
         {
-            "source": "E:/Solar-Canopy-2023/canopy-2025/gitbak/rivt-solar-canopy-structural-calculations",
+            "source": "E:/OneDrive/StL-Projects/2025/solar-canopy-2022/rivt-solar-canopy-structural-calculations",
             "target": "C:/git/git-rivt-solar-canopy-structural-calculations",
             "include": "**/*.*",
             "exclude": "",
@@ -28,7 +28,7 @@
         "editor.indentSize": "tabSize",
         "editor.formatOnType": false,
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.defaultFormatter": "ms-python.autopep8",
         "editor.stickyScroll.enabled": false,
     },
     "notebook.defaultFormatter": "ms-python.autopep8",
@@ -137,11 +137,6 @@
         "isWholeLine": false,
     },
     "todohighlight.keywords": [
-        {
-            "text": "#",
-            "color": "#899f90",
-            "isWholeLine": true,
-        },
         {
             "text": "rv.R",
             "color": "#e8c468",
