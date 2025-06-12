@@ -1,28 +1,28 @@
 #! python
 
-from rivtlib.rvreport import *  # noqa: F403
+from rivtlib.report import *  # noqa: F403
 
-""" generate rivt report
+""" generate a rivt report
 
-Different report settings can be saved by renaming copies of the file. Run
-this Python file, after adjusting settings, to generate a report. Output will be
-written to the docs/report/subfolder where subfolder is the report type.
+Run this Python file, after adjusting settings, to generate a report. Different
+report settings can be saved by making copies and renaming this file. Output
+is written to the docs/report/subfolder where subfolder is the report
+type. A flag determines whether the report is assembled from existing doc
+files or whether rivt files are first rerun (see "process" below).
 
-Each rivt file is a report subdivision within a division (folder). Subdivision
-and division titles are inferred by stripping the doc number and replacing
-underscores with spaces. Titles can also be overridden as shown below and in
-example files (see documentation).
-
-Process settings (see below) determine whether the report is assembled from
-existing doc files or whether the rivt files are first rerun.
-
-
+Each rivt file is a subdivision within a rivt division (folder). Subdivision
+and division titles are constructed by stripping the doc number and replacing
+underscores with spaces in the file or folder name. They can be overwritten
+(see "files" below).
 """
+
 # ===========================
 # process
 # ===========================
-dtype = "rst2pdf"               # doc type
-rerun = False                   # rerun rivt files before assembling report
+rerun = False                   # flag that reruns rivt files
+rtype = "rst2pdf"               # report type
+yamlP = "doc/styles/"
+iniP = "doc/styles"
 
 # ===========================
 # layout
@@ -35,7 +35,7 @@ header = "<datetime > | Solar Canopy - Larkspur, Ca. | page < page >"
 footer = "<datetime > | Solar Canopy - Larkspur, Ca. | page < page >"
 
 # ===========================
-# cover
+# cover and toc
 # ===========================
 cover_pdf = ""                  # insert cover (overrides other cover settings)
 cover_title1 = "Solar Canopy"   # first line of default cover
@@ -45,7 +45,7 @@ cover_image = "img.png"         # image
 cover_title3 = "<datetime>"     # last line of default cover
 
 # ===========================
-# include and rename files
+# files
 # ===========================
 report_include = "all"          # rivt files to include e.g. "r0101, r0201"
 report_exclude = ""             # rivt files to exclude e.g. "r0101, r0201"

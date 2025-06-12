@@ -2,19 +2,6 @@
 
 import rivtlib.api as rv
 
-# %% Project
-rv.S(""" Run
-
-    |WINCMD|
-    |WINFILE|
-
-    |LINUXCMD|
-    |LINUXFILE|
-
-    |OSXCMD| 
-    |OSXFILE| 
-
-""")
 
 # %% Project
 rv.I(""" Project Summary | ros | 
@@ -121,6 +108,20 @@ rv.S(""" Abbreviations and References | ros |
 
     | TEXT | ins01/abbrev_math.tex | latex
     """)
+
+# %% Project
+rv.S(""" Run
+
+    |WINCMD|
+    |WINFILE|
+
+    |LINUXCMD|
+    |LINUXFILE|
+
+    |OSXCMD| 
+    |OSXFILE| 
+
+""")
 # %% Write
 rv.S(""" Write 
 
