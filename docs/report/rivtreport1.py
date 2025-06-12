@@ -4,22 +4,20 @@ from rivtlib.rvreport import *  # noqa: F403
 
 """ generate rivt report
 
-Different report settings can be saved by renaming copies of this file. After
-adjusting settings run the file to generate the report.
+Different report settings can be saved by renaming copies of the file. Run
+this Python file, after adjusting settings, to generate a report. Output will be
+written to the docs/report/subfolder where subfolder is the report type.
 
-Each rivt file is a report subdivision, where subdivisions are contained in a
-division folder. Subdivision and division titles are inferred by stripping the
-doc number and replacing underscores with spaces. Titels can be overridden
-as shown below in the example file.
+Each rivt file is a report subdivision within a division (folder). Subdivision
+and division titles are inferred by stripping the doc number and replacing
+underscores with spaces. Titles can also be overridden as shown below and in
+example files (see documentation).
 
-A process setting determines whether the report is assembled from existing doc
-files or whether the rivt files are first rerun.
+Process settings (see below) determine whether the report is assembled from
+existing doc files or whether the rivt files are first rerun.
 
-Output will be written to docs/report/subfolder where subfolder is the report
-type.
 
 """
-
 # ===========================
 # process
 # ===========================
@@ -39,12 +37,12 @@ footer = "<datetime > | Solar Canopy - Larkspur, Ca. | page < page >"
 # ===========================
 # cover
 # ===========================
-cover_pdf = ""                  # insert cover - overrides other cover settings
-cover_title1 = "Solar Canopy"   # first line of std. cover
-cover_title2 = "Larkspur, Ca."  # second line of std. cover
-cover_author = "rhh"            # third line of std. cover
+cover_pdf = ""                  # insert cover (overrides other cover settings)
+cover_title1 = "Solar Canopy"   # first line of default cover
+cover_title2 = "Larkspur, Ca."  # second line of default cover
+cover_author = "rhh"            # third line of default cover
 cover_image = "img.png"         # image
-cover_title3 = "<datetime>"     # last line of std. cover
+cover_title3 = "<datetime>"     # last line of default cover
 
 # ===========================
 # include and rename files
@@ -61,6 +59,5 @@ r0202 = "Solar Panels"
 d03 = "Foundation"
 r0301 = "Slab"
 r0302 = "Walls"
-
 
 genreport()  # noqa: F405

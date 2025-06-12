@@ -1,7 +1,20 @@
 #! python
 
-import rivtlib.rapi as rv
+import rivtlib.api as rv
 
+# %% Project
+rv.S(""" Run
+
+    |WINCMD|
+    |WINFILE|
+
+    |LINUXCMD|
+    |LINUXFILE|
+
+    |OSXCMD| 
+    |OSXFILE| 
+
+""")
 
 # %% Project
 rv.I(""" Project Summary | ros | 
@@ -109,14 +122,12 @@ rv.S(""" Abbreviations and References | ros |
     | TEXT | ins01/abbrev_math.tex | latex
     """)
 # %% Write
-rv.S(""" Write | ros |
+rv.S(""" Write 
 
-    |DOC| docs/pdf/ | pdf, cover, rivt01
+    |DOC| docrst2pdf | rst2pdf, rivtdoc1.ini
 
-    # ||REPORT| docs/pdf2/ | pdf2
+    # ||APPEND| docrst2pdf | file.pdf
 
-    # ||APPEND| docs/pdf2/ | file.pdf
-
-    # ||PREPEND| docs/pdf2/ | file.pdf
+    # ||PREPEND| docrst2pdf | file.pdf
 
 """)
