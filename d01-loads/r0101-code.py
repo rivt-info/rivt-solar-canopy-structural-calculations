@@ -120,9 +120,9 @@ rv.S(""" Abbreviations and References | rivtos | none
 # %% Write
 rv.S(""" Write |  |
 
-    |DOC| rst2pdf | rivtdoc1.ini
-
     |DOC| text | rivtdoc1.ini
+
+    # |DOC| rst2pdf | rivtdoc1.ini
 
     # |APPEND| docs/pdf2/ | nodivider
 
