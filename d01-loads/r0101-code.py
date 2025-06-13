@@ -14,7 +14,6 @@ rv.I(""" Project Summary | rivtos |
     |TABLE| i01/project-data.csv | Title of table, 40, l, [] _[T]
     """)
 
-
 # %% Overview
 rv.I(""" Overview and Codes | rivtos |
 
@@ -29,7 +28,7 @@ rv.I(""" Overview and Codes | rivtos |
 
     |IMG| i01/site01.png | Wind Load 2, 30 _[F]
 
-    some more text
+    some more text followed by an equation
 
     wt2 = (1/sin(x)) + 4 + a2 * dl2 / 2   _[S]
 
@@ -42,7 +41,7 @@ rv.I(""" Overview and Codes | rivtos |
     B1       11.1     15.0
     ======= ======== ======
 
-    |TEXT| i01/example1.txt | preformat
+    |TEXT| i01/example1.txt | preformat, color
     """)
 
 rv.I("""-- code tables | rivtos |
@@ -52,6 +51,8 @@ rv.I("""-- code tables | rivtos |
     - City of Larkspur, California
     - 2019 California Building Code[CBC]
     - 2019 California Residential Code[CRC]
+
+    =-=-=-=-=
 
     |TABLE| i01/cbc2019A_stds.csv | My Table, 53, l, [], _[T]
 
@@ -65,7 +66,6 @@ rv.I("""-- code tables | rivtos |
     |TABLE| i01/asce7_load_comb.csv | Load Combinations 2, 55, c, [], _[T]
     """)
 
-
 # %% Gravity
 rv.V("""Gravity Loads and Seismic Mass | |
 
@@ -78,7 +78,8 @@ rv.V("""Gravity Loads and Seismic Mass | |
     ht1 := 9.0 * FT | FT, M, 2 | wall height 
     len1 := 110 * FT | FT, M, 2 | interior wall length 
     len2 := 155 * FT  | FT, M, 2| exterior wall length
-    udl1 := 12.2 * PSF  | PSF, PA | 2, - | description
+    udl1 := 12.2 * PSF  | PSF, PA, 2 | dead load 1
+    udl2 := 22.2 * PSF  | PSF, PA, 2 | dead load 2
     _[[Q]]
 
     Additional values from a file.
@@ -86,14 +87,15 @@ rv.V("""Gravity Loads and Seismic Mass | |
     |VALUE| v01/test1.csv | Another values table _[T]
 
     Floor and wall areas _[E]
+    
+    =-=-=-=-=
+    
+    wt2 := area2 * udl1  | KIPS, N, 2, 2 | ACI-315-05
 
-    wt2 := area2 * floordl1  | KIPS, N, 2, 2 | ACI-315-05
-
-    wt3 := area3 * floordl2 * 30/40 | LBF, N, 1, 2 | ACI-315 - 05 
+    wt3 := area3 * udl2 * 30/40 | LBF, N, 1, 2 | ACI-315 - 05 
 
     |VALUE| v01/test2.csv | Exterior wall - total area load _[T]
     """)
-
 
 # %% Abbreviations
 rv.S(""" Abbreviations and References | rivtos | none
@@ -114,10 +116,13 @@ rv.S(""" Abbreviations and References | rivtos | none
 
     |TEXT| i01/abbrev_math.tex | latex
     """)
+
 # %% Write
 rv.S(""" Write |  |
 
     |DOC| rst2pdf | rivtdoc1.ini
+
+    |DOC| text | rivtdoc1.ini
 
     # |APPEND| docs/pdf2/ | nodivider
 
