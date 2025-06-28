@@ -2,7 +2,6 @@
 
 import rivtlib.api as rv
 
-
 # %% Project
 rv.I(""" Project Summary | ros | 
 
@@ -14,9 +13,7 @@ rv.I(""" Project Summary | ros |
     center this text _[C]
 
     |TABLE| i01/project-data.csv | Title of table, 35, l, [] _[T]
-
-""")
-
+    """)
 
 # %% Overview
 rv.I(""" Overview and Codes | |
@@ -37,9 +34,7 @@ rv.I(""" Overview and Codes | |
     wt2 = 4+ a2 * dl2/2   _[S]
 
     |TEXT| i01/example1.txt | plain, []
-
-""")
-
+    """)
 
 rv.I(""" -- code tables | |
 
@@ -58,7 +53,6 @@ rv.I(""" -- code tables | |
 
     |TABLE| i01/asce7_load_comb.csv | Load Combinations, 55, c, [] _[T]
     """)
-
 
 # %% Gravity
 rv.V("""Gravity Loads and Seismic Mass | |
@@ -110,25 +104,21 @@ rv.S(""" Abbreviations and References | ros |
     """)
 
 # %% Project
-rv.S(""" Run
+rv.S(""" Run | ros | 
+ 
+    |WINFILE| /source/r01/file.cmd | exit
 
-    |WINCMD|
-    |WINFILE|
+    |LINUXFILE| /source/r01/file.sh | exit
 
-    |LINUXCMD|
-    |LINUXFILE|
+    |OSXFILE| /source/r01/file.sh | exit
+    """)
 
-    |OSXCMD| 
-    |OSXFILE| 
-
-""")
 # %% Write
-rv.S(""" Write 
+rv.S(""" Write | ros |
 
     |DOC| docrst2pdf | rst2pdf, rivtdoc1.ini
 
     # ||APPEND| docrst2pdf | file.pdf
 
     # ||PREPEND| docrst2pdf | file.pdf
-
-""")
+    """)
