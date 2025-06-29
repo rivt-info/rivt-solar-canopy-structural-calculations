@@ -42,7 +42,7 @@ rv.I("""Overview and Codes
     B1       11.1     15.0
     ======= ======== ======
 
-    |TEXT| i01/example1.txt | preformat, color
+    |TEXT| i01/example1.txt | preformat, red
     """)
 
 rv.I("""--code tables 
@@ -122,7 +122,7 @@ rv.P("""Publish
 
     |DOC| rstpdf | rivtdoc1.ini 
 
-    |ATTACH| attach/test1.pdf
+    |ATTACH| attach/test1.pdf | a pdf title
     
     # |DOC| text | rivtdoc1.ini | cover1.txt
     
