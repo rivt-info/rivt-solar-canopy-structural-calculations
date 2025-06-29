@@ -29,7 +29,7 @@ rv.I("""Overview and Codes
 
     |IMG| i01/site01.png | Wind Load 2, 30 _[F]
 
-    some more text followed by an equation
+    text followed by an equation
 
     wt2 = (1/sin(x)) + 4 + a2 * dl2 / 2   _[S]
 
@@ -118,7 +118,7 @@ rv.S("""Abbreviations and References
     """)
 
 # %% Publish
-rv.S("""Publish 
+rv.P("""Publish 
 
     |DOC| rstpdf | rivtdoc1.ini 
 
