@@ -22,9 +22,8 @@ titles may be changed (see "optional rename" below). """
 # ==================================
 # report type and paths
 # ==================================
-rerun = False  # flag for regenerating doc files [True; False]
-rvtype = "rstpdf"  # report type [html; rstpdf; texpdf; text]
-cover = "cover1.pdf"  # insert cover page [filename.pdf; filename.rst]
+reptype = "rstpdf"  # report type [html; rstpdf; texpdf; text]
+reptitle = ""
 
 # ==================================
 # include files and optional rename
