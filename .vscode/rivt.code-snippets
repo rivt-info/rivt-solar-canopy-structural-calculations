@@ -52,7 +52,7 @@
             ""
         ]
     },
-    "T method ( rvt )": {
+    "T section ( rvt )": {
         "prefix": "rvt",
         "description": "Tools method",
         "scope": "python",
@@ -65,14 +65,14 @@
             "    \"\"\")"
         ]
     },
-    "W method [ rvw ]": {
-        "prefix": "rvw",
-        "description": "write method",
+    "P section [rvp]": {
+        "prefix": "rvp",
+        "description": "publish method",
         "scope": "python",
         "body": [
-            "rv.W(\"\"\"${1:write-settings} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
+            "rv.P(\"\"\"${1:write-settings} | ${2:public} ${3:private} | ${4:nocolor} ${0:color} ",
             "    ",
-            "    #|| write | pdf",
+            "",
             "    ",
             "    \"\"\")"
         ]

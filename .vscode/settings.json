@@ -2,10 +2,27 @@
 // top
 {
     "editor.parameterHints.enabled": false,
+    "settings.cycle": [
+        {
+            "id": "explorerSort2", // must be unique
+            "overrideWorkspaceSettings": false,
+            "values": [
+                {
+                    "explorer.sortOrder": "name"
+                },
+                {
+                    "explorer.sortOrder": "type"
+                }
+                {
+                    "explorer.sortOrder": "modified"
+                }
+            ]
+        }
+    ],
     "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
     "fsdeploy.nodes": [
         {
-            "source": "E:/OneDrive/StL-Projects/2025/solar-canopy-2022/rivt-solar-canopy-structural-calculations",
+            "source": "E:/OneDrive/StL-Proj2/2025/solar-canopy/rivt-solar-canopy-structural-calculations",
             "target": "C:/git/git-rivt-solar-canopy-structural-calculations",
             "include": "**/*.*",
             "exclude": "",
@@ -28,10 +45,10 @@
         "editor.indentSize": "tabSize",
         "editor.formatOnType": false,
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.defaultFormatter": "charliermarsh.ruff",
         "editor.stickyScroll.enabled": false,
     },
-    "notebook.defaultFormatter": "ms-python.autopep8",
+    "notebook.defaultFormatter": "charliermarsh.ruff",
     "notebook.outline.showCodeCells": true,
     "editor.foldingStrategy": "auto",
     "actionButtons": {
@@ -109,7 +126,7 @@
                 "name": "ExplorerSort",
                 "color": "yellow",
                 "useVsCodeApi": true,
-                "command": "extension.toggleExplorerSortOrder",
+                "command": "settings.cycle.explorerSort2",
             },
             {
                 "name": "LOC",
@@ -203,15 +220,7 @@
             "color": "#f4a462",
         },
         {
-            "text": "|BLOCK|",
-            "color": "#f4a462",
-        },
-        {
-            "text": "|APPEND|",
-            "color": "#f4a462",
-        },
-        {
-            "text": "|PREPEND|",
+            "text": "|ATTACH|",
             "color": "#f4a462",
         },
         {
