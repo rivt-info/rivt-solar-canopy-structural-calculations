@@ -18,7 +18,7 @@ rv.I(""" Project Summary | ros |
 # %% Overview
 rv.I(""" Overview and Codes | |
 
-    This report **describes** the structural design of a solar canopy
+    This report **describes** the structural design of a **solar** canopy
     *covering* a residential patio located in the City of Larkspur, California.
     It includes the design of a concrete slab and *stem* wall, steel tube
     frame, and clip attachments of solar panels to the frame.

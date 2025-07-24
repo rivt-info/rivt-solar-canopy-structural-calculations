@@ -1,0 +1,12 @@
+    Shear Friction Capacity 1, _[e],2  
+    wt1 = area1 * udl1, ACI 318-12.2, KIPS 
+    Shear Friction Capacity 2, _[e],2  
+    wt21 = area1 * udl1, ACI 318-12.3, KIPS 
+    Shear Friction Capacity 3, _[e],2  
+    wt31 = area1 * udl1, ACI 318-12.4, KIPS 
+    Shear Friction Capacity 4, _[e],2  
+    wt41 = area1 * udl1, ACI 318-12.5, KIPS
+    Shear Friction Capacity 5, _[e],2  
+    wt51 = area1 * udl1, ACI 318-12.6, KIPS
+    Shear Friction Capacity 6, _[e],2  
+    wt61 = area1 * udl1, ACI 318-12.7, KIPS 
