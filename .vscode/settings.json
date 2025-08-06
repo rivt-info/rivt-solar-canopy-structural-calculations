@@ -128,12 +128,6 @@
                 "useVsCodeApi": true,
                 "command": "settings.cycle.explorerSort2",
             },
-            {
-                "name": "LOC",
-                "color": "yellow",
-                "useVsCodeApi": true,
-                "command": "extension.linecount.workspace",
-            },
         ]
     },
     "editor.rulers": [
