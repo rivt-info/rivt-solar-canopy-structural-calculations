@@ -1,3 +1,0 @@
-    wt1 = 1.4*KIPS, data 1
-    wt2 = 2.02*IN, data 2
-    wt3 = 10.1*FT, data 4

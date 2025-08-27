@@ -1,7 +1,6 @@
 // ========================================================================== //
 // top
 {
-    "editor.parameterHints.enabled": false,
     "settings.cycle": [
         {
             "id": "explorerSort2", // must be unique
@@ -12,14 +11,13 @@
                 },
                 {
                     "explorer.sortOrder": "type"
-                }
+                },
                 {
                     "explorer.sortOrder": "modified"
                 }
             ]
         }
     ],
-    "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
     "fsdeploy.nodes": [
         {
             "source": "E:/OneDrive/StL-Proj2/2025/solar-canopy/rivt-solar-canopy-structural-calculations",
@@ -29,8 +27,8 @@
             "deleteTargetOnDeploy": true,
         }
     ],
-    "fsdeploy.deployOnSave": true,
-    "fsdeploy.deployWorkspaceOnSave": false,
+    "editor.parameterHints.enabled": false,
+    "window.title": "${separator}${activeEditorLong}${separator}${remoteName}$[dirty}",
     "workbench.colorTheme": "Default Dark Modern",
     "workbench.colorCustomizations": {
         "tab.activeBackground": "#2a2570",
@@ -272,7 +270,6 @@
         "git:/**/*.code-snippets": "default",
         "gitlens:/**/*.code-snippets": "default",
         "*.svg": "default",
-        "*.csv": "gc-excelviewer-csv-editor"
     },
     "files.associations": {
         "*.py": "python"
@@ -299,16 +296,15 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "editor.codeLens": true,
+    "ShortcutMenuBar.saveAll": true,
     "ShortcutMenuBar.beautify": false,
-    "ShortcutMenuBar.showCommands": true,
+    "ShortcutMenuBar.showCommands": false,
     "ShortcutMenuBar.navigateBack": false,
     "ShortcutMenuBar.navigateForward": false,
     "ShortcutMenuBar.commentLine": false,
     "ShortcutMenuBar.toggleWordWrap": true,
     "editor.renderWhitespace": "none",
     "editor.guides.indentation": false,
-    "pdf-preview.default.sidebar": true,
-    "pdf-preview.default.scale": "page-actual",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "explorer.confirmDelete": false,
     "git.postCommitCommand": "sync",
@@ -350,7 +346,8 @@
         "stds",
         "yapf"
     ],
-    "ShortcutMenuBar.openFilesList": false,
+    "ShortcutMenuBar.openFilesList": true,
+    "ShortcutMenuBar.findReplace": false,
 }
 // ========================================================================== //
 // bottom

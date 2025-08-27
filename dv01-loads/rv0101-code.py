@@ -1,6 +1,6 @@
 #! python
 # %% Start
-import rivtlib.api as rv
+import rivtlib.rvapi as rv
 
 # %% Project
 rv.I("""Project Summary 
@@ -18,7 +18,7 @@ rv.I("""Project Summary
 # %% Overview
 rv.I("""Overview and Codes 
 
-    This report **describes** the structural design of a solar canopy
+    This report describes the **structural** design of a solar canopy
     *covering* a residential patio located in the City of Larkspur, California.
     It includes the design of a concrete slab and *stem* wall, steel tube
     frame, and clip attachments of solar panels to the frame.

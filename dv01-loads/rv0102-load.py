@@ -1,6 +1,6 @@
 #! python
 
-import rivtlib.api as rv
+import rivtlib.rvapi as rv
 
 # %% Project
 rv.I(""" Project Summary | ros | 
